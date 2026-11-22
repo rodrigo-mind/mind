@@ -28,3 +28,4 @@ Leitura parcial: li a capa, o sumário, o prefácio, a seção "about this book"
 
 - [[developer]] — referência atual de CSS para a camada de front-end da stack (CSS sem frameworks), com responsividade e desempenho, que o centralizador inclui no escopo
 - [[The-Definitive-Guide-to-HTML5-(Adam-Freeman) (pdf)]] — os dois livros tratam de CSS para front-end; este, de 2024, cobre recursos modernos (grid, cascade layers, container queries) que o livro de HTML5, de 2012, não alcança
+- [[mapa-css-in-depth]] — o mapa acompanha a destilação deste livro

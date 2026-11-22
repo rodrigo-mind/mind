@@ -20,3 +20,5 @@ Leitura parcial: li os metadados, o sumário completo e o prefácio; os capítul
 - [[developer]] — referência de PHP moderno para a camada de back-end da stack (PHP puro), com tipos, MVC, injeção de dependência e Composer
 - [[PHP-8-Objects-Patterns-and-Practice-Volume-1-(Matt-Zandstra) (pdf)]] — os dois cobrem PHP 8 moderno, orientação a objetos, tipos, padrões e injeção de dependência; aquele aprofunda os padrões de projeto, inclusive de banco
 - [[php-diretrizes-e-referencias]] — a nota lista as fontes (PHP-FIG, PHP The Right Way, OWASP) que complementam o livro em Composer, autoload e segurança
+- [[PHP-and-MySQL-The-Comprehensive-Guide-(Christian-Wenz-Tobias-Hauser) (pdf)]] — os dois cobrem PHP moderno e orientação a objetos; aquele acrescenta o acesso a banco (SQL, PDO, MySQL) que este não trata
+- [[mapa-the-art-of-modern-php-8]] — o mapa acompanha a destilação deste livro

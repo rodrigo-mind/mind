@@ -1,0 +1,18 @@
+# Artefatos de ferramentas
+.cc-writes/
+.idea/
+.vscode/
+
+# Estado local do Obsidian (muda a cada uso)
+.obsidian/workspace.json
+.obsidian/appearance.json
+
+# Dotfiles de shell e configuração pessoal
+.bash_profile
+.bashrc
+.profile
+.zprofile
+.zshrc
+.gitconfig
+.gitmodules
+.ripgreprc

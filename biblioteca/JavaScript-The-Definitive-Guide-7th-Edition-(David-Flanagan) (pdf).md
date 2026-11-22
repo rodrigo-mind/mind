@@ -19,3 +19,4 @@ Leitura parcial: li a capa, os créditos, o sumário e o prefácio (páginas ini
 ## Conexões
 - [[developer]] — referência da linguagem do front-end (JavaScript sem frameworks) da stack e, no capítulo de navegadores, da camada de interação com a página
 - [[The-Definitive-Guide-to-HTML5-(Adam-Freeman) (pdf)]] — os dois cobrem JavaScript no navegador e o DOM; o de HTML5 (2012) tem a parte de HTML e CSS3, e este (2020) cobre a linguagem moderna (classes, módulos, assíncrono)
+- [[mapa-javascript-the-definitive-guide]] — o mapa acompanha a destilação deste livro

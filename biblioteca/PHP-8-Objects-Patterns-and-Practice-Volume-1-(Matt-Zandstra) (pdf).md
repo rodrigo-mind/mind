@@ -23,3 +23,5 @@ Leitura parcial: li a capa, os créditos, o sumário e a introdução, e fiz bus
 - [[developer]] — referência de PHP orientado a objetos para a camada de back-end da stack; no que toca ao banco, só traz padrões de acesso a dados com PDO, e não o tema de PDO nem o de segurança do checklist
 - [[The-Art-of-Modern-PHP-8-(Joseph-Edmonds-Lorna-Jane-Mitchell) (epub)]] — os dois cobrem PHP 8 moderno, orientação a objetos, tipos, padrões, MVC e injeção de dependência; este aprofunda os padrões de projeto (inclusive de banco) e o outro traz Composer e PHP 8.1
 - [[php-diretrizes-e-referencias]] — a nota indica o OWASP e o PHP The Right Way para segurança e PDO, temas que este livro não cobre
+- [[PHP-and-MySQL-The-Comprehensive-Guide-(Christian-Wenz-Tobias-Hauser) (pdf)]] — os dois tratam de orientação a objetos, padrões de projeto e MVC; aquele traz a base da linguagem e o banco de dados, e este aprofunda a arquitetura
+- [[mapa-php-8-objects-patterns-and-practice]] — o mapa acompanha a destilação deste livro

@@ -72,3 +72,4 @@ Ao escrever código baseado nas referências acima, aplique automaticamente:
 - [[developer]] — complementa o centralizador com fontes de referência de PHP vanilla (manual, PSR, OWASP, testes), no mesmo escopo da stack de PHP puro sem framework definida aqui
 - [[The-Art-of-Modern-PHP-8-(Joseph-Edmonds-Lorna-Jane-Mitchell) (epub)]] — o livro trata dos mesmos temas que esta nota manda aplicar (tipos estritos, `readonly`, enums, injeção de dependência e autoload PSR-4)
 - [[PHP-8-Objects-Patterns-and-Practice-Volume-1-(Matt-Zandstra) (pdf)]] — o livro desenvolve a orientação a objetos, a composição e a injeção de dependência que esta nota pede como diretriz de design
+- [[PHP-and-MySQL-The-Comprehensive-Guide-(Christian-Wenz-Tobias-Hauser) (pdf)]] — o livro tem capítulos de PDO e de segurança de sessões, temas para os quais esta nota indica fontes de referência

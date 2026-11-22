@@ -41,7 +41,7 @@ O projeto tem duas pastas fixas. As demais são criadas depois, uma por finalida
 
 ### NUCLEO
 
-Ponto de partida e diretrizes do projeto. Contém este arquivo e `philosophy.md`; novos arquivos `.md` podem ser adicionados depois. **Todo arquivo do NUCLEO se conecta a este** (`mind.md`), formando o conjunto de diretrizes estruturais, filosóficas e outras que orientam o projeto.
+Ponto de partida e diretrizes do projeto. Contém este arquivo, `philosophy.md` e `creator-of-minds.md`; novos arquivos `.md` podem ser adicionados depois. **Todo arquivo do NUCLEO se conecta a este** (`mind.md`), formando o conjunto de diretrizes estruturais, filosóficas e outras que orientam o projeto.
 
 ### RESPOSTAS
 
@@ -54,7 +54,7 @@ Dentro dela existe uma subpasta fixa, `relatorios-de-integracao/`, **exclusiva**
 > Este bloco é mantido pelo comando `/integrar`. Não edite entre os marcadores.
 
 <!-- INTEGRAR:ARVORE:INICIO -->
-Última integração: 2026-11-22 06:37
+Última integração: 2026-11-22 19:17
 
 ```
 mind/
@@ -62,7 +62,15 @@ mind/
 ├── RESPOSTAS/
 │   └── relatorios-de-integracao/
 ├── biblioteca/
-└── developer/
+├── developer/
+│   ├── conceitos/
+│   ├── frameworks/
+│   └── mapas/
+├── estrategia/
+│   ├── conceitos/
+│   ├── frameworks/
+│   └── mapas/
+└── trafego/
 ```
 
 | Diretório | Finalidade |
@@ -71,6 +79,8 @@ mind/
 | `RESPOSTAS/` | Saída de dados: respostas e arquivos gerados a pedido, isolados do resto do projeto |
 | `developer/` | Assunto desenvolvimento de software (sistemas, sites, apps e automações), a partir do centralizador `developer.md`, com stack de referência, fluxo e checklist |
 | `biblioteca/` | Livros de referência em PDF e outros formatos, cada um com sua ficha `.md` |
+| `estrategia/` | Assunto estratégia (validação de negócio, posicionamento, personalidade de marca e mensagem), a partir do centralizador `estrategia.md`, com notas destiladas dos livros em `frameworks/`, `conceitos/` e `mapas/` |
+| `trafego/` | Assunto tráfego (pago, orgânico, social e direto, campanhas, anúncios e medição), a partir do centralizador `trafego.md`, que se apoia em `estrategia/` e `developer/`; ainda sem livros nem notas destiladas |
 <!-- INTEGRAR:ARVORE:FIM -->
 
 ## Arquivos do NUCLEO
@@ -148,6 +158,14 @@ Ao ser executado, o Claude Code:
 8. Salva um relatório em `RESPOSTAS/relatorios-de-integracao/` e o liga ao `relatorios.md`.
 
 Para reanalisar tudo do zero, use `/integrar tudo`.
+
+## O comando `/destilar`
+
+Comando para extrair o conteúdo útil de um livro da biblioteca. Ele fica em `.claude/commands/destilar.md`.
+
+A ficha criada pelo `/integrar` é só um resumo do livro. O `/destilar` vai além: lê os capítulos mais importantes e grava notas curtas, em palavras próprias, cada uma com o livro, o capítulo e as páginas de origem. Há três tipos: **frameworks** (procedimentos com passos), **conceitos** e **regras**. Elas ficam na pasta do assunto, em `frameworks/`, `conceitos/` e `mapas/`, e o mapa de cada livro registra o andamento. Cada execução trata de um lote de capítulos, e rodar o mesmo comando de novo continua de onde parou. O comando `/destilar playbook <tema>` combina notas de livros diferentes em um processo. Depois de destilar, rode `/integrar` para ligar as notas novas.
+
+As notas geradas trazem `origem: destilar` no frontmatter. Só o `/destilar` as atualiza, e ele não altera nenhuma outra nota. Elas são resumos rastreáveis: em decisões importantes, confira a fonte indicada.
 
 ## Regras do projeto
 

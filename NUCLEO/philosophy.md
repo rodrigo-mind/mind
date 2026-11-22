@@ -1,3 +1,10 @@
+---
+titulo: Filosofia
+tipo: diretriz
+criado: 2026-11-22
+atualizado: 2026-11-22
+---
+
 # FILOSOFIA
 
 ## I. Do Conhecimento Verdadeiro

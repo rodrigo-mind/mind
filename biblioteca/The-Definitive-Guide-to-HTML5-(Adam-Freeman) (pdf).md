@@ -21,3 +21,4 @@ Leitura parcial: li a contracapa, o sumário completo (40 capítulos) e o capít
 - [[developer]] — o livro é referência de front-end (HTML, CSS e JavaScript sem frameworks), uma camada da stack e do mapa do assunto desenvolvimento
 - [[CSS-in-Depth-Second-Edition-(Keith-J-Grant) (pdf)]] — os dois tratam de CSS; aquele, de 2024, atualiza a parte de CSS3 deste livro, escrito em 2012
 - [[JavaScript-The-Definitive-Guide-7th-Edition-(David-Flanagan) (pdf)]] — complementa a parte de JavaScript e DOM deste livro com a linguagem atual (classes, módulos, assíncrono) e o capítulo de navegadores
+- [[mapa-the-definitive-guide-to-html5]] — o mapa acompanha a destilação deste livro

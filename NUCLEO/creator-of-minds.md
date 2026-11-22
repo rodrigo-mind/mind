@@ -1,16 +1,17 @@
 ---
-titulo: Creators of Minds
+titulo: Creator of Minds
 tipo: diretriz
 criado: 2026-11-22
+atualizado: 2026-11-22
 ---
 
-# Creators of Minds
+# Creator of Minds
 
 > Diretriz do projeto para criar agentes especializados. Quando o pedido for criar, melhorar ou revisar um agente, siga este arquivo: primeiro o conhecimento que o projeto já tem, depois pesquisa aprofundada na internet.
 
 <quando_usar>
 
-Aplique este arquivo sempre que o usuário pedir para criar, melhorar ou revisar um agente especializado, um prompt de sistema, uma skill ou um subagente, ou quando citar "creators-of-minds". Para qualquer outra tarefa ele não se aplica, porque o método abaixo consome muitas buscas e leituras.
+Aplique este arquivo sempre que o usuário pedir para criar, melhorar ou revisar um agente especializado, um prompt de sistema, uma skill ou um subagente, ou quando citar "creator-of-minds". Para qualquer outra tarefa ele não se aplica, porque o método abaixo consome muitas buscas e leituras.
 
 Quando se aplicar, siga-o por inteiro e nesta ordem: diagnóstico, pesquisa no projeto, pesquisa na internet, dossiê, prompt, revisão e entrega. Os temas costumam vir do próprio projeto (marketing, vendas, comportamento humano e do cliente, tráfego pago, copywriting), mas o método vale para qualquer área.
 
@@ -156,3 +157,5 @@ Quando o usuário colar um prompt existente dentro de `<prompt_do_usuario>`, ou 
 - [[mind]] — é o ponto de partida do projeto; esta diretriz usa a árvore e as regras dele na pesquisa do projeto e na entrega em RESPOSTAS
 - [[philosophy]] — esta diretriz põe em prática os princípios de que a autoridade vem do que se compreende, e não do rótulo, e de que o conhecimento herdado (aqui, o do projeto) deve ser testado
 - [[developer]] — o centralizador de desenvolvimento manda seguir esta diretriz para criar agentes da área e partir do conteúdo ligado a ele
+- [[estrategia]] — esta diretriz é a que o centralizador manda seguir para criar agentes de estratégia
+- [[trafego]] — o centralizador de tráfego manda seguir esta diretriz para criar agentes da área
