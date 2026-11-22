@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "09fd03eb614ae4f6",
+    "type": "split",
+    "children": [
+      {
+        "id": "e9c319a8dea0fda5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b9b90d55e2bba921",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "107d4bbdc2a4c3f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "b75ac0d56035412d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b35c3833d688213",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "42199fb8920edb90",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "35d2178b3c97a64d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "857f40b7d764bd11",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d96dcab87c6e9aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb6dbb412cea4f33",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos"
+            }
+          },
+          {
+            "id": "efc4b75dac35065c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "78f9dfa736f95ea5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "1c91955e3228ee06",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "d04f959dbe3ad392",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2026-11-22-0303-integracao.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "3b35c3833d688213",
+  "lastOpenFiles": [
+    "RESPOSTAS/relatorios-de-integracao/2026-11-22-0637-integracao.md",
+    "RESPOSTAS/relatorios-de-integracao/2026-11-22-0631-integracao.md",
+    "RESPOSTAS/2026-11-22-0630-livros-php.md",
+    "NUCLEO/sedh3Qa9v",
+    "RESPOSTAS/2026-11-22-0620-renomeacao-livro-php-zandstra.md",
+    "developer/developer.md",
+    "developer/php-diretrizes-e-referencias.md",
+    "RESPOSTAS/2026-11-22-0650-php-diretrizes-vanilla.md",
+    "RESPOSTAS/relatorios-de-integracao/2026-11-22-0622-integracao.md",
+    "biblioteca/PHP-8-Objects-Patterns-and-Practice-Volume-1-(Matt-Zandstra) (pdf).md",
+    "RESPOSTAS/2026-11-22-0610-renomeacao-biblioteca.md",
+    "biblioteca/PHP-8-Objects-Patterns-and-Practice-Volume-1-(Matt-Zandstra).pdf",
+    "biblioteca/PHP 8 Objects, Patterns, and Practice Volume 1 Mastering OO Enhancements and Design Patterns (Matt Zandstra) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "biblioteca/sedQ3WSaI",
+    "biblioteca/JavaScript-The-Definitive-Guide-7th-Edition-(David-Flanagan).pdf",
+    "biblioteca/The-Art-of-Modern-PHP-8-(Joseph-Edmonds-Lorna-Jane-Mitchell) (epub).md",
+    "biblioteca/CSS-in-Depth-Second-Edition-(Keith-J-Grant) (pdf).md",
+    "biblioteca/JavaScript-The-Definitive-Guide-7th-Edition-(David-Flanagan) (pdf).md",
+    "biblioteca/The-Art-of-Modern-PHP-8-(Joseph-Edmonds-Lorna-Jane-Mitchell).epub",
+    "biblioteca/CSS-in-Depth-Second-Edition-(Keith-J-Grant).pdf",
+    "RESPOSTAS/relatorios-de-integracao/2026-11-22-0600-integracao.md",
+    "biblioteca/The-Definitive-Guide-to-HTML5-(Adam-Freeman).pdf",
+    "biblioteca/The-Definitive-Guide-to-HTML5-(Adam-Freeman) (pdf).md",
+    "biblioteca/CSS-in-Depth_Second-Edition_(Keith J. Grant).pdf",
+    "biblioteca/CSS-in-Depth_Second-Edition_(Keith J. Grant) (pdf).md",
+    "biblioteca",
+    "RESPOSTAS/2026-11-22-0517-head-st-motors.md",
+    "RESPOSTAS/relatorios-de-integracao/2026-11-22-0513-integracao.md",
+    "RESPOSTAS/relatorios-de-integracao/2026-11-22-0454-integracao.md",
+    "livros/CSS-in-Depth_Second-Edition_(Keith J. Grant) (pdf).md",
+    "RESPOSTAS/relatorios-de-integracao/2026-11-22-0450-integracao.md",
+    "filosofia.md",
+    "livros/The-Definitive-Guide-to-HTML5-(Adam-Freeman) (pdf).md",
+    "RESPOSTAS/2026-11-22-0421-risco-malware-pdf.md",
+    "RESPOSTAS/2026-11-22-0353-agente-marketing.md",
+    "RESPOSTAS/2026-11-22-0353-dossie-marketing.md"
+  ]
+}
