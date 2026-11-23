@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "Christian Wenz e Tobias Hauser, PHP and MySQL: The Comprehensive Guide, cap. 11, seções 11.3.10 e 11.4.2 a 11.4.4 (PDF p. 492-498 e 506-510)"
+  - "Matt Zandstra, PHP 8 Objects, Patterns, and Practice, vol. 1, cap. 4 (PDF p. 147-164)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -29,6 +30,11 @@ Permitem interceptar acessos, converter objetos em texto e carregar classes sob 
 
 O autoload completo está em carregamento automático em PHP; ver também fundamentos de classes e objetos em PHP.
 
+
+## Notas do Claude
+
+- Zandstra (cap. 4) acrescenta: o operador `??` chama `isset()` implicitamente, o que aciona `__isset()`; `__clone()` roda na cópia, e a cópia padrão é rasa; uma classe com `__toString()` implementa `Stringable` (PHP 8). O autor pede cuidado com a "mágica" (ver a regra use métodos mágicos com cuidado e documente).
+
 ## Conexões
 
 - [[mapa-php-and-mysql-the-comprehensive-guide]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -36,3 +42,4 @@ O autoload completo está em carregamento automático em PHP; ver também fundam
 - [[fundamentos-de-classes-e-objetos-em-php]] — esta nota cita a ideia de «Fundamentos de classes e objetos em PHP» na seção sobre como se relaciona
 - [[carregamento-automatico-em-php]] — spl_autoload_register é o autoload tratado ali
 - [[serializacao-de-objetos-em-php]] — __sleep e __wakeup fazem parte da serialização
+- [[regra-use-metodos-magicos-com-cuidado-e-documente]] — a regra orienta o uso dos métodos mágicos apresentados aqui

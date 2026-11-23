@@ -54,3 +54,5 @@ Para PHP moderno, `htmlspecialchars($s, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8')` e
 - [[php-e-javascript-ordem-de-execucao-e-troca-de-dados]] — dados do PHP em script exigem escape
 - [[funcoes-do-apache-no-php]] — o exemplo escapa a saída com htmlspecialchars
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[escapar-texto-conforme-o-destino-em-php]] — o escape de HTML é o passo 1 deste framework
+- [[renderizar-templates-em-php-puro-com-buffer-de-saida]] — o template é o lugar em que o escape de saída precisa ser garantido

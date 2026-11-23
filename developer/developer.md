@@ -136,7 +136,6 @@ Quando uma nota, livro ou agente sugerir outra stack, registrar como alternativa
 - [[validar-formularios-em-php]] — nota destilada (framework): Validar formulários em PHP
 - [[produto-minimo-viavel]] — o escopo mínimo e a construção em fatias do fluxo de desenvolvimento aplicam a mesma lógica do MVP
 - [[site-que-conta-a-historia-do-cliente]] — sites e landing pages são parte do escopo do centralizador de desenvolvimento
-- [[regra-senha-com-hash-e-sal]] — diverge: o checklist usa `password_hash` e `password_verify`, enquanto o livro de SQL ensina o hash com sal calculado à mão
 - [[principios-solid]] — nota destilada (conceito): Princípios SOLID, na leitura do livro
 - [[divida-tecnica]] — nota destilada (conceito): Dívida técnica
 - [[regra-confira-o-motor-innodb-nas-chaves-estrangeiras]] — nota destilada (regra): No MySQL, confira o motor InnoDB e as colunas ao declarar chaves estrangeiras
@@ -407,3 +406,81 @@ Quando uma nota, livro ou agente sugerir outra stack, registrar como alternativa
 - [[regra-nao-reutilize-regex-global-em-lacos-sem-controlar-lastindex]] — nota destilada (regra): Regra: não reutilize uma regex com g ou y em laços sem controlar lastIndex
 - [[regra-ordene-textos-para-pessoas-com-intl-collator]] — nota destilada (regra): Regra: ordene textos para pessoas com Intl.Collator
 - [[trafego]] — o tráfego define o que medir e como nomear; este assunto implementa o rastreamento (Tag Manager, pixels, UTM, consentimento) nos sites e sistemas
+- [[mapa-css-in-depth]] — mapa de destilação de livro-base deste assunto: Mapa de CSS in Depth, Second Edition
+- [[mapa-javascript-the-definitive-guide]] — mapa de destilação de livro-base deste assunto: Mapa de JavaScript, The Definitive Guide (7ª edição)
+- [[mapa-php-8-objects-patterns-and-practice]] — mapa de destilação de livro-base deste assunto: Mapa de PHP 8 Objects, Patterns, and Practice
+- [[mapa-php-and-mysql-the-comprehensive-guide]] — mapa de destilação de livro-base deste assunto: Mapa de PHP and MySQL, The Comprehensive Guide
+- [[mapa-sql-antipatterns]] — mapa de destilação de livro-base deste assunto: Mapa de SQL Antipatterns
+- [[mapa-the-art-of-modern-php-8]] — mapa de destilação de livro-base deste assunto: Mapa de The Art of Modern PHP 8
+- [[mapa-the-definitive-guide-to-html5]] — mapa de destilação de livro-base deste assunto: Mapa de The Definitive Guide to HTML5
+- [[animacoes-com-keyframes-em-css]] — nota destilada (conceito): Animações com keyframes em CSS (@keyframes e animation)
+- [[antipadrao-de-sql-o-que-e]] — nota destilada (conceito): Antipadrão de SQL, o que é e como o livro organiza cada um
+- [[api-de-validacao-de-formularios-por-javascript]] — nota destilada (conceito): API de validação de formulários por JavaScript (checkValidity e setCustomValidity)
+- [[apis-do-navegador-para-conhecer]] — nota destilada (conceito): APIs do navegador para conhecer (lista do fim do capítulo 15)
+- [[aplicacoes-offline-appcache-e-service-workers]] — nota destilada (conceito): Aplicações offline (o AppCache do livro e o que o substituiu)
+- [[atributos-globais-booleanos-e-data-em-html]] — nota destilada (conceito): Atributos globais, booleanos e data-* em HTML
+- [[audio-e-video-em-html5]] — nota destilada (conceito): Áudio e vídeo em HTML5 (video, audio, source e track)
+- [[callbacks-funcoes-anonimas-e-closures-em-php]] — nota destilada (conceito): Callbacks, funções anônimas e closures em PHP
+- [[cors-requisicoes-entre-origens]] — nota destilada (conceito): CORS, requisições entre origens (cross-origin resource sharing)
+- [[declaracoes-de-tipo-em-php-uniao-anulavel-mixed-e-dnf]] — nota destilada (conceito): Declarações de tipo em PHP (união, anulável, mixed e DNF)
+- [[diferencas-entre-navegadores-e-deteccao-de-recursos]] — nota destilada (conceito): Diferenças entre navegadores e detecção de recursos
+- [[efeitos-sonoros-com-audio-e-webaudio]] — nota destilada (conceito): Efeitos sonoros com Audio e WebAudio
+- [[estilos-de-programacao-procedural-funcional-e-orientado-a-objetos]] — nota destilada (conceito): Estilos de programação em PHP (procedural, funcional e orientado a objetos)
+- [[expressoes-regulares-em-php-com-preg]] — nota destilada (conceito): Expressões regulares em PHP com preg_match e preg_replace
+- [[ferramentas-do-javascript-eslint-prettier-jest-e-empacotadores]] — nota destilada (conceito): Ferramentas do JavaScript (ESLint, Prettier, Jest, npm, empacotadores, Babel e TypeScript)
+- [[filtros-mascaras-e-recortes-em-css]] — nota destilada (conceito): Filtros, máscaras e recortes em CSS (filter, mask, clip-path, shape-outside)
+- [[funcoes-de-vetores-em-php]] — nota destilada (conceito): Funções de vetores em PHP (busca, ordenação e manipulação)
+- [[geolocalizacao-no-navegador]] — nota destilada (conceito): Geolocalização no navegador (Geolocation API)
+- [[gradientes-sombras-e-modos-de-mesclagem-em-css]] — nota destilada (conceito): Gradientes, sombras e modos de mesclagem em CSS (gradients, shadows, blend modes)
+- [[iteradores-e-geradores-em-javascript]] — nota destilada (conceito): Iteradores e geradores em JavaScript (Symbol.iterator, function* e yield)
+- [[match-e-switch-em-php]] — nota destilada (conceito): match e switch em PHP
+- [[metaprogramacao-em-javascript]] — nota destilada (conceito): Metaprogramação em JavaScript (atributos de propriedade, Object.freeze, Reflect e Proxy)
+- [[mysqli-extensao-do-mysql-para-php]] — nota destilada (conceito): mysqli, a extensão do MySQL para PHP (e quando preferir o PDO)
+- [[node-js-javascript-fora-do-navegador]] — nota destilada (conceito): Node.js, JavaScript fora do navegador
+- [[numeros-aleatorios-e-precisao-em-php]] — nota destilada (conceito): Números aleatórios e precisão decimal em PHP (Randomizer e BCMath)
+- [[outros-bancos-de-dados-com-php]] — nota destilada (conceito): Outros bancos de dados com PHP (SQLite, SQL Server, Oracle, PostgreSQL e MongoDB)
+- [[padrao-collection-colecao-tipada]] — nota destilada (conceito): Padrão Collection (coleção tipada) em PHP
+- [[padrao-repository-repositorio]] — nota destilada (conceito): Padrão Repository (repositório) e entidades
+- [[propagacao-e-cancelamento-de-eventos]] — nota destilada (conceito): Propagação e cancelamento de eventos (bubbling, capturing e delegação)
+- [[seletores-css-atributos-combinadores-e-pseudoclasses]] — nota destilada (conceito): Seletores CSS (atributos, combinadores, pseudoclasses e pseudoelementos)
+- [[sintomas-de-um-projeto-php-que-degringola]] — nota destilada (conceito): Sintomas de um projeto PHP que degringola (a evolução do desastre)
+- [[svg-no-html-e-por-javascript]] — nota destilada (conceito): SVG no HTML e por JavaScript (scalable vector graphics)
+- [[transformacoes-em-css]] — nota destilada (conceito): Transformações em CSS (transform, translate, rotate, scale)
+- [[versoes-do-ecmascript-e-ambientes-do-javascript]] — nota destilada (conceito): Versões do ECMAScript e ambientes do JavaScript
+- [[xml-imagens-e-pdf-com-php]] — nota destilada (conceito): XML, imagens e PDF com PHP (SimpleXML, DOM, GD e TCPDF)
+- [[xmlhttprequest-estados-eventos-e-erros]] — nota destilada (conceito): XMLHttpRequest: estados, eventos e erros
+- [[regra-anime-so-transform-e-opacity]] — nota destilada (regra): Anime só transform e opacity
+- [[regra-chame-preventdefault-no-inicio-do-tratador]] — nota destilada (regra): Chame preventDefault no início do tratador
+- [[regra-crie-elementos-svg-com-createelementns]] — nota destilada (regra): Crie elementos SVG com createElementNS
+- [[regra-guarde-senhas-com-password-hash]] — nota destilada (regra): Guarde senhas com password_hash, nunca com md5 ou sha1
+- [[regra-leia-superglobais-em-um-so-lugar]] — nota destilada (regra): Leia as superglobais em um só lugar
+- [[regra-nao-crie-propriedades-dinamicas]] — nota destilada (regra): Não crie propriedades dinâmicas em objetos
+- [[regra-nao-defina-tratadores-de-evento-em-atributos-html]] — nota destilada (regra): Não defina tratadores de evento em atributos HTML
+- [[regra-nao-ordene-por-rand-em-tabelas-grandes]] — nota destilada (regra): Não ordene por RAND() em tabelas grandes
+- [[regra-nao-quebre-a-linha-depois-de-return]] — nota destilada (regra): Não quebre a linha depois de return e use ponto e vírgula em JavaScript
+- [[regra-nao-use-die-ou-exit-para-tratar-erros]] — nota destilada (regra): Não use die ou exit para tratar erros
+- [[regra-nunca-silencie-excecoes]] — nota destilada (regra): Nunca silencie exceções
+- [[regra-omita-a-tag-de-fechamento-em-arquivos-so-php]] — nota destilada (regra): Omita a tag de fechamento em arquivos só com PHP
+- [[regra-prefira-logica-no-php-a-procedimentos-armazenados]] — nota destilada (regra): Prefira a lógica no PHP a procedimentos armazenados
+- [[regra-respeite-prefers-reduced-motion]] — nota destilada (regra): Respeite a preferência de movimento reduzido (prefers-reduced-motion)
+- [[regra-trate-o-codigo-do-banco-como-codigo]] — nota destilada (regra): Trate o código do banco como código (versionar, documentar e testar)
+- [[regra-use-metodos-magicos-com-cuidado-e-documente]] — nota destilada (regra): Use métodos mágicos com cuidado e documente
+- [[regra-use-require-para-arquivos-essenciais]] — nota destilada (regra): Use require_once para arquivos essenciais
+- [[arrastar-e-soltar-com-a-api-nativa-do-html5]] — nota destilada (framework): Arrastar e soltar com a API nativa do HTML5 (drag and drop)
+- [[converter-erros-em-excecoes-com-manipuladores-globais]] — nota destilada (framework): Converter erros em exceções com manipuladores globais (set_error_handler e set_exception_handler)
+- [[criar-transicoes-em-css]] — nota destilada (framework): Criar transições em CSS (transition)
+- [[criar-um-pacote-composer-e-versionar-com-semver]] — nota destilada (framework): Criar um pacote Composer e versionar com SemVer
+- [[desenhar-graficos-com-canvas]] — nota destilada (framework): Desenhar gráficos com canvas (API 2D)
+- [[diagnosticar-erros-de-ambiente-php]] — nota destilada (framework): Diagnosticar erros de ambiente PHP (404, 500, código-fonte na tela, extensão faltando)
+- [[disparar-eventos-personalizados-com-customevent]] — nota destilada (framework): Disparar eventos personalizados com CustomEvent
+- [[enviar-formulario-por-ajax-com-formdata]] — nota destilada (framework): Enviar formulário por Ajax com FormData
+- [[escapar-texto-conforme-o-destino-em-php]] — nota destilada (framework): Escapar texto conforme o destino em PHP (HTML, URL, SQL e regex)
+- [[registrar-tratadores-de-eventos-com-addeventlistener]] — nota destilada (framework): Registrar tratadores de eventos com addEventListener
+- [[renderizar-templates-em-php-puro-com-buffer-de-saida]] — nota destilada (framework): Renderizar templates em PHP puro com buffer de saída
+- [[trabalhar-com-datas-em-php-com-datetime]] — nota destilada (framework): Trabalhar com datas em PHP com DateTime
+- [[tratar-erros-com-excecoes-em-php]] — nota destilada (framework): Tratar erros com exceções em PHP
+- [[The-Art-of-SEO-Mastering-Search-Engine-Optimization-(Eric-Enge-Stephan-Spencer) (pdf)]] — livro de SEO cujos capítulos de implementação e site amigável cobrem o tema "Desempenho e SEO técnico" do assunto
+- [[guia-google-ads-brasil]] — o rastreamento de conversões do módulo B é implementado pela área de desenvolvimento
+- [[guia-trafego-pago-meta-brasil]] — pixel e API de conversões são implementados pela área de desenvolvimento
+- [[mapa-dos-guias-de-trafego]] — implementa o rastreamento que os guias de mensuração exigem
+- [[operador-do-mind]] — o Operador do Mind começa por este centralizador nas tarefas de construção

@@ -46,3 +46,5 @@ Confiança média: não li ordenação (`sort`), criação de vetores, vetores e
 - [[sets-e-maps-em-javascript]] — iteração e vetores
 - [[arrays-tipados-e-arraybuffer-em-javascript]] — comparação com vetores comuns
 - [[regra-ordene-textos-para-pessoas-com-intl-collator]] — sort() de vetores
+- [[funcoes-de-vetores-em-php]] — as funções de vetor do PHP têm a contraparte em JavaScript
+- [[iteradores-e-geradores-em-javascript]] — a iteração de vetores é o caso de uso mais comum de iteradores

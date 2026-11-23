@@ -159,3 +159,4 @@ Quando o usuário colar um prompt existente dentro de `<prompt_do_usuario>`, ou 
 - [[developer]] — o centralizador de desenvolvimento manda seguir esta diretriz para criar agentes da área e partir do conteúdo ligado a ele
 - [[estrategia]] — esta diretriz é a que o centralizador manda seguir para criar agentes de estratégia
 - [[trafego]] — o centralizador de tráfego manda seguir esta diretriz para criar agentes da área
+- [[operador-do-mind]] — o Operador usa esta diretriz de pesquisa em duas camadas (projeto, depois internet) como método em qualquer tarefa

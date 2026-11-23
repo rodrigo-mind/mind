@@ -24,23 +24,25 @@ Livro de 2021 sobre PHP moderno: programação orientada a objetos, o sistema de
 
 | Cap. | Título | Páginas | Prioridade | Estado | Notas geradas |
 |---|---|---|---|---|---|
-| 1 | Object-Oriented PHP | n/a | media | pendente |  |
-| 2 | Inheritance and Composition, Encapsulation and Visibility, Interfaces and Concretions | n/a | media | pendente |  |
-| 3 | Advanced OOP Features | n/a | media | pendente |  |
+| 1 | Object-Oriented PHP | n/a | media | destilado | [[estilos-de-programacao-procedural-funcional-e-orientado-a-objetos]], [[regra-nao-crie-propriedades-dinamicas]] |
+| 2 | Inheritance and Composition, Encapsulation and Visibility, Interfaces and Concretions | n/a | media | destilado | sem nota nova: confirma notas existentes, que ganharam esta fonte |
+| 3 | Advanced OOP Features | n/a | media | destilado | [[converter-erros-em-excecoes-com-manipuladores-globais]], [[regra-nunca-silencie-excecoes]] (SPL, reflexão e atributos não foram relidos: já têm notas de outro livro) |
 | 4 | Scalar, Arrays, and Special Types | n/a | media | destilado | [[tipos-escalares-do-php-e-armadilhas]], [[regra-nao-use-float-para-dinheiro]], [[regra-use-sempre-a-comparacao-identica-em-php]], [[vetores-iteraveis-e-geradores-em-php]], [[null-void-e-propriedades-nao-inicializadas-em-php]] |
 | 5 | Object Types, Interfaces, and Unions | n/a | media | destilado | [[tipos-de-objeto-heranca-de-tipos-comparacao-e-referencias]], [[criar-instancias-por-clone-reflexao-e-serializacao]], [[regra-nao-desserialize-dados-nao-confiaveis]] |
 | 6 | Parameter, Property, and Return Types | n/a | alta | destilado | [[regra-strict-types-em-todo-arquivo-php]] |
 | 7 | Design Patterns and Clean Code | n/a | alta | destilado | [[divida-tecnica]], [[principios-solid]], [[nomes-claros-e-linguagem-ubiqua-no-codigo]], [[complexidade-ciclomatica]], [[regra-use-retorno-antecipado-em-vez-de-condicionais-aninhadas]], [[regra-nao-repita-valores-use-constantes-nomeadas]], [[imutabilidade-datetime-e-datetimeimmutable]], [[regra-use-tipos-de-retorno-precisos-em-vez-de-interfaces-vagas]], [[padrao-builder]], [[padrao-fluent-interface-fluente]], [[padrao-chain-of-responsibility]], [[padrao-strangler]], [[regra-evite-o-singleton-classico]] |
-| 8 | Model, View, Controller (MVC) Example | n/a | media | pendente |  |
+| 8 | Model, View, Controller (MVC) Example | n/a | media | destilado | [[padrao-repository-repositorio]], [[padrao-collection-colecao-tipada]], [[renderizar-templates-em-php-puro-com-buffer-de-saida]], [[regra-leia-superglobais-em-um-so-lugar]] |
 | 9 | Dependency Injection Example | n/a | media | destilado | [[conteiner-de-injecao-de-dependencias-como-funciona]] (a seção final sobre o antipadrão do localizador de serviços foi lida só até o início; já coberta por outra nota) |
 | 10 | Composer For Dependencies | n/a | alta | destilado | [[gerenciar-dependencias-com-composer]] |
-| 11 | Creating Your Own Composer Package | n/a | baixa | pendente |  |
+| 11 | Creating Your Own Composer Package | n/a | baixa | destilado | [[criar-um-pacote-composer-e-versionar-com-semver]] |
 | 12 | The Awesomeness That Is 8.1 | n/a | alta | destilado | [[enums-em-php]], [[propriedades-readonly-em-php]], [[tipos-de-intersecao-em-php]], [[tipo-de-retorno-never-em-php]], [[constantes-final-em-php]] |
 
 Prioridade: `alta`, `media`, `baixa` ou `ignorar` (o usuário pode mudar). Estado: `pendente` ou `destilado`. Páginas: numeração do leitor de PDF, salvo indicação nas observações.
 
 ## Observações
 
+- 2026-11-22 (destilação feita no Claude.ai, fora do Claude Code): capítulo 11 (criar um pacote Composer, executáveis, tags e SemVer) lido por inteiro na prosa. Registrada uma divergência: o livro chama o autoload de PSR-12, mas é PSR-4. Com isso, todos os capítulos do livro estão destilados.
+- 2026-11-22 (destilação feita no Claude.ai, fora do Claude Code): capítulos 1, 2, 3 e 8 lidos na prosa (o EPUB foi convertido para texto fora do projeto; o código dos exemplos só foi lido onde virou nota). A parte de SPL, reflexão e atributos do capítulo 3 foi só folheada, por já ter notas de Wenz e Hauser. Os autores entraram como fonte em 7 notas existentes. Os capítulos 2 e 3 trazem nomes de projetos e frameworks de 2021; as recomendações de bibliotecas não foram conferidas.
 - 2026-11-22: primeiro lote, com o capítulo 6 (lido até a variância de tipos) e a primeira metade do capítulo 12 (enums e readonly). Do capítulo 12 ficam pendentes tipos de interseção, o tipo `never` e constantes `final`. A variância (covariância e contravariância) do capítulo 6 foi lida, mas não virou nota, por ser avançada para a stack do projeto. Próximos naturais: capítulo 7 (código limpo), capítulo 10 (Composer) e os capítulos 4 e 5 (tipos).
 
 ## Conexões
@@ -80,3 +82,13 @@ Prioridade: `alta`, `media`, `baixa` ou `ignorar` (o usuário pode mudar). Estad
 - [[tipos-de-intersecao-em-php]] — o mapa do livro lista esta nota como gerada pela destilação
 - [[tipo-de-retorno-never-em-php]] — o mapa do livro lista esta nota como gerada pela destilação
 - [[constantes-final-em-php]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[estilos-de-programacao-procedural-funcional-e-orientado-a-objetos]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[padrao-collection-colecao-tipada]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[padrao-repository-repositorio]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[regra-leia-superglobais-em-um-so-lugar]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[regra-nao-crie-propriedades-dinamicas]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[regra-nunca-silencie-excecoes]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[converter-erros-em-excecoes-com-manipuladores-globais]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[renderizar-templates-em-php-puro-com-buffer-de-saida]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[tratar-erros-com-excecoes-em-php]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[criar-um-pacote-composer-e-versionar-com-semver]] — o mapa do livro lista esta nota como gerada pela destilação

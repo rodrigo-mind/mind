@@ -37,3 +37,4 @@ O uso em PHP está em criar e ler cookies em PHP. Para sessões, que dependem de
 - [[armazenamento-no-navegador]] — esta nota cita a ideia de «Armazenamento no navegador» na seção sobre como se relaciona
 - [[criar-e-ler-cookies-em-php]] — esta nota cita a ideia de «Criar e ler cookies em PHP» na seção sobre como se relaciona
 - [[cookies-no-javascript-document-cookie]] — o conceito de cookie e seus limites
+- [[problemas-tecnicos-de-plataforma-que-prejudicam-o-seo]] — IDs de sessão na URL eram a alternativa a cookies que prejudica o rastreamento

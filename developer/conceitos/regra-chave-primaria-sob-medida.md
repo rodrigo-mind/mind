@@ -46,3 +46,4 @@ O livro cita o padrão ISO/IEC 11179 para nomear metadados. No MySQL com PDO, us
 - [[sql-basico-para-aplicacoes-web]] — o livro de SQL Antipatterns discute a escolha da chave primária
 - [[regra-nao-renumere-chaves-primarias-nem-reaproveite-ids]] — a regra sobre pseudochaves complementa a escolha da chave
 - [[numerar-linhas-do-resultado-com-row-number]] — compara chaves geradas e GUIDs
+- [[padrao-repository-repositorio]] — a chave primária escolhida afeta o uso de UUID nos repositórios

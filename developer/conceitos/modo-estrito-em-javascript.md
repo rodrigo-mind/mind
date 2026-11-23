@@ -41,3 +41,6 @@ Veja módulos ES6 em JavaScript, classes com a palavra class (corpo estrito), `e
 - [[funcoes-de-seta-e-o-valor-de-this]] — em modo estrito, this é undefined em chamadas simples
 - [[regra-strict-types-em-todo-arquivo-php]] — equivalente em espírito em PHP
 - [[declaracao-de-variaveis-let-const-e-var]] — atribuir a variável não declarada é erro
+- [[diferencas-entre-navegadores-e-deteccao-de-recursos]] — a escolha do modo estrito e de recursos novos considera o suporte dos navegadores
+- [[metaprogramacao-em-javascript]] — o modo estrito faz falhar a escrita em objeto congelado
+- [[versoes-do-ecmascript-e-ambientes-do-javascript]] — as versões do ES explicam por que o modo estrito existe

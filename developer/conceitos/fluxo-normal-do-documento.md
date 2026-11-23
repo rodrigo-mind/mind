@@ -40,3 +40,4 @@ Ver modelo de caixa do CSS, altura de elementos e overflow, e centralizar um blo
 - [[tipos-de-posicionamento-em-css]] — fixed e absolute retiram o elemento do fluxo
 - [[agrupar-conteudo-em-html]] — parágrafos e divs são elementos de bloco do fluxo normal
 - [[playbook-pagina-responsiva-em-css]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[filtros-mascaras-e-recortes-em-css]] — os elementos flutuantes que saem do fluxo ganham contorno por `shape-outside`

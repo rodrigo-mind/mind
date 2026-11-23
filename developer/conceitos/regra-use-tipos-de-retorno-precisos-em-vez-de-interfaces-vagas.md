@@ -38,3 +38,4 @@ A ressalva da abstração desejada é minha, para equilibrar com a regra de depe
 - [[developer]] — nota destilada ligada a este assunto: regra de livro-base
 - [[principios-solid]] — ligada ao princípio de substituição de Liskov
 - [[regra-componentes-devem-expor-capacidades-nao-tipos]] — diverge: aqui o tipo preciso é preferido ao vago, ali a capacidade vale mais que o tipo; as duas valem em contextos diferentes
+- [[declaracoes-de-tipo-em-php-uniao-anulavel-mixed-e-dnf]] — as declarações de tipo são o recurso que a regra usa

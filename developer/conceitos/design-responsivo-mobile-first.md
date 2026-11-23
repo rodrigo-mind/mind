@@ -48,3 +48,6 @@ Confiança média: li a abertura e a seção "mobile first"; a implementação d
 - [[regra-prefira-consultas-de-conteiner-as-de-midia-nos-modulos]] — o @media segue válido para o layout geral
 - [[imagens-e-mapas-de-imagem-em-html]] — imagens responsivas fazem parte do design responsivo
 - [[playbook-pagina-responsiva-em-css]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[The-Art-of-SEO-Mastering-Search-Engine-Optimization-(Eric-Enge-Stephan-Spencer) (pdf)]] — o livro trata, no capítulo 10, da busca móvel, que depende de um site feito para tela pequena
+- [[arquitetura-de-site-amigavel-a-buscadores]] — a decisão de versão móvel (responsivo ou URL separada) faz parte da arquitetura
+- [[preparar-um-site-para-busca-movel]] — o design responsivo é uma das três configurações móveis aceitas pelo Google

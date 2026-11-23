@@ -50,3 +50,4 @@ No projeto (PHP e MySQL com deploy por FTP em hospedagem compartilhada), o mais 
 - [[regra-upload-seguro-em-php]] — o upload decide onde o arquivo vai parar
 - [[transacoes-e-acid]] — arquivos externos não seguem transações
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[xml-imagens-e-pdf-com-php]] — a geração de miniaturas se liga à decisão de guardar no disco

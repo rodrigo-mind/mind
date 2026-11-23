@@ -44,3 +44,4 @@ Para o projeto (CSS puro, sem pré-processador), são a ferramenta natural de te
 - [[organizacao-de-uma-folha-de-estilo-em-seis-camadas]] — a camada theme guarda as variáveis
 - [[organizar-cores-com-propriedades-personalizadas]] — aplica as variáveis CSS às cores
 - [[listas-e-figuras-em-html]] — os contadores de CSS são o outro recurso das listas personalizadas
+- [[criar-transicoes-em-css]] — `@property` registra variáveis que passam a poder transicionar

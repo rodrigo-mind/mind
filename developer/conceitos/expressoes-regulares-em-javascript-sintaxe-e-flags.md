@@ -42,3 +42,4 @@ O livro (início de 2020) dá o suporte de lookbehind, `\p{}`, `s` e grupos nome
 - [[validacao-nativa-de-formularios-html5]] — esta nota cita a ideia de «Validação nativa de formulários em HTML5» na seção sobre como se relaciona
 - [[validar-formularios-em-php]] — esta nota cita a ideia de «Validar formulários em PHP» na seção sobre como se relaciona
 - [[regra-nao-reutilize-regex-global-em-lacos-sem-controlar-lastindex]] — as flags g e y
+- [[expressoes-regulares-em-php-com-preg]] — a sintaxe é a mesma das expressões regulares em PHP

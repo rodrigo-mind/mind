@@ -39,3 +39,4 @@ Em hospedagem compartilhada, o `.htaccess` é uma forma de definir o `include_pa
 - [[carregamento-automatico-em-php]] — o autoload substitui a maior parte dos require manuais
 - [[trabalhar-com-arquivos-em-php]] — include e include_path também lidam com caminhos de arquivos
 - [[opcoes-importantes-do-php-ini]] — include_path é uma das opções
+- [[regra-use-require-para-arquivos-essenciais]] — a regra escolhe, entre include e require, o certo para arquivos essenciais

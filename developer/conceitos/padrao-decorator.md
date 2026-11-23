@@ -43,3 +43,4 @@ A associação com o middleware dos frameworks atuais é inferência minha, pelo
 - [[composicao-em-vez-de-heranca]] — esta nota cita a ideia de «Composição em vez de herança» na seção sobre como se relaciona
 - [[front-controller-em-php]] — o pipeline de requisição lembra os filtros do controlador frontal
 - [[padrao-chain-of-responsibility]] — «Padrão Chain of Responsibility» cita esta nota ao explicar suas relações
+- [[regra-use-metodos-magicos-com-cuidado-e-documente]] — o Decorator pode usar __call para delegar, de forma documentada

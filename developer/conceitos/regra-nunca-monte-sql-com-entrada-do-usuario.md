@@ -51,3 +51,5 @@ No PHP com PDO, a parametrização é `$pdo->prepare('... WHERE id = ?')` seguid
 - [[implementar-busca-por-palavras-no-mysql]] — o termo de busca digitado deve ir em parâmetro
 - [[regra-verifique-erros-do-banco-e-depure-o-sql-final]] — montar SQL por concatenação dificulta a depuração e abre o risco de injeção
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[mysqli-extensao-do-mysql-para-php]] — o mysqli também permite consultas parametrizadas
+- [[escapar-texto-conforme-o-destino-em-php]] — a alternativa ao escape de SQL é a consulta parametrizada

@@ -38,3 +38,4 @@ Procure `!important`, seletores com `#` e seletores de três ou mais níveis. Pa
 - [[camadas-da-cascata-em-css]] — as camadas reduzem a necessidade de truques de especificidade
 - [[regra-limite-o-aninhamento-a-tres-niveis]] — o aninhamento profundo eleva a especificidade
 - [[regra-nao-altere-um-modulo-com-seletores-de-contexto]] — é uma forma de manter a especificidade baixa
+- [[seletores-css-atributos-combinadores-e-pseudoclasses]] — os seletores de atributo e classe ajudam a manter a especificidade baixa

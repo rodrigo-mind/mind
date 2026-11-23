@@ -24,7 +24,7 @@ Referência de HTML5 (2011), com mais de mil páginas, em cinco partes: introdu�
 
 | Cap. | Título | Páginas | Prioridade | Estado | Notas geradas |
 |---|---|---|---|---|---|
-| 1-5 | Putting HTML5 in Context, Getting Ready, Getting Started with HTML, CSS and JavaScript | 3-102 | baixa | pendente |  |
+| 1-5 | Putting HTML5 in Context, Getting Ready, Getting Started with HTML, CSS and JavaScript | 3-102 | baixa | destilado | [[atributos-globais-booleanos-e-data-em-html]] (os caps. 4 e 5 repetem CSS in Depth e Flanagan) |
 | 6 | HTML Elements in Context | 104-114 | media | destilado | [[regra-escolha-o-elemento-html-mais-especifico-e-seja-consistente]] |
 | 7 | Creating HTML Documents | 115-148 | alta | destilado | [[estrutura-basica-de-um-documento-html5]], [[metadados-do-documento-html]], [[regra-carregue-scripts-com-defer-ou-async]] |
 | 8 | Marking Up Text | 149-188 | alta | destilado | [[links-e-urls-relativas-em-html]], [[escolher-o-elemento-html-de-texto-pelo-significado]] |
@@ -35,17 +35,19 @@ Referência de HTML5 (2011), com mais de mil páginas, em cinco partes: introdu�
 | 13 | Customizing the Input Element | 311-350 | alta | destilado | [[tipos-do-elemento-input]] |
 | 14 | Other Form Elements and Input Validation | 351-370 | alta | destilado | [[validacao-nativa-de-formularios-html5]], [[regra-validacao-no-navegador-nao-substitui-a-do-servidor]], [[outros-elementos-de-formulario-html5]] |
 | 15 | Embedding Content | 365-389 | media | destilado | [[imagens-e-mapas-de-imagem-em-html]], [[regra-sempre-informe-alt-e-as-dimensoes-das-imagens]], [[iframe-object-embed-progress-e-meter-em-html5]] |
-| 16-24 | CSS (contexto, seletores, bordas, modelo de caixa, layouts, texto, transições e outras) | 397-632 | ignorar | pendente |  |
-| 25-31 | DOM (contexto, documento, janela, elementos, estilo, eventos, objetos específicos) | 633-818 | media | pendente |  |
-| 32-33 | Ajax, partes I e II | 821-872 | media | pendente |  |
-| 34-40 | Multimídia, canvas, arrastar e soltar, geolocalização, web storage e aplicações offline | 873-1052 | baixa | pendente |  |
+| 16-24 | CSS (contexto, seletores, bordas, modelo de caixa, layouts, texto, transições e outras) | 397-632 | ignorar | destilado | [[seletores-css-atributos-combinadores-e-pseudoclasses]] (os caps. 19 a 24 repetem notas de CSS in Depth, mais recentes) |
+| 25-31 | DOM (contexto, documento, janela, elementos, estilo, eventos, objetos específicos) | 620-803 (PDF) | media | destilado | [[diferencas-entre-navegadores-e-deteccao-de-recursos]], [[api-de-validacao-de-formularios-por-javascript]] (os demais temas já tinham notas do livro de JavaScript; Freeman entrou como segunda fonte nelas) |
+| 32-33 | Ajax, partes I e II | 804-854 (PDF) | media | destilado | [[xmlhttprequest-estados-eventos-e-erros]], [[cors-requisicoes-entre-origens]], [[enviar-formulario-por-ajax-com-formdata]], [[regra-chame-preventdefault-no-inicio-do-tratador]] |
+| 34-40 | Multimídia, canvas, arrastar e soltar, geolocalização, web storage e aplicações offline | 873-1052 | baixa | destilado | [[audio-e-video-em-html5]], [[arrastar-e-soltar-com-a-api-nativa-do-html5]], [[geolocalizacao-no-navegador]], [[aplicacoes-offline-appcache-e-service-workers]] (canvas e web storage entraram como fonte em [[desenhar-graficos-com-canvas]] e [[armazenamento-no-navegador]]) |
 
 Prioridade: `alta`, `media`, `baixa` ou `ignorar` (o usuário pode mudar). Estado: `pendente` ou `destilado`. Páginas: numeração do leitor de PDF, salvo indicação nas observações.
 
 ## Observações
 
+- 2026-11-22 (destilação feita no Claude.ai, fora do Claude Code): capítulos 1 a 5, 16 a 24 e 34 a 40 destilados a pedido do usuário, inclusive os marcados `ignorar` (16 a 24), em leitura dirigida (confiança média). Aberturas no PDF: 16 em 389, 17 em 403, 18 em 429, 19 em 456, 20 em 487, 21 em 521, 22 em 545, 23 em 570, 24 em 599, 34 em 855, 35 em 879, 36 em 910, 37 em 938, 38 em 955, 39 em 966, 40 em 976; nos capítulos 1 a 5 o PDF fica 1 página à frente da impressa. Uma divergência registrada: o AppCache (cap. 40) foi removido dos navegadores e foi substituído pelos service workers. Com isso, todos os capítulos do livro estão destilados.
 - 2026-11-22: as páginas da tabela continuam sendo as IMPRESSAS. A busca no PDF não deu um deslocamento confiável; confira o deslocamento antes de ler.
 - 2026-11-22: mapa criado a partir do sumário (páginas impressas); nenhum capítulo foi destilado.
+- 2026-11-22 (destilação feita no Claude.ai, fora do Claude Code): capítulos 25 a 33 lidos na prosa; as tabelas de referência foram consultadas e as listagens de código, puladas. Páginas do PDF conferidas pela abertura de cada capítulo (25 em 620, 26 em 640, 27 em 666, 28 em 692, 29 em 721, 30 em 750, 31 em 778, 32 em 804, 33 em 831; deslocamento de -13 em relação à impressa). Os capítulos 26 a 30 se sobrepõem ao livro de JavaScript (Flanagan, 2020): em vez de notas novas, Freeman entrou como fonte em 13 notas (inclusive as três de eventos criadas hoje a partir de Flanagan), com uma divergência registrada (atributos de evento no HTML). Livro de 2012: avisos sobre Opera, IE e jQuery estão defasados e foram marcados nas notas.
 
 ## Conexões
 
@@ -73,3 +75,18 @@ Prioridade: `alta`, `media`, `baixa` ou `ignorar` (o usuário pode mudar). Estad
 - [[imagens-e-mapas-de-imagem-em-html]] — o mapa do livro lista esta nota como gerada pela destilação
 - [[regra-sempre-informe-alt-e-as-dimensoes-das-imagens]] — o mapa do livro lista esta nota como gerada pela destilação
 - [[iframe-object-embed-progress-e-meter-em-html5]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[api-de-validacao-de-formularios-por-javascript]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[cors-requisicoes-entre-origens]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[diferencas-entre-navegadores-e-deteccao-de-recursos]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[propagacao-e-cancelamento-de-eventos]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[regra-chame-preventdefault-no-inicio-do-tratador]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[regra-nao-defina-tratadores-de-evento-em-atributos-html]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[xmlhttprequest-estados-eventos-e-erros]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[enviar-formulario-por-ajax-com-formdata]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[registrar-tratadores-de-eventos-com-addeventlistener]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[aplicacoes-offline-appcache-e-service-workers]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[atributos-globais-booleanos-e-data-em-html]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[audio-e-video-em-html5]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[geolocalizacao-no-navegador]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[seletores-css-atributos-combinadores-e-pseudoclasses]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[arrastar-e-soltar-com-a-api-nativa-do-html5]] — o mapa do livro lista esta nota como gerada pela destilação

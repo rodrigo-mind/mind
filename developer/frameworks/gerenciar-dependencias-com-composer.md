@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "Joseph Edmonds e Lorna Jane Mitchell, The Art of Modern PHP 8, cap. 10"
+  - "Christian Wenz e Tobias Hauser, PHP and MySQL, The Comprehensive Guide, cap. 38 (PDF p. 1313-1324)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -70,6 +71,11 @@ Um `composer.json` com dependências e carregamento automático, uma pasta `vend
 }
 ```
 
+
+## Notas do Claude
+
+- Confirmado também por Wenz e Hauser (cap. 38): instalação com `curl -sS https://getcomposer.org/installer | php` (ou o instalador do Windows, que confere o OpenSSL), `composer.json` com as dependências, pasta `vendor/` e restrições de versão (como "pelo menos 3.0.0 e menos que 4.0.0"). Os capítulos 39 (extensões em C pelo PECL) e 40 (como contribuir com o PHP) foram lidos e não geraram notas, por estarem fora da stack.
+
 ## Conexões
 
 - [[mapa-the-art-of-modern-php-8]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -82,3 +88,7 @@ Um `composer.json` com dependências e carregamento automático, uma pasta `vend
 - [[testes-unitarios-em-php-com-phpunit]] — o PHPUnit se instala e carrega pelo Composer
 - [[conteiner-de-injecao-de-dependencias-como-funciona]] — as bibliotecas de DI se instalam com Composer
 - [[regra-centralize-as-classes-reutilizaveis-em-vez-de-copiar]] — o pacote compartilhado se instala com Composer
+- [[regra-use-require-para-arquivos-essenciais]] — o autoload do Composer é incluído com require_once
+- [[xml-imagens-e-pdf-com-php]] — o Composer instala as bibliotecas de PDF
+- [[criar-um-pacote-composer-e-versionar-com-semver]] — criar o próprio pacote é o passo seguinte ao uso do Composer
+- [[mapa-php-and-mysql-the-comprehensive-guide]] — o mapa acompanha a destilação do livro de que esta nota veio

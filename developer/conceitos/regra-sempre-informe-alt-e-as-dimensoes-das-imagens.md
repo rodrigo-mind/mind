@@ -40,3 +40,6 @@ Veja imagens e mapas de imagem em HTML.
 - [[imagens-e-mapas-de-imagem-em-html]] — esta nota cita a ideia de «Imagens e mapas de imagem em HTML» na seção sobre como se relaciona
 - [[regra-upload-seguro-em-php]] — o alt e as dimensões podem ser definidos no tratamento do upload
 - [[playbook-pagina-responsiva-em-css]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[o-que-os-buscadores-leem-em-uma-pagina]] — o atributo alt é a principal pista textual que o buscador tem sobre uma imagem
+- [[otimizar-os-elementos-de-uma-pagina-para-palavras-chave]] — o alt e o nome de arquivo das imagens fazem parte da otimização de página
+- [[melhorar-velocidade-e-experiencia-movel-de-um-site]] — regra de imagens do projeto de desenvolvimento

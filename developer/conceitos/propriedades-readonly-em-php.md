@@ -44,3 +44,4 @@ Exige PHP 8.1 ou superior; propriedades readonly precisam ter tipo declarado (in
 - [[null-void-e-propriedades-nao-inicializadas-em-php]] — «Null, void e propriedades não inicializadas em PHP» cita esta nota ao explicar suas relações
 - [[imutabilidade-datetime-e-datetimeimmutable]] — «Imutabilidade: DateTime e DateTimeImmutable» cita esta nota ao explicar suas relações
 - [[atributos-nativos-do-php-8]] — «Atributos nativos do PHP 8» cita esta nota ao explicar suas relações
+- [[metaprogramacao-em-javascript]] — a imutabilidade de readonly tem paralelo em Object.freeze

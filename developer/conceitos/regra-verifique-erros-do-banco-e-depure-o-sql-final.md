@@ -46,3 +46,4 @@ Em PHP, o equivalente é ativar o modo de exceções do PDO (`PDO::ERRMODE_EXCEP
 - [[regra-nunca-monte-sql-com-entrada-do-usuario]] — montar SQL por concatenação dificulta a depuração e abre o risco de injeção
 - [[depurar-php-com-var-dump-e-xdebug]] — ambos tratam de depuração em PHP
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[mysqli-extensao-do-mysql-para-php]] — a verificação de erros vale também para o mysqli

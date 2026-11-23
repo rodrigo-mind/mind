@@ -39,3 +39,4 @@ Para passar dados do PHP ao JavaScript, `json_encode` (com as flags de escape de
 - [[ajax-e-websockets-com-php]] — esta nota cita a ideia de «Ajax e WebSockets com PHP» na seção sobre como se relaciona
 - [[regra-escape-a-saida-contra-xss]] — dados do PHP em script exigem escape
 - [[promises-em-javascript]] — o retorno do fetch usa promessas
+- [[estilos-de-programacao-procedural-funcional-e-orientado-a-objetos]] — a mistura de PHP e HTML na página é típica do estilo procedural

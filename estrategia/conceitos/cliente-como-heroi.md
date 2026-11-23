@@ -37,3 +37,4 @@ O guia precisa transmitir empatia e autoridade (nota guia, empatia e autoridade)
 - [[historia-de-marca-e-recompensa-ao-espectador]] — «História de marca e recompensa ao espectador» cita esta nota ao explicar suas relações
 - [[brandscript-sb7]] — esta nota cita a ideia de «BrandScript SB7» na seção sobre como se relaciona
 - [[arquetipo-heroi]] — «O arquétipo do Herói em marcas» cita esta nota ao explicar suas relações
+- [[criar-e-testar-criativos-de-anuncios-na-meta]] — o cliente como protagonista da mensagem

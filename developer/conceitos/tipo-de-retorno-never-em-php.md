@@ -34,3 +34,5 @@ Veja null, void e propriedades não inicializadas em PHP, tipos de objeto e hera
 - [[developer]] — nota destilada ligada a este assunto: conceito de livro-base
 - [[null-void-e-propriedades-nao-inicializadas-em-php]] — esta nota cita a ideia de «Null, void e propriedades não inicializadas em PHP» na seção sobre como se relaciona
 - [[tipos-de-objeto-heranca-de-tipos-comparacao-e-referencias]] — never é o tipo de fundo na covariância
+- [[declaracoes-de-tipo-em-php-uniao-anulavel-mixed-e-dnf]] — `never` é um dos tipos de retorno listados na visão geral das declarações de tipo
+- [[regra-nao-use-die-ou-exit-para-tratar-erros]] — `never` é o caso em que encerrar com exit é legítimo

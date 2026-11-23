@@ -33,3 +33,4 @@ Veja exceções em JavaScript (`throw` e `try/catch/finally`), classes com a pal
 - [[excecoes-em-javascript-throw-e-try-catch-finally]] — como lançar e tratar
 - [[subclasses-com-extends-e-super-em-javascript]] — erros personalizados usam extends e super
 - [[console-api-do-javascript]] — console.log de um Error mostra a pilha
+- [[tratar-erros-com-excecoes-em-php]] — os erros personalizados de JavaScript têm paralelo no PHP

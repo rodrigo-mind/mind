@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "David Flanagan, JavaScript, The Definitive Guide, 7ª ed., cap. 15, seção 15.13.5 e 15.13.6 (PDF p. 427-594, capítulo 15)"
+  - "Adam Freeman, The Definitive Guide to HTML5, cap. 27 (PDF p. 666-691)"
 confianca: media
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -29,6 +30,8 @@ Veja workers: threads no navegador, modelo de segurança da web no navegador e h
 ## Notas do Claude
 
 Confiança média: o trecho final sobre o uso de `event.origin` ficou truncado na extração. Em produção, **evite `"*"`** e **confira `event.origin`** ao receber mensagens, antes de agir sobre elas (recomendação minha, a conferir).
+
+- Freeman (cap. 27) reforça: no evento `message`, confira `event.origin` antes de agir, para não obedecer a scripts desconhecidos.
 
 ## Conexões
 

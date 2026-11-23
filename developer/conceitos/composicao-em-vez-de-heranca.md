@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "Matt Zandstra, PHP 8 Objects, Patterns, and Practice, cap. 8, seção Composition and Inheritance (PDF p. 270-278)"
+  - "Joseph Edmonds e Lorna Jane Mitchell, The Art of Modern PHP 8, cap. 2, seção sobre composição (EPUB, sem páginas)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -29,6 +30,11 @@ A saída é o padrão Estratégia (Strategy): mover os algoritmos de preço para
 ## Como se relaciona
 
 Segue o princípio de projeto de "programar para a interface, não para a implementação". A pergunta que fica, "de onde vêm esses objetos?", é respondida pelos padrões de criação (ver padrões de criação de objetos). O desacoplamento é o outro princípio do capítulo.
+
+
+## Notas do Claude
+
+- Edmonds e Mitchell (cap. 2) confirmam: hierarquias longas, feitas para não repetir código (DRY), ficam difíceis de entender e frágeis, porque uma mudança no alto da cadeia tem efeitos inesperados (o exemplo deles é o Magento). Na composição, a interface vira a peça central, e as classes concretas tendem a ser `final`. Também recomendam manter poucos níveis de herança.
 
 ## Conexões
 

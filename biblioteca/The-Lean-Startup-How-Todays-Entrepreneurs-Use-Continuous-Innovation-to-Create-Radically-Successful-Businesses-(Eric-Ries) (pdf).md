@@ -22,3 +22,4 @@ Leitura parcial: li os metadados, os elogios, o sumário e as primeiras linhas d
 - [[Obviously-Awesome-(April-Dunford) (pdf)]] — os dois são livros para quem lança produtos em condições de incerteza; um valida o que construir, o outro como posicionar o que existe
 - [[estrategia]] — livro-base de descoberta, validação e métricas do assunto
 - [[mapa-the-lean-startup]] — o mapa acompanha a destilação deste livro
+- [[The-Art-of-SEO-Mastering-Search-Engine-Optimization-(Eric-Enge-Stephan-Spencer) (pdf)]] — ambos defendem medir resultados e testar hipóteses, como nos capítulos 11 e 13 do livro de SEO

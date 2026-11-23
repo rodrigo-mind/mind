@@ -60,3 +60,4 @@ echo json_encode(['resultado' => quadrado((int) ($_GET['n'] ?? 0))]);
 - [[regra-registre-so-as-funcoes-permitidas-em-uma-api]] — a regra corrige o ponto fraco do exemplo
 - [[usar-a-api-fetch]] — o navegador consome a API com fetch
 - [[json-em-javascript-stringify-parse-tojson-replacer-e-reviver]] — «JSON em JavaScript: stringify, parse, toJSON, replacer e reviver» cita esta nota ao explicar suas relações
+- [[cors-requisicoes-entre-origens]] — a API em PHP precisa dos cabeçalhos CORS para ser chamada de outra origem

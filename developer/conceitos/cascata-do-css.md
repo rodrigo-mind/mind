@@ -46,3 +46,4 @@ O livro é de 2024; camadas e escopo são recursos novos. Camadas e escopo não 
 - [[controlar-css-por-javascript]] — o estilo computado resulta da cascata
 - [[camadas-da-cascata-em-css]] — «Camadas da cascata» cita esta nota ao explicar suas relações
 - [[escopo-em-css-com-scope]] — «Escopo em CSS com @scope» cita esta nota ao explicar suas relações
+- [[animacoes-com-keyframes-em-css]] — a animação é uma origem de prioridade alta na cascata

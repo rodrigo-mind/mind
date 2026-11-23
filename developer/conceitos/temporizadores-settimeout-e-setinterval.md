@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "David Flanagan, JavaScript, The Definitive Guide, 7ª ed., cap. 11, seção 11.10 (PDF p. 285-344, capítulo 11)"
+  - "Adam Freeman, The Definitive Guide to HTML5, cap. 27 (PDF p. 666-691)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -27,6 +28,11 @@ São a base da programação assíncrona simples e de animações e atualizaçõ
 ## Como se relaciona
 
 Veja assincronia com callbacks e eventos, promises em JavaScript, workers (o código do worker também tem temporizadores), datas e horas e SSE e WebSockets (alternativas a consultas periódicas).
+
+
+## Notas do Claude
+
+- Também em Freeman (cap. 27), sem nada novo.
 
 ## Conexões
 

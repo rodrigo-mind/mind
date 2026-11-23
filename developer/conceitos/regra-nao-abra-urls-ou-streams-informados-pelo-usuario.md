@@ -39,3 +39,4 @@ Essa classe de falha é chamada de inclusão de arquivo local e falsificação d
 - [[fazer-requisicoes-http-com-streams-em-php]] — a regra limita quais URLs abrir
 - [[regra-nunca-confie-na-entrada-do-usuario]] — é um caso da regra geral
 - [[owasp-top-10-2021]] — a requisição forjada pelo servidor é uma classe de falha do OWASP
+- [[regra-use-require-para-arquivos-essenciais]] — a regra de URLs vindas do usuário vale também para include

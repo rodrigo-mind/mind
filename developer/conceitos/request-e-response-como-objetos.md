@@ -35,3 +35,4 @@ O padrão PSR-7 define interfaces para requisição e resposta; Slim e o pacote 
 - [[front-controller-em-php]] — esta nota cita a ideia de «Controlador frontal» na seção sobre como se relaciona
 - [[regra-nunca-confie-na-entrada-do-usuario]] — um objeto de requisição é o lugar natural para filtrar a entrada
 - [[padrao-command]] — os comandos recebem uma requisição e devolvem uma resposta
+- [[regra-leia-superglobais-em-um-so-lugar]] — a requisição como objeto é o resultado de ler as superglobais num só lugar

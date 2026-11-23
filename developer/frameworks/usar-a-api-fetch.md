@@ -70,3 +70,7 @@ Confiança média: li a abertura, o tratamento de status e cabeçalhos, os parâ
 - [[acesso-condicional-e-invocacao-condicional-em-javascript]] — útil para ler dados aninhados de respostas
 - [[json-em-javascript-stringify-parse-tojson-replacer-e-reviver]] — as respostas de API são lidas como JSON
 - [[classe-url-e-urlsearchparams-em-javascript]] — montar a URL de uma requisição
+- [[apis-do-navegador-para-conhecer]] — a lista de APIs do capítulo 15 situa o fetch entre os demais recursos
+- [[cors-requisicoes-entre-origens]] — o fetch obedece à mesma política de CORS
+- [[xmlhttprequest-estados-eventos-e-erros]] — o fetch substitui o XMLHttpRequest em código novo
+- [[enviar-formulario-por-ajax-com-formdata]] — o fetch também envia FormData

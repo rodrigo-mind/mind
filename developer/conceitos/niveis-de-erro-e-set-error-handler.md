@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "Christian Wenz e Tobias Hauser, PHP and MySQL: The Comprehensive Guide, cap. 11, seção 11.4.1 (PDF p. 503-506)"
+  - "Joseph Edmonds e Lorna Jane Mitchell, The Art of Modern PHP 8, cap. 3, seção sobre tratamento de erros (EPUB, sem páginas)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -30,6 +31,8 @@ A configuração do que exibir está em não exiba erros na tela em produção e
 
 O livro não trata, neste trecho, de exceções (`try`/`catch`) e do uso de `set_error_handler` para convertê-las em `ErrorException`; é um padrão comum, a conferir na documentação (inferência minha).
 
+- Atualização: a conversão em `ErrorException`, que faltava aqui, está em converter erros em exceções com manipuladores globais (Edmonds e Mitchell, cap. 3).
+
 ## Conexões
 
 - [[mapa-php-and-mysql-the-comprehensive-guide]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -38,3 +41,5 @@ O livro não trata, neste trecho, de exceções (`try`/`catch`) e do uso de `set
 - [[regra-nao-exiba-erros-na-tela-em-producao]] — trata do que exibir e do que registrar
 - [[depurar-php-com-var-dump-e-xdebug]] — os níveis de erro orientam a depuração
 - [[excecoes-em-javascript-throw-e-try-catch-finally]] — modelo de erros em PHP
+- [[converter-erros-em-excecoes-com-manipuladores-globais]] — a conversão em exceções está neste framework
+- [[tratar-erros-com-excecoes-em-php]] — as exceções são o complemento dos níveis de erro tradicionais

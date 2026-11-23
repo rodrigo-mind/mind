@@ -42,3 +42,5 @@ Procure no código atribuições a `innerHTML` com variáveis que vêm de URL, f
 - [[criar-inserir-e-remover-nos-do-dom]] — nós de texto evitam a injeção de HTML
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
 - [[regra-nunca-passe-texto-do-usuario-a-eval]] — outro vetor de injeção de código no navegador
+- [[regra-nao-defina-tratadores-de-evento-em-atributos-html]] — tratadores em atributos agravam o XSS por innerHTML
+- [[enviar-formulario-por-ajax-com-formdata]] — a resposta de Ajax em HTML deve respeitar esta regra

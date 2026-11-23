@@ -73,3 +73,11 @@ Segundo o checklist do projeto, as consultas devem usar comandos preparados. O l
 - [[regra-nomeie-as-colunas-explicitamente]] — o fetch associativo sofre com nomes repetidos
 - [[regra-verifique-erros-do-banco-e-depure-o-sql-final]] — o PDO oferece o modo de exceções
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[mysqli-extensao-do-mysql-para-php]] — o PDO é a escolha da stack; o mysqli se lê para manter código antigo
+- [[padrao-repository-repositorio]] — o PDO é o que o repositório usa por baixo
+- [[regra-nao-use-die-ou-exit-para-tratar-erros]] — o padrão `or die` ao conectar com PDO cai nesta regra
+- [[escapar-texto-conforme-o-destino-em-php]] — o PDO é o caminho recomendado para valores em SQL
+- [[tratar-erros-com-excecoes-em-php]] — o PDO lança exceções tratadas como neste framework
+- [[outros-bancos-de-dados-com-php]] — o PDO é o caminho comum para vários bancos
+- [[regra-nao-ordene-por-rand-em-tabelas-grandes]] — o PDO é o meio de aplicar a alternativa de sortear a posição
+- [[regra-prefira-logica-no-php-a-procedimentos-armazenados]] — o acesso por PDO concentra a lógica na aplicação

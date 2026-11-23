@@ -43,3 +43,4 @@ O `XMLHttpRequest` foi substituído, no navegador moderno, pela API `fetch()`, b
 - [[websockets-no-navegador]] — os eventos open, message e close seguem o modelo de eventos
 - [[workers-threads-no-navegador]] — a comunicação é por eventos assíncronos
 - [[temporizadores-settimeout-e-setinterval]] — os temporizadores são callbacks assíncronos
+- [[xmlhttprequest-estados-eventos-e-erros]] — o XMLHttpRequest é a assincronia por eventos na prática

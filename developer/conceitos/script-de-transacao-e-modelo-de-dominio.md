@@ -35,3 +35,4 @@ A persistência do modelo de domínio é tratada pelos padrões de banco de dado
 - [[developer]] — nota destilada ligada a este assunto: conceito de livro-base
 - [[mapeador-de-dados-data-mapper]] — «Mapeador de dados» cita esta nota ao explicar suas relações
 - [[arquitetura-em-camadas]] — «Arquitetura em camadas de aplicações corporativas» cita esta nota ao explicar suas relações
+- [[regra-prefira-logica-no-php-a-procedimentos-armazenados]] — a lógica na aplicação pode ser um script de transação ou um modelo de domínio

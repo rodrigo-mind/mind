@@ -39,3 +39,5 @@ Para o projeto (vários sites em PHP, deploy por FTP), um pacote próprio instal
 - [[gerenciar-dependencias-com-composer]] — o pacote compartilhado se instala com Composer
 - [[acoplamento-e-desacoplamento]] — cópias entre projetos são acoplamento em escala maior
 - [[regra-nao-repita-valores-use-constantes-nomeadas]] — o mesmo princípio DRY para classes
+- [[sintomas-de-um-projeto-php-que-degringola]] — a regra combate o sintoma de copiar código entre páginas
+- [[criar-um-pacote-composer-e-versionar-com-semver]] — o pacote Composer é a forma de centralizar classes reutilizáveis

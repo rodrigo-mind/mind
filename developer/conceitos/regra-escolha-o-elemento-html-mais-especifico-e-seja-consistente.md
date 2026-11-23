@@ -52,3 +52,4 @@ O capítulo traz também tabelas de consulta rápida com todos os elementos (doc
 - [[agrupar-conteudo-em-html]] — o div é último recurso
 - [[css-modular-modulos-variantes-e-bem]] — as classes com significado servem de modo parecido nos módulos
 - [[playbook-pagina-responsiva-em-css]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[atributos-globais-booleanos-e-data-em-html]] — a escolha do elemento e dos atributos globais anda junta

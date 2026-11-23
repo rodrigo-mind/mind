@@ -5,7 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "David Flanagan, JavaScript, The Definitive Guide, 7ª ed., cap. 15, seção 15.2 (PDF p. 444-454)"
-confianca: media
+confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
 ---
@@ -29,11 +29,11 @@ Eventos dependentes de dispositivo (`mousedown`, `touchstart`, `keydown`), indep
 
 ## Como se relaciona
 
-O registro com `addEventListener()` aparece em programação assíncrona com callbacks e eventos. A segurança do navegador tem sua nota (ver modelo de segurança do navegador).
+O registro com `addEventListener()` aparece em programação assíncrona com callbacks e eventos. Como registrar tratadores está em registrar tratadores de eventos com addEventListener; fases, delegação e cancelamento estão em propagação e cancelamento de eventos; eventos próprios estão em disparar eventos personalizados com CustomEvent. Na seção 15.15.6, o livro lista outros eventos úteis: `online` e `offline` na janela, `visibilitychange` no documento (troca de aba, com `document.visibilityState`) e os de arrastar e soltar (`dragstart`, `dragover`, `drop`), necessários para receber arquivos arrastados da área de trabalho. A segurança do navegador tem sua nota (ver modelo de segurança do navegador).
 
 ## Notas do Claude
 
-Confiança média: li as definições e as categorias; o registro detalhado, a invocação, a propagação e os eventos personalizados (seções 15.2.2 a 15.2.6) não foram lidos por inteiro.
+A seção 15.2 foi lida por inteiro; os detalhes de registro, propagação e eventos personalizados ficaram nas notas próprias, para não repetir.
 
 ## Conexões
 
@@ -49,3 +49,10 @@ Confiança média: li as definições e as categorias; o registro detalhado, a i
 - [[construir-modal-e-menu-suspenso-com-posicionamento]] — o JavaScript do modal responde a eventos de clique
 - [[padrao-observer]] — o modelo de eventos é um Observer
 - [[server-sent-events-com-eventsource]] — as mensagens chegam como eventos do navegador
+- [[efeitos-sonoros-com-audio-e-webaudio]] — os elementos de áudio e vídeo disparam eventos próprios nesse modelo
+- [[propagacao-e-cancelamento-de-eventos]] — as fases e o cancelamento estão detalhados em nota própria
+- [[regra-nao-defina-tratadores-de-evento-em-atributos-html]] — a nota de eventos apresenta o modelo que a regra pede para usar
+- [[disparar-eventos-personalizados-com-customevent]] — eventos próprios usam o mesmo modelo
+- [[registrar-tratadores-de-eventos-com-addeventlistener]] — o registro prático dos tratadores está neste framework
+- [[arrastar-e-soltar-com-a-api-nativa-do-html5]] — os eventos de arrastar fazem parte do modelo de eventos
+- [[criar-transicoes-em-css]] — o `transitionend` é um dos eventos do navegador

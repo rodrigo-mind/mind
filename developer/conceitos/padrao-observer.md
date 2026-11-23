@@ -42,3 +42,5 @@ O mesmo conceito, com outro nome, é o sistema de eventos (listeners) de framewo
 - [[eventos-no-navegador]] — o modelo de eventos é um Observer
 - [[padrao-chain-of-responsibility]] — «Padrão Chain of Responsibility» cita esta nota ao explicar suas relações
 - [[spl-iteradores-e-classes-padrao-do-php]] — «SPL: iteradores e classes padrão do PHP» cita esta nota ao explicar suas relações
+- [[callbacks-funcoes-anonimas-e-closures-em-php]] — callbacks em PHP são o jeito mínimo de implementar o Observer
+- [[disparar-eventos-personalizados-com-customevent]] — o CustomEvent é a implementação do Observer no navegador

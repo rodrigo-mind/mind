@@ -41,3 +41,5 @@ Para o projeto, vale registrar os pares aprovados junto das variáveis de cor (v
 - [[notacoes-de-cor-em-css-e-oklch]] — a escolha de cores deve respeitar o contraste
 - [[regra-carregue-so-as-fontes-necessarias-e-escolha-o-font-display]] — fontes finas pedem mais contraste
 - [[playbook-pagina-responsiva-em-css]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[gradientes-sombras-e-modos-de-mesclagem-em-css]] — gradiente ou sombra sob o texto exige conferir o contraste
+- [[regra-respeite-prefers-reduced-motion]] — contraste e movimento reduzido são cuidados de acessibilidade

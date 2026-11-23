@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "David Flanagan, JavaScript, The Definitive Guide, 7ª ed., cap. 15, seções 15.3.2 a 15.3.4 (PDF p. 459-466)"
+  - "Adam Freeman, The Definitive Guide to HTML5, caps. 26 e 28 (PDF p. 640-665 e 692-720)"
 confianca: media
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -38,6 +39,8 @@ Usa a seleção de elementos (ver selecionar elementos). A regra de nunca inseri
 
 Confiança média: li a navegação e os atributos com cuidado; o conteúdo como texto e a criação, inserção e exclusão de nós (15.3.5) não foram lidos por inteiro.
 
+- Confirmado também por Freeman (caps. 26 e 28): navegação pela árvore, atributos, `innerHTML`, `outerHTML` e `insertAdjacentHTML`. `isSameNode()` diz se dois objetos são o mesmo elemento; `isEqualNode()` diz se são iguais em atributos e conteúdo, mesmo sendo elementos diferentes.
+
 ## Conexões
 
 - [[mapa-javascript-the-definitive-guide]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -46,3 +49,5 @@ Confiança média: li a navegação e os atributos com cuidado; o conteúdo como
 - [[regra-nunca-insira-entrada-do-usuario-com-innerhtml]] — a regra trata do risco do innerHTML descrito aqui
 - [[links-e-urls-relativas-em-html]] — a navegação por âncora e a leitura do DOM trabalham sobre os mesmos elementos
 - [[criar-inserir-e-remover-nos-do-dom]] — completa a leitura e o conteúdo com a edição por nós
+- [[atributos-globais-booleanos-e-data-em-html]] — os atributos data-* são lidos pelo DOM
+- [[xml-imagens-e-pdf-com-php]] — o DOM do PHP para XML segue o modelo de nós do DOM do navegador

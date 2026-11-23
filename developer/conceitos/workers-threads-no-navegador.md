@@ -41,3 +41,6 @@ Ver postMessage, MessageChannel e mensagens entre janelas, assincronia com callb
 - [[usar-a-api-fetch]] — o fetch está disponível nos workers
 - [[temporizadores-settimeout-e-setinterval]] — workers também têm temporizadores
 - [[arrays-tipados-e-arraybuffer-em-javascript]] — ArrayBuffers podem ser transferidos a workers
+- [[apis-do-navegador-para-conhecer]] — a lista de APIs do capítulo 15 situa os workers entre os demais recursos
+- [[aplicacoes-offline-appcache-e-service-workers]] — o service worker é um worker especializado
+- [[node-js-javascript-fora-do-navegador]] — os workers do navegador têm paralelo em `worker_threads` do Node

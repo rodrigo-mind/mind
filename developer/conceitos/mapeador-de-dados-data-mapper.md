@@ -49,3 +49,4 @@ Confiança média: li a abertura, a estrutura básica e o mapeador de `Venue`; a
 - [[padroes-de-banco-de-dados-visao-geral]] — «Padrões de banco de dados em PHP» cita esta nota ao explicar suas relações
 - [[acoplamento-e-desacoplamento]] — o mapeador isola o modelo do banco, aplicando o desacoplamento
 - [[padrao-composite]] — o composto é difícil de gravar em banco relacional
+- [[padrao-repository-repositorio]] — o repositório é a versão mais simples do mesmo problema

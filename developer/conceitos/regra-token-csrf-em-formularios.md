@@ -50,3 +50,5 @@ O exemplo do livro grava o token em binário dentro do HTML, o que pode não ser
 - [[estrutura-de-formularios-html5]] — o formulário POST que muda dados deve levar o token CSRF
 - [[criar-e-ler-cookies-em-php]] — o atributo SameSite ajuda a reduzir ataques CSRF
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[cors-requisicoes-entre-origens]] — o CORS não substitui a proteção CSRF
+- [[numeros-aleatorios-e-precisao-em-php]] — a geração do token usa aleatório criptográfico

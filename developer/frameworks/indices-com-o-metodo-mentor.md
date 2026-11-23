@@ -57,3 +57,5 @@ Consulta lenta em `pedidos WHERE cliente_id = ? ORDER BY criado_em`: `EXPLAIN` m
 - [[obter-a-linha-com-o-maior-valor-por-grupo]] — os índices ajudam as subconsultas e os joins
 - [[regra-nao-use-like-com-curinga-para-buscar-palavras]] — LIKE com % inicial não usa índice comum
 - [[regra-normalize-primeiro-e-desnormalize-so-com-medicao]] — a medição antes e depois é do método Mentor
+- [[antipadrao-de-sql-o-que-e]] — os índices fazem parte do projeto físico que o livro organiza
+- [[regra-nao-ordene-por-rand-em-tabelas-grandes]] — a ordenação por RAND() é um caso em que o índice não ajuda

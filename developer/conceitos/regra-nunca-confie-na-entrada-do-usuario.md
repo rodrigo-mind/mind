@@ -59,3 +59,5 @@ No projeto, a lista de arquivos permitidos para `include` (uma lista fixa de nom
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
 - [[postmessage-messagechannel-e-mensagens-entre-janelas]] — mensagens recebidas devem ter a origem e o conteúdo conferidos
 - [[regra-nunca-passe-texto-do-usuario-a-eval]] — caso particular do princípio
+- [[regra-leia-superglobais-em-um-so-lugar]] — a regra pede concentrar a leitura da entrada num ponto controlado
+- [[escapar-texto-conforme-o-destino-em-php]] — a regra se concretiza escapando conforme o destino

@@ -33,3 +33,5 @@ Veja a regra de preferir igualdade estrita, laços em JavaScript, retorno anteci
 - [[complexidade-ciclomatica]] — esta nota cita a ideia de «Complexidade ciclomática» na seção sobre como se relaciona
 - [[regra-use-retorno-antecipado-em-vez-de-condicionais-aninhadas]] — reduz o aninhamento dos if
 - [[regra-prefira-igualdade-estrita-em-javascript]] — o switch compara com ===
+- [[match-e-switch-em-php]] — o `match` do PHP corrige o descuido do `break` do switch
+- [[mapa-javascript-the-definitive-guide]] — o mapa do livro lista esta nota como gerada pela destilação

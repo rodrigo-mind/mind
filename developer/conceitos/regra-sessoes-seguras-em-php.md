@@ -52,3 +52,5 @@ O checklist do projeto também pede cookies de sessão seguros e HTTPS. Em hospe
 - [[opcoes-importantes-do-php-ini]] — as opções de sessão ficam no php.ini
 - [[serializacao-de-objetos-em-php]] — «Serialização de objetos em PHP» cita esta nota ao explicar suas relações
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[regra-guarde-senhas-com-password-hash]] — a nota sobre senhas diverge do uso de md5(uniqid()) para IDs de sessão
+- [[regra-omita-a-tag-de-fechamento-em-arquivos-so-php]] — sessões e cookies falham se algo for enviado antes dos cabeçalhos

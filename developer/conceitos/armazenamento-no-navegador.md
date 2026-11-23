@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "David Flanagan, JavaScript, The Definitive Guide, 7ª ed., cap. 15, seção 15.12 (PDF p. 554-566)"
+  - "Adam Freeman, The Definitive Guide to HTML5, cap. 39 (PDF p. 966-975)"
 confianca: media
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -45,6 +46,8 @@ Os cookies de sessão e suas proteções estão em sessões seguras em PHP; o es
 
 Confiança média: li o panorama, o Web Storage e a abertura dos cookies; os atributos dos cookies, o exemplo de uso e o IndexedDB (a partir da p. 557) não foram lidos por inteiro.
 
+- Confirmado também por Freeman (cap. 39): `localStorage` e `sessionStorage` guardam pares de **strings**. O evento `storage` dispara na janela de **outros** documentos que compartilham o mesmo armazenamento quando um deles o altera; no `sessionStorage`, como cada aba tem o seu, o evento quase não ocorre.
+
 ## Conexões
 
 - [[mapa-javascript-the-definitive-guide]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -57,3 +60,6 @@ Confiança média: li o panorama, o Web Storage e a abertura dos cookies; os atr
 - [[indexeddb-banco-de-objetos-no-navegador]] — «IndexedDB: banco de objetos no navegador» cita esta nota ao explicar suas relações
 - [[cookies-no-javascript-document-cookie]] — «Cookies no JavaScript» cita esta nota ao explicar suas relações
 - [[json-em-javascript-stringify-parse-tojson-replacer-e-reviver]] — «JSON em JavaScript: stringify, parse, toJSON, replacer e reviver» cita esta nota ao explicar suas relações
+- [[apis-do-navegador-para-conhecer]] — a lista de APIs do capítulo 15 situa o armazenamento entre os demais recursos do navegador
+- [[aplicacoes-offline-appcache-e-service-workers]] — o armazenamento local é uma das peças de uma aplicação offline
+- [[mapa-the-definitive-guide-to-html5]] — o mapa acompanha a destilação do livro de que esta nota veio

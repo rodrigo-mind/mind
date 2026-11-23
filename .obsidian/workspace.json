@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RESPOSTAS/relatorios-de-integracao/2026-11-22-1917-integracao.md",
+                "file": "CLAUDE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-11-22-1917-integracao"
+              "title": "CLAUDE"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 402.07915115356445
   },
   "right": {
     "id": "857f40b7d764bd11",
@@ -187,43 +187,43 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "3b35c3833d688213",
+  "active": "5094364f87452241",
   "lastOpenFiles": [
-    "MEMORY.md",
-    "RESPOSTAS/relatorios-de-integracao/2026-11-22-1917-integracao.md",
-    "proximo-passo-com-qualidade.md",
-    "RESPOSTAS/relatorios-de-integracao/relatorios.md",
-    "RESPOSTAS/relatorios-de-integracao/2026-11-22-1920-integracao.md",
-    "RESPOSTAS/relatorios-de-integracao/2026-11-22-1911-integracao.md",
-    "RESPOSTAS/relatorios-de-integracao/2026-11-22-1913-integracao.md",
+    "RESPOSTAS/ST Motors/Informacoes_Gerais/dados-da-empresa.md",
+    "RESPOSTAS/ST Motors/Informacoes_Gerais",
+    "RESPOSTAS/ST Motors",
+    "RESPOSTAS/2026-11-23-2012-pasta-st-motors.md",
+    "ST Motors/Informacoes_Gerais/dados-da-empresa.md",
+    "ST Motors/Informacoes_Gerais",
+    "ST Motors",
+    "RESPOSTAS/relatorios-de-integracao/2026-11-23-1955-integracao.md",
+    "RESPOSTAS/2026-11-23-2005-possibilidades-do-sistema.md",
+    "RESPOSTAS/2026-11-23-2005-possibilidades-do-sistema.md.tmp.25402.f31216701ccb",
+    "CLAUDE.md",
+    "NUCLEO/operador-do-mind.md",
+    "RESPOSTAS/2026-11-24-0015-texto-para-o-claude-md.md",
+    "RESPOSTAS/2026-11-23-2355-prompt-do-agente-operador-do-mind.md",
+    "NUCLEO/mind.md",
+    "NUCLEO/x.md",
     "trafego/trafego.md",
-    "developer/conceitos/regra-ordene-textos-para-pessoas-com-intl-collator.md",
-    "developer/conceitos/regra-nao-reutilize-regex-global-em-lacos-sem-controlar-lastindex.md",
-    "developer/conceitos/arrays-tipados-e-arraybuffer-em-javascript.md",
-    "developer/conceitos/metodos-de-string-com-expressoes-regulares-em-javascript.md",
-    "developer/conceitos/expressoes-regulares-em-javascript-sintaxe-e-flags.md",
-    "developer/conceitos/temporizadores-settimeout-e-setinterval.md",
-    "developer/conceitos/classe-url-e-urlsearchparams-em-javascript.md",
-    "developer/conceitos/console-api-do-javascript.md",
-    "developer/conceitos/internacionalizacao-com-intl-em-javascript.md",
-    "developer/conceitos/json-em-javascript-stringify-parse-tojson-replacer-e-reviver.md",
-    "developer/conceitos/classes-de-erro-do-javascript-e-erros-personalizados.md",
-    "developer/conceitos/datas-e-horas-com-date-em-javascript.md",
-    "developer/conceitos/sets-e-maps-em-javascript.md",
-    "RESPOSTAS/relatorios-de-integracao/2026-11-22-1908-integracao.md",
-    "developer/conceitos/modo-estrito-em-javascript.md",
-    "developer/conceitos/excecoes-em-javascript-throw-e-try-catch-finally.md",
-    "developer/conceitos/regra-use-for-of-e-nao-for-in-para-vetores.md",
-    "developer/conceitos/lacos-em-javascript-for-of-e-for-in.md",
-    "developer/conceitos/sedqIgpj1",
-    "trafego",
-    "developer/mapas",
-    "developer/conceitos",
-    "developer/frameworks",
-    "estrategia/frameworks/isolar-atributos-unicos.md.tmp.18738.a3982fa4ee44",
-    "estrategia/frameworks/listar-alternativas-competitivas.md.tmp.18738.98621a91a2cc",
-    "estrategia/frameworks/componentes-do-posicionamento.md.tmp.18738.814241ed2df6",
-    "estrategia/conceitos/categoria-de-mercado.md.tmp.18738.da8a335bd9ef",
-    "estrategia/conceitos/categoria-de-mercado.md.tmp.18738.9421afccba40"
+    "RESPOSTAS/2026-11-24-0005-incorporar-o-prompt-a-base.md",
+    "RESPOSTAS/2026-11-23-2200-saude-do-sistema.md",
+    "RESPOSTAS/relatorios-de-integracao/2026-11-23-1940-integracao.md",
+    "RESPOSTAS/relatorios-de-integracao/relatorios.md",
+    "NUCLEO/sedcAVo46",
+    "RESPOSTAS/2026-11-23-2330-destilacao-dos-guias-de-trafego.md",
+    "trafego/frameworks/operar-o-marketing-digital-rituais-ferramentas-e-fornecedores.md",
+    "trafego/frameworks/planejar-datas-sazonais-e-reagir-a-queda-de-vendas.md",
+    "trafego/conceitos/regra-trate-dados-pessoais-e-ia-com-governanca-no-marketing.md",
+    "trafego/frameworks/montar-o-plano-de-mensuracao-e-triangular-a-atribuicao.md",
+    "trafego/frameworks/montar-crm-e-mail-whatsapp-e-automacoes-de-retencao.md",
+    "trafego/frameworks/otimizar-conversao-de-site-loja-virtual-e-marketplaces.md",
+    "trafego/frameworks/escolher-o-mix-de-canais-e-orcar-o-marketing-digital.md",
+    "trafego/frameworks/definir-estrategia-posicionamento-e-oferta-no-marketing-digital.md",
+    "trafego/frameworks/diagnosticar-o-negocio-e-calcular-unit-economics.md",
+    "NUCLEO/sedFcc41E",
+    "NUCLEO/sedWpD5BK",
+    "NUCLEO/sedUkIODd",
+    "RESPOSTAS/2026-11-23-2100-destilacao-the-art-of-seo.md.tmp.12365.e53aceaea82b"
   ]
 }

@@ -35,3 +35,4 @@ A aplicação prática está em organizar cores com propriedades personalizadas;
 - [[developer]] — nota destilada ligada a este assunto: conceito de livro-base
 - [[organizar-cores-com-propriedades-personalizadas]] — esta nota cita a ideia de «Organizar cores com propriedades personalizadas» na seção sobre como se relaciona
 - [[regra-garanta-o-contraste-minimo-do-texto-wcag]] — a escolha de cores deve respeitar o contraste
+- [[gradientes-sombras-e-modos-de-mesclagem-em-css]] — os espaços de cor aparecem na interpolação dos gradientes

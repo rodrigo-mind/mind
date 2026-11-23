@@ -35,3 +35,4 @@ Veja internacionalização com `Intl`, JSON (`Date` vira texto via `toJSON`), te
 - [[internacionalizacao-com-intl-em-javascript]] — Intl.DateTimeFormat formata datas para o usuário
 - [[json-em-javascript-stringify-parse-tojson-replacer-e-reviver]] — Date vira texto no JSON
 - [[imutabilidade-datetime-e-datetimeimmutable]] — o Date do JavaScript é mutável, como o DateTime do PHP
+- [[trabalhar-com-datas-em-php-com-datetime]] — o tratamento de datas em PHP tem a contraparte do lado do navegador

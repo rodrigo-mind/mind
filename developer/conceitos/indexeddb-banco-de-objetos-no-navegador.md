@@ -44,3 +44,4 @@ Confiança média: li a visão geral e a descrição do funcionamento, mas não 
 - [[gerenciar-o-historico-em-aplicacoes-de-uma-pagina]] — ambos usam o clone estruturado
 - [[transacoes-e-acid]] — as transações do IndexedDB são atômicas
 - [[workers-threads-no-navegador]] — o IndexedDB está disponível dentro de workers
+- [[aplicacoes-offline-appcache-e-service-workers]] — o IndexedDB é a opção de dados estruturados para aplicações offline

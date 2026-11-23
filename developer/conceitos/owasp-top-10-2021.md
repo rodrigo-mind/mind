@@ -48,3 +48,4 @@ Serve de índice para as regras de segurança: nunca confiar na entrada (regra n
 - [[regra-nao-exiba-erros-na-tela-em-producao]] — mensagens de erro detalhadas facilitam ataques
 - [[regra-nao-desserialize-dados-nao-confiaveis]] — a injeção de objetos faz parte das falhas de integridade
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[regra-guarde-senhas-com-password-hash]] — a guarda segura de senhas responde a itens do OWASP

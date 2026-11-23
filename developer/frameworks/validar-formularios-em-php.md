@@ -72,3 +72,7 @@ Confiança média: li o início da seção de validação e a de JavaScript. O l
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
 - [[metodos-de-string-com-expressoes-regulares-em-javascript]] — «Métodos de string com expressões regulares» cita esta nota ao explicar suas relações
 - [[expressoes-regulares-em-javascript-sintaxe-e-flags]] — «Expressões regulares em JavaScript: sintaxe e flags» cita esta nota ao explicar suas relações
+- [[api-de-validacao-de-formularios-por-javascript]] — a validação do navegador, inclusive por script, complementa esta
+- [[expressoes-regulares-em-php-com-preg]] — a validação de formatos recorre a regex preg
+- [[enviar-formulario-por-ajax-com-formdata]] — o envio por Ajax não dispensa a validação no servidor
+- [[trabalhar-com-datas-em-php-com-datetime]] — a validação de datas é um caso da validação de formulários

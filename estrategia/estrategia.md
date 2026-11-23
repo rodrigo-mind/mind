@@ -187,3 +187,12 @@ Ainda sem livro dedicado na biblioteca:
 - [[descobrir-a-essencia-da-categoria]] — nota destilada (framework): Descobrir a essência da categoria
 - [[playbook-posicionamento-de-produto]] — nota destilada (playbook): Playbook de posicionamento de produto
 - [[trafego]] — centralizador que leva a promessa definida aqui até o público e mede o resultado, partindo do brief, do posicionamento e da mensagem da estratégia
+- [[usos-estrategicos-do-seo]] — o uso para marca e mensagem precisa dialogar com o posicionamento do negócio
+- [[planejar-a-estrategia-de-seo-com-swot-e-smart]] — o público, a marca e a mensagem que a estratégia de SEO considera vêm da estratégia do negócio
+- [[guia-marketing-digital-brasil]] — os módulos A e B (diagnóstico, posicionamento, proposta de valor e marca) tratam do que o assunto estratégia define
+- [[mapa-building-a-storybrand]] — acompanha a destilação de um livro-base deste assunto
+- [[mapa-the-lean-startup]] — acompanha a destilação de um livro-base deste assunto
+- [[mapa-the-hero-and-the-outlaw]] — acompanha a destilação de um livro-base deste assunto
+- [[mapa-dos-guias-de-trafego]] — define o posicionamento e a mensagem de que os guias de canal partem
+- [[mapa-the-art-of-seo]] — define o público, a marca e a mensagem de que o planejamento de SEO parte
+- [[operador-do-mind]] — o Operador do Mind consulta este centralizador em tarefas de posicionamento, oferta e mensagem

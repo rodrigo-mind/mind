@@ -68,3 +68,6 @@ Um painel curto com a linha de base, a meta do modelo e a evolução de cada mot
 - [[ciclo-construir-medir-aprender]] — «Ciclo construir-medir-aprender» cita esta nota ao explicar suas relações
 - [[aprendizado-validado]] — «Aprendizado validado» cita esta nota ao explicar suas relações
 - [[os-cinco-principios-do-lean-startup]] — «Os cinco princípios do Lean Startup» cita esta nota ao explicar suas relações
+- [[medir-resultados-de-seo-com-kpis-acionaveis]] — ambos medem o progresso contra uma linha de base registrada antes da mudança
+- [[registrar-linha-de-base-e-historico-de-mudancas-de-seo]] — ambos partem de uma linha de base registrada para comparar o efeito de cada mudança
+- [[diagnosticar-o-negocio-e-calcular-unit-economics]] — medir progresso contra uma linha de base

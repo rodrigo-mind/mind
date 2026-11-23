@@ -40,3 +40,6 @@ O livro é de 2011: hoje também existem `srcset` e `sizes` (imagens responsivas
 - [[regra-sempre-informe-alt-e-as-dimensoes-das-imagens]] — «Sempre informe alt e as dimensões das imagens» cita esta nota ao explicar suas relações
 - [[iframe-object-embed-progress-e-meter-em-html5]] — «iframe, object e embed em HTML5, progress e meter» cita esta nota ao explicar suas relações
 - [[design-responsivo-mobile-first]] — imagens responsivas fazem parte do design responsivo
+- [[svg-no-html-e-por-javascript]] — o SVG é uma das alternativas de imagem em HTML
+- [[audio-e-video-em-html5]] — áudio e vídeo são a contraparte das imagens no HTML
+- [[otimizacao-para-buscas-verticais-imagem-video-produtos-e-noticias]] — a otimização de imagens depende de marcar as imagens corretamente no HTML

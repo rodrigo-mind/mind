@@ -51,3 +51,4 @@ Confiança média: li o problema, o exemplo do banco e o início do exemplo de n
 - [[padrao-observer]] — «Padrão Observer» cita esta nota ao explicar suas relações
 - [[principios-de-projeto-orientado-a-objetos-resumo]] — «Princípios de projeto orientado a objetos: resumo do livro» cita esta nota ao explicar suas relações
 - [[regra-centralize-as-classes-reutilizaveis-em-vez-de-copiar]] — cópias entre projetos são acoplamento em escala maior
+- [[disparar-eventos-personalizados-com-customevent]] — eventos próprios são um meio de desacoplar módulos do front-end

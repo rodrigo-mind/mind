@@ -41,3 +41,4 @@ Confiança média: li a seção sobre polimorfismo, e a de encapsulamento e a de
 - [[padrao-null-object]] — «Padrão Null Object» cita esta nota ao explicar suas relações
 - [[padrao-strategy]] — «Padrão Strategy» cita esta nota ao explicar suas relações
 - [[principios-de-projeto-orientado-a-objetos-resumo]] — «Princípios de projeto orientado a objetos: resumo do livro» cita esta nota ao explicar suas relações
+- [[match-e-switch-em-php]] — o `match` é uma alternativa simples quando o polimorfismo é demais

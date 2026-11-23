@@ -48,3 +48,4 @@ Em PHP com MySQL via PDO, o equivalente do exemplo é uma tabela de ligação co
 - [[regra-chave-primaria-sob-medida]] — a tabela de interseção precisa de chave primária composta
 - [[regra-nao-crie-colunas-numeradas-para-valores-multiplos]] — é o mesmo objetivo e a mesma solução de uma relação um para muitos
 - [[formas-normais-resumo]] — a 1FN proíbe várias informações em uma coluna
+- [[antipadrao-de-sql-o-que-e]] — a regra é um antipadrão no formato objetivo, antipadrão, reconhecer, solução

@@ -45,3 +45,4 @@ Para código chamado por um formulário, os valores de `$_POST` chegam como text
 - [[tipos-escalares-do-php-e-armadilhas]] — os tipos escalares se declaram com strict_types
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
 - [[modo-estrito-em-javascript]] — equivalente em espírito em PHP
+- [[declaracoes-de-tipo-em-php-uniao-anulavel-mixed-e-dnf]] — as declarações de tipo só são rigorosas com strict_types

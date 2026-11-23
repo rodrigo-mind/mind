@@ -43,3 +43,4 @@ Sobre datas, os autores preferem guardar um carimbo de data em texto (`CHAR(14)`
 - [[modelo-relacional-juncoes-e-agregacoes]] — o modelo relacional continua o SQL básico
 - [[regra-chave-primaria-sob-medida]] — o livro de SQL Antipatterns discute a escolha da chave primária
 - [[regra-nunca-monte-sql-com-entrada-do-usuario]] — ao escrever INSERT e WHERE com dados do usuário, use consultas preparadas
+- [[antipadrao-de-sql-o-que-e]] — os antipadrões partem do uso comum de SQL descrito aqui

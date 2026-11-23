@@ -39,3 +39,4 @@ Confiança alta no `for/of` e no `for/in`; não resumi `while`, `do/while` e o `
 - [[vetores-e-iteracao-em-javascript]] — iteração de vetores
 - [[sets-e-maps-em-javascript]] — Set e Map são percorridos com for/of
 - [[regra-nao-reutilize-regex-global-em-lacos-sem-controlar-lastindex]] — armadilha de estado em laços
+- [[iteradores-e-geradores-em-javascript]] — o for/of é a forma de consumir iteradores

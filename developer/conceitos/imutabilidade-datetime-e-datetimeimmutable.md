@@ -35,3 +35,4 @@ Veja propriedades readonly em PHP, tipos de objeto, herança de tipos, comparaç
 - [[regra-encapsule-propriedades-como-privadas]] — propriedades privadas e só leitura sustentam a imutabilidade
 - [[padrao-fluent-interface-fluente]] — a variante imutável devolve cópias
 - [[datas-e-horas-com-date-em-javascript]] — o Date do JavaScript é mutável, como o DateTime do PHP
+- [[trabalhar-com-datas-em-php-com-datetime]] — a imutabilidade se aplica ao trabalho com datas deste framework

@@ -38,3 +38,4 @@ Para código novo, o livro e o ES6 apontam `let` e `const`; evitar `var` (infer�
 - [[modulos-es6-em-javascript]] — esta nota cita a ideia de «Módulos ES6 em JavaScript» na seção sobre como se relaciona
 - [[classes-com-a-palavra-class-em-javascript]] — classes não sofrem içamento como os var e as funções
 - [[modo-estrito-em-javascript]] — atribuir a variável não declarada é erro
+- [[versoes-do-ecmascript-e-ambientes-do-javascript]] — `let` e `const` são recursos do ES6

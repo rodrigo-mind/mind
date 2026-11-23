@@ -38,3 +38,6 @@ Não li a lista completa de opções de `DateTimeFormat` (campos de data e hora)
 - [[mapa-javascript-the-definitive-guide]] — o mapa do livro lista esta nota como gerada pela destilação
 - [[developer]] — nota destilada ligada a este assunto: conceito de livro-base
 - [[regra-ordene-textos-para-pessoas-com-intl-collator]] — a classe Collator é descrita ali
+- [[trabalhar-com-datas-em-php-com-datetime]] — a formatação por idioma também existe no PHP, com datas
+- [[datas-e-horas-com-date-em-javascript]] — Intl.DateTimeFormat formata datas para o usuário
+- [[igualdade-comparacao-e-operador-mais-em-javascript]] — a ordem de textos depende da localidade

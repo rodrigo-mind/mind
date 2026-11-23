@@ -77,3 +77,4 @@ Segundo o livro, o `SameSite` tem três níveis: `None` (sem restrição), `Lax`
 - [[regra-escape-a-saida-contra-xss]] — o valor lido de $_COOKIE deve ser escapado na saída; httponly reduz o roubo por XSS
 - [[enviar-email-com-mail-do-php]] — ambos dependem de cabeçalhos e da configuração do servidor
 - [[cookies-no-javascript-document-cookie]] — «Cookies no JavaScript» cita esta nota ao explicar suas relações
+- [[regra-omita-a-tag-de-fechamento-em-arquivos-so-php]] — a regra evita o erro de cabeçalhos já enviados ao criar cookies

@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "Joseph Edmonds e Lorna Jane Mitchell, The Art of Modern PHP 8, cap. 4, seção Floats (EPUB)"
+  - "Christian Wenz e Tobias Hauser, PHP and MySQL, The Comprehensive Guide, cap. 9, seção 9.1.7 (PDF p. 400-402)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -32,9 +33,12 @@ Procure `float`, `round(` e operadores aritméticos sobre preços; troque por BC
 
 No banco, o equivalente é `NUMERIC`/`DECIMAL` (ver use NUMERIC para valores exatos). Guardar em inteiros de centavos é uma alternativa comum (inferência minha, não do trecho lido).
 
+- Wenz e Hauser (cap. 9) apresentam a extensão BCMath (`bcadd`, `bcmul`, `bcdiv`...), que calcula com strings e precisão definida. Atenção: ela corta as casas extras em vez de arredondar (ver números aleatórios e precisão em PHP).
+
 ## Conexões
 
 - [[mapa-the-art-of-modern-php-8]] — o mapa do livro lista esta nota como gerada pela destilação
 - [[developer]] — nota destilada ligada a este assunto: regra de livro-base
 - [[tipos-escalares-do-php-e-armadilhas]] — a regra tira a consequência prática dos floats
 - [[regra-use-numeric-para-valores-exatos]] — é a regra equivalente no banco de dados
+- [[numeros-aleatorios-e-precisao-em-php]] — o BCMath é uma das saídas para o problema do float

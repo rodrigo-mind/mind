@@ -50,3 +50,4 @@ Ver onde configurar o PHP e a regra de não exibir erros na produção; para upl
 - [[carregamento-de-arquivos-e-include-path]] — include_path é uma das opções
 - [[enviar-email-com-mail-do-php]] — a seção mail function fica no php.ini
 - [[niveis-de-erro-e-set-error-handler]] — «Níveis de erro e set_error_handler» cita esta nota ao explicar suas relações
+- [[diagnosticar-erros-de-ambiente-php]] — as opções do php.ini são o que se confere no diagnóstico

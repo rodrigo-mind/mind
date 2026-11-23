@@ -54,3 +54,5 @@ Segundo o livro, em 2011 o suporte era desigual: Chrome e Firefox mudavam o esti
 - [[agrupar-conteudo-em-html]] — «Agrupar conteúdo em HTML: p, div, pre, blockquote e hr» cita esta nota ao explicar suas relações
 - [[regra-escolha-o-elemento-html-mais-especifico-e-seja-consistente]] — «Escolha o elemento HTML mais específico e use-o com consistência» cita esta nota ao explicar suas relações
 - [[playbook-pagina-responsiva-em-css]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[The-Art-of-SEO-Mastering-Search-Engine-Optimization-(Eric-Enge-Stephan-Spencer) (pdf)]] — o livro trata da estrutura de página que ajuda o buscador a entender o conteúdo
+- [[arquitetura-de-site-amigavel-a-buscadores]] — navegação e seções bem marcadas ajudam a expressar a estrutura da página

@@ -41,3 +41,4 @@ Ver tipos escalares do PHP e armadilhas, regra de strict_types e propriedades re
 - [[regra-trate-null-como-desconhecido]] — o tratamento de nulos também importa no banco
 - [[padrao-null-object]] — «Padrão Null Object» cita esta nota ao explicar suas relações
 - [[tipo-de-retorno-never-em-php]] — «Tipo de retorno never em PHP 8.1» cita esta nota ao explicar suas relações
+- [[declaracoes-de-tipo-em-php-uniao-anulavel-mixed-e-dnf]] — tipos anuláveis e de retorno ligam-se ao tratamento de null e void

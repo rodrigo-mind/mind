@@ -5,6 +5,8 @@ origem: destilar
 assunto: developer
 fontes:
   - "Christian Wenz e Tobias Hauser, PHP and MySQL: The Comprehensive Guide, cap. 11, seções 11.2 e 11.3.1 a 11.3.3 (PDF p. 454-473)"
+  - "Matt Zandstra, PHP 8 Objects, Patterns, and Practice, vol. 1, cap. 3 (PDF p. 37-96)"
+  - "Joseph Edmonds e Lorna Jane Mitchell, The Art of Modern PHP 8, caps. 1 e 2 (EPUB, sem páginas)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -32,6 +34,13 @@ atualizado: 2026-11-22
 
 Ver visibilidade, static e final em PHP, interfaces, classes abstratas e traits, métodos mágicos do PHP e composição em vez de herança.
 
+
+## Notas do Claude
+
+- Zandstra (cap. 3) acrescenta os **argumentos nomeados** (PHP 8): `new ShopProduct(title: "Catálogo", price: 0.7)`. Eles resolvem o problema dos valores padrão em listas longas: dá para informar só os argumentos desejados, em qualquer ordem, sem preencher os do meio. O livro também mostra por que a herança existe: juntar tipos diferentes numa classe só, com uma propriedade de tipo e `if` em cada método, incha o objeto e espalha condicionais.
+
+- Edmonds e Mitchell (caps. 1 e 2) recomendam a promoção no construtor sempre que possível. Para argumentos nomeados, sugerem manter a ordem normal e também nomear, para clareza. O operador `...` (splat) recebe um número variável de argumentos como vetor e também desempacota um vetor em argumentos.
+
 ## Conexões
 
 - [[mapa-php-and-mysql-the-comprehensive-guide]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -46,3 +55,6 @@ Ver visibilidade, static e final em PHP, interfaces, classes abstratas e traits,
 - [[null-void-e-propriedades-nao-inicializadas-em-php]] — a promoção de propriedades do construtor
 - [[principios-de-projeto-orientado-a-objetos-resumo]] — a evolução dos objetos em PHP
 - [[classes-e-prototipos-em-javascript]] — «Classes e protótipos em JavaScript» cita esta nota ao explicar suas relações
+- [[estilos-de-programacao-procedural-funcional-e-orientado-a-objetos]] — os fundamentos de classes são a base do estilo orientado a objetos
+- [[padrao-collection-colecao-tipada]] — o operador `...` do construtor sustenta a coleção tipada
+- [[regra-nao-crie-propriedades-dinamicas]] — a promoção no construtor evita propriedades dinâmicas

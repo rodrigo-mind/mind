@@ -49,3 +49,4 @@ Confiança média: a tabela segue o resumo do capítulo; só os quatro padrões 
 - [[unidade-de-trabalho-unit-of-work]] — esta nota cita a ideia de «Unidade de trabalho» na seção sobre como se relaciona
 - [[arquitetura-em-camadas]] — a camada de dados é detalhada nos padrões de banco de dados
 - [[iteracao-de-objetos-em-php]] — resultados de banco costumam ser percorridos como iteráveis
+- [[padrao-repository-repositorio]] — o repositório entra entre os padrões de banco de dados

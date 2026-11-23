@@ -64,3 +64,4 @@ Paleta em variáveis, em um só lugar, com mudanças locais e previsíveis.
 - [[organizacao-de-uma-folha-de-estilo-em-seis-camadas]] — as cores globais ficam na camada theme
 - [[consultas-de-estilo-de-conteiner]] — o modo escuro pode usar consultas de estilo
 - [[playbook-pagina-responsiva-em-css]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[gradientes-sombras-e-modos-de-mesclagem-em-css]] — as propriedades personalizadas podem alimentar gradientes

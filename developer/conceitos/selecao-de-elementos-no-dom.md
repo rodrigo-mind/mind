@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "David Flanagan, JavaScript, The Definitive Guide, 7ª ed., cap. 15, seção 15.3.1 (PDF p. 456-459)"
+  - "Adam Freeman, The Definitive Guide to HTML5, cap. 26 (PDF p. 640-665)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -30,6 +31,11 @@ Tag (`div`), id (`#nav`), classe (`.warning`), atributo (`p[lang="fr"]`), descen
 
 Usado com eventos (ver eventos no navegador) e com a navegação pela árvore (ver navegação e conteúdo do DOM). A especificidade dos seletores em CSS também usa essa sintaxe (ver especificidade de seletores).
 
+
+## Notas do Claude
+
+- Confirmado também por Freeman (cap. 26): `getElementById`, `getElementsBy...` e `querySelector`/`querySelectorAll`. Todos, menos `getElementById`, existem também nos elementos, e por isso as buscas podem ser encadeadas. Os resultados múltiplos são `NodeList` ou `HTMLCollection` (com `namedItem()`, que acha um item pelo `id` ou `name`). Propriedades prontas do documento: `images`, `forms`, `links`, `scripts`, `body`, `head`.
+
 ## Conexões
 
 - [[mapa-javascript-the-definitive-guide]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -40,3 +46,5 @@ Usado com eventos (ver eventos no navegador) e com a navegação pela árvore (v
 - [[criar-inserir-e-remover-nos-do-dom]] — para inserir perto de um nó é preciso selecioná-lo antes
 - [[tabelas-em-html5]] — o tbody automático afeta os seletores
 - [[componentes-web-templates-elementos-customizados-e-shadow-dom]] — o shadow DOM esconde elementos do querySelector
+- [[registrar-tratadores-de-eventos-com-addeventlistener]] — a seleção de elementos é o passo anterior ao registro
+- [[seletores-css-atributos-combinadores-e-pseudoclasses]] — os seletores CSS são os usados em querySelector

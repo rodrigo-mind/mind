@@ -47,3 +47,4 @@ Combina com a regra de nunca confiar na entrada do usuário e com a de campos oc
 - [[filtrar-entrada-com-filter-input]] — os filtros do PHP validam no servidor o que o HTML valida no navegador
 - [[regra-nunca-confie-na-entrada-do-usuario]] — é um caso da regra geral sobre entrada não confiável
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[api-de-validacao-de-formularios-por-javascript]] — a validação por JavaScript é um caso em que a regra se aplica

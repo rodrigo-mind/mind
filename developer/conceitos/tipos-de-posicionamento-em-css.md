@@ -40,3 +40,4 @@ Veja construir um modal e um menu suspenso, contextos de empilhamento e z-index 
 - [[modelo-de-caixa-do-css]] — as propriedades inset e o bloco contêiner dependem da caixa
 - [[geometria-e-rolagem-do-documento]] — absolute usa o bloco contêiner e as coordenadas de viewport
 - [[playbook-pagina-responsiva-em-css]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[transformacoes-em-css]] — o transform move sem mexer no fluxo, ao contrário do posicionamento

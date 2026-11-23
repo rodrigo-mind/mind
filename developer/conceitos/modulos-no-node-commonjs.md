@@ -36,3 +36,4 @@ Confiança média: li a visão geral, não todos os detalhes. O projeto não usa
 - [[developer]] — nota destilada ligada a este assunto: conceito de livro-base
 - [[modulos-es6-em-javascript]] — esta nota cita a ideia de «Módulos ES6 em JavaScript» na seção sobre como se relaciona
 - [[closures-em-javascript]] — «Closures em JavaScript» cita esta nota ao explicar suas relações
+- [[node-js-javascript-fora-do-navegador]] — o Node é o ambiente em que o CommonJS nasceu

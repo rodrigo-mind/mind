@@ -38,3 +38,4 @@ Veja composição em vez de herança (onde o Strategy aparece com o custo da aul
 - [[padrao-interpreter-e-mini-linguagens]] — o exemplo do questionário usa as duas ideias
 - [[conteiner-de-injecao-de-dependencias-como-funciona]] — a dependência do analisador deve ser injetada
 - [[principios-de-projeto-orientado-a-objetos-resumo]] — o exemplo de encapsular o que varia é uma Estratégia
+- [[callbacks-funcoes-anonimas-e-closures-em-php]] — um callable pode fazer o papel da estratégia

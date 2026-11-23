@@ -40,3 +40,4 @@ Namespaces e carregamento automático andam juntos: o padrão PSR-4 (ver gerenci
 - [[developer]] — nota destilada ligada a este assunto: conceito de livro-base
 - [[carregamento-automatico-em-php]] — «Carregamento automático de classes em PHP» cita esta nota ao explicar suas relações
 - [[gerenciar-dependencias-com-composer]] — esta nota cita a ideia de «Gerenciar dependências com o Composer» na seção sobre como se relaciona
+- [[criar-um-pacote-composer-e-versionar-com-semver]] — os namespaces são o que o autoload do pacote mapeia

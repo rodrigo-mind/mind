@@ -38,3 +38,4 @@ Confiança alta no que li; o detalhe do comportamento do `finally` com `return` 
 - [[niveis-de-erro-e-set-error-handler]] — modelo de erros em PHP
 - [[regra-nao-exiba-erros-na-tela-em-producao]] — não exibir detalhes de erros ao usuário
 - [[classes-de-erro-do-javascript-e-erros-personalizados]] — como lançar e tratar
+- [[tratar-erros-com-excecoes-em-php]] — o tratamento de exceções em PHP tem o mesmo desenho do JavaScript

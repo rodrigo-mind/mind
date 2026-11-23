@@ -67,3 +67,6 @@ final class PrecoTest extends PHPUnit\Framework\TestCase
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
 - [[complexidade-ciclomatica]] — reduzir pontos de decisão sem testes é arriscado
 - [[atributos-nativos-do-php-8]] — «Atributos nativos do PHP 8» cita esta nota ao explicar suas relações
+- [[ferramentas-do-javascript-eslint-prettier-jest-e-empacotadores]] — o Jest é o equivalente em JavaScript do PHPUnit
+- [[sintomas-de-um-projeto-php-que-degringola]] — os testes evitam os erros de correções feitas às pressas
+- [[criar-um-pacote-composer-e-versionar-com-semver]] — os testes do pacote usam o PHPUnit

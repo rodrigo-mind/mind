@@ -55,3 +55,4 @@ Confiança média: li a tabela-resumo e a apresentação dos elementos; o detalh
 - [[regra-token-csrf-em-formularios]] — o formulário POST que muda dados deve levar o token CSRF
 - [[escolher-o-elemento-html-de-texto-pelo-significado]] — o rótulo e os campos também são marcação semântica
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[api-de-validacao-de-formularios-por-javascript]] — a API de formulários por JavaScript opera sobre esta estrutura

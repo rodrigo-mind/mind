@@ -40,3 +40,6 @@ Veja namespaces em PHP, incluir arquivos em PHP e gerenciar dependências com o 
 - [[testes-unitarios-em-php-com-phpunit]] — o PHPUnit usa o autoload com --bootstrap
 - [[metodos-magicos-e-constantes-magicas-do-php]] — spl_autoload_register é o autoload tratado ali
 - [[conteiner-de-injecao-de-dependencias-como-funciona]] — o autowiring se apoia em classes carregadas automaticamente
+- [[estilos-de-programacao-procedural-funcional-e-orientado-a-objetos]] — o carregamento automático é o que torna prática a organização em classes
+- [[regra-use-require-para-arquivos-essenciais]] — o autoload evita uma longa lista de require
+- [[criar-um-pacote-composer-e-versionar-com-semver]] — o autoload PSR-4 é configurado no composer.json do pacote

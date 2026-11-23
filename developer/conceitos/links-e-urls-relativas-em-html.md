@@ -46,3 +46,6 @@ O livro não menciona o risco de `target="_blank"` dar acesso à página de orig
 - [[fontes-web-e-font-face]] — o link e o preconnect ficam no head do documento
 - [[imagens-e-mapas-de-imagem-em-html]] — «Imagens e mapas de imagem em HTML» cita esta nota ao explicar suas relações
 - [[classe-url-e-urlsearchparams-em-javascript]] — «Classe URL e URLSearchParams em JavaScript» cita esta nota ao explicar suas relações
+- [[The-Art-of-SEO-Mastering-Search-Engine-Optimization-(Eric-Enge-Stephan-Spencer) (pdf)]] — o livro defende links e URLs claros e rastreáveis pelos robôs de busca
+- [[arquitetura-de-site-amigavel-a-buscadores]] — a estrutura de links e URLs depende de como os links são escritos
+- [[problemas-tecnicos-de-plataforma-que-prejudicam-o-seo]] — URLs limpas e links rastreáveis são parte do problema tratado aqui

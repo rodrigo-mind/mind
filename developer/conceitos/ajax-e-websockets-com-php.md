@@ -39,3 +39,5 @@ Confiança média: a parte de Sajax é histórica. O WebSocket com Ratchet exige
 - [[assincronia-com-callbacks-e-eventos]] — os eventos do WebSocket seguem o modelo de callbacks
 - [[websockets-no-navegador]] — «WebSockets no navegador» cita esta nota ao explicar suas relações
 - [[server-sent-events-com-eventsource]] — «Server-Sent Events com EventSource» cita esta nota ao explicar suas relações
+- [[xmlhttprequest-estados-eventos-e-erros]] — o XMLHttpRequest é o cliente das respostas do PHP
+- [[o-que-os-buscadores-leem-em-uma-pagina]] — conteúdo carregado por AJAX depois de uma ação pode não estar no HTML que o robô lê

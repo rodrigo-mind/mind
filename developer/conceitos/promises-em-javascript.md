@@ -57,3 +57,4 @@ O `async`/`await` as esconde (ver async e await). A API `fetch()` é baseada em 
 - [[indexeddb-banco-de-objetos-no-navegador]] — «IndexedDB: banco de objetos no navegador» cita esta nota ao explicar suas relações
 - [[excecoes-em-javascript-throw-e-try-catch-finally]] — «Exceções em JavaScript: throw e try/catch/finally» cita esta nota ao explicar suas relações
 - [[temporizadores-settimeout-e-setinterval]] — «Temporizadores: setTimeout e setInterval» cita esta nota ao explicar suas relações
+- [[node-js-javascript-fora-do-navegador]] — o Node usa promessas na API assíncrona

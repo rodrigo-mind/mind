@@ -49,3 +49,4 @@ Opções de correção que o livro compara:
 - [[camadas-da-cascata-em-css]] — as camadas vêm antes da especificidade
 - [[is-e-where-em-seletores-css]] — tratam de como a especificidade é calculada
 - [[regra-nao-altere-um-modulo-com-seletores-de-contexto]] — seletores de contexto aumentam a especificidade
+- [[seletores-css-atributos-combinadores-e-pseudoclasses]] — os tipos de seletor são o que a especificidade calcula

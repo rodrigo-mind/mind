@@ -38,3 +38,4 @@ Outra forma de evitar o problema é guardar centavos como inteiro (o livro menci
 - [[developer]] — nota destilada ligada a este assunto: regra de livro-base
 - [[valor-historico-em-tabela-de-associacao]] — preços pagos usam tipo numérico exato
 - [[regra-nao-use-float-para-dinheiro]] — é a regra equivalente no banco de dados
+- [[numeros-aleatorios-e-precisao-em-php]] — o cálculo exato também se faz no PHP, com BCMath

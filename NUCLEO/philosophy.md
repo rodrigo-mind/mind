@@ -117,3 +117,4 @@ Não procures ser apenas luz, fingindo que não há sombra em ti. Não procures 
 
 - [[mind]] — é o ponto de partida do projeto e reúne as diretrizes do NUCLEO, entre elas esta filosofia
 - [[creator-of-minds]] — aplica à criação de agentes o princípio de que a autoridade vem do que se compreende, não do rótulo, e testa o conhecimento do projeto em vez de aceitá-lo como herdado
+- [[operador-do-mind]] — o Operador trata o conhecimento herdado do Mind como memória a testar e complementar, não como dogma

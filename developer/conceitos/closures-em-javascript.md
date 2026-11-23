@@ -35,3 +35,4 @@ Confiança média: li a definição e a regra de escopo, mas não os exemplos de
 - [[modulos-no-node-commonjs]] — esta nota cita a ideia de «Módulos no Node» na seção sobre como se relaciona
 - [[modulos-es6-em-javascript]] — esta nota cita a ideia de «Módulos ES6 em JavaScript» na seção sobre como se relaciona
 - [[funcoes-de-seta-e-o-valor-de-this]] — ambos dependem do escopo léxico
+- [[callbacks-funcoes-anonimas-e-closures-em-php]] — a ideia de closure tem a contraparte em PHP, com `use` e funções de seta

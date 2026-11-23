@@ -64,3 +64,5 @@ Na hospedagem compartilhada com deploy por FTP do projeto, módulos nativos são
 - [[regra-carregue-scripts-com-defer-ou-async]] — módulos se comportam como defer por padrão
 - [[playbook-pagina-responsiva-em-css]] — é usada como etapa deste playbook, que a combina com notas de outros livros
 - [[componentes-web-templates-elementos-customizados-e-shadow-dom]] — «Componentes web: templates, elementos customizados e shadow DOM» cita esta nota ao explicar suas relações
+- [[diferencas-entre-navegadores-e-deteccao-de-recursos]] — a decisão de usar módulos depende do suporte dos navegadores
+- [[ferramentas-do-javascript-eslint-prettier-jest-e-empacotadores]] — servir módulos direto dispensa o empacotador

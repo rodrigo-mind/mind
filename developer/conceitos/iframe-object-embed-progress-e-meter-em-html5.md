@@ -40,3 +40,4 @@ Plugins como o Flash não existem mais nos navegadores atuais (inferência minha
 - [[modelo-de-seguranca-da-web-no-navegador]] — o sandbox restringe o conteúdo de terceiros
 - [[validacao-nativa-de-formularios-html5]] — progress e meter aparecem em interfaces de formulário
 - [[postmessage-messagechannel-e-mensagens-entre-janelas]] — o postMessage conversa com o conteúdo de iframes
+- [[audio-e-video-em-html5]] — vídeo e áudio são conteúdos incorporados, como os elementos tratados aqui

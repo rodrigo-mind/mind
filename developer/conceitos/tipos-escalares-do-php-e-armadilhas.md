@@ -39,3 +39,4 @@ Veja a regra de não usar float para dinheiro, type juggling e comparação estr
 - [[regra-strict-types-em-todo-arquivo-php]] — os tipos escalares se declaram com strict_types
 - [[validar-formularios-em-php]] — valores de formulário chegam como texto
 - [[igualdade-comparacao-e-operador-mais-em-javascript]] — armadilhas de conversão em PHP
+- [[declaracoes-de-tipo-em-php-uniao-anulavel-mixed-e-dnf]] — os tipos escalares são os tipos isolados da lista de declarações

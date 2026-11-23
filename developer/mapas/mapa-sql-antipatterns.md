@@ -24,7 +24,7 @@ Os erros mais comuns no uso de SQL seguem padrões que se repetem, e conhecê-lo
 
 | Cap. | Título | Páginas | Prioridade | Estado | Notas geradas |
 |---|---|---|---|---|---|
-| 1 | What's an Antipattern? | 20-27 | baixa | pendente | |
+| 1 | What's an Antipattern? | 20-27 | baixa | destilado | [[antipadrao-de-sql-o-que-e]] |
 | 2 | Jaywalking | 28-39 | alta | destilado | [[regra-nao-guardar-lista-em-uma-coluna]] |
 | 3 | Naive Trees | 40-59 | alta | destilado | [[regra-escolha-o-modelo-de-arvore-pelo-uso]] |
 | 4 | ID Required | 60-71 | alta | destilado | [[regra-chave-primaria-sob-medida]] |
@@ -39,7 +39,7 @@ Os erros mais comuns no uso de SQL seguem padrões que se repetem, e conhecê-lo
 | 13 | Index Shotgun | 160-175 | alta | destilado | [[indices-com-o-metodo-mentor]] |
 | 14 | Fear of the Unknown | 176-187 | alta | destilado | [[regra-trate-null-como-desconhecido]] |
 | 15 | Ambiguous Groups | 188-199 | media | destilado | [[regra-siga-a-regra-do-valor-unico-no-group-by]], [[obter-a-linha-com-o-maior-valor-por-grupo]] |
-| 16 | Random Selection | 200-209 | baixa | pendente | |
+| 16 | Random Selection | 200-209 | baixa | destilado | [[regra-nao-ordene-por-rand-em-tabelas-grandes]] |
 | 17 | Poor Man's Search Engine | 210-223 | media | destilado | [[regra-nao-use-like-com-curinga-para-buscar-palavras]], [[implementar-busca-por-palavras-no-mysql]] |
 | 18 | Spaghetti Query | 224-233 | media | destilado | [[regra-nao-resolva-um-problema-complexo-em-uma-consulta-so]], [[produto-cartesiano-nao-intencional]] |
 | 19 | Implicit Columns | 234-243 | media | destilado | [[regra-nomeie-as-colunas-explicitamente]] |
@@ -47,8 +47,8 @@ Os erros mais comuns no uso de SQL seguem padrões que se repetem, e conhecê-lo
 | 21 | SQL Injection | 258-275 | alta | destilado | [[regra-nunca-monte-sql-com-entrada-do-usuario]] |
 | 22 | Pseudokey Neat-Freak | 276-283 | media | destilado | [[regra-nao-renumere-chaves-primarias-nem-reaproveite-ids]], [[numerar-linhas-do-resultado-com-row-number]] |
 | 23 | See No Evil | 284-291 | media | destilado | [[regra-verifique-erros-do-banco-e-depure-o-sql-final]] |
-| 24 | Diplomatic Immunity | 292-305 | baixa | pendente | |
-| 25 | Standard Operating Procedures | 306-319 | baixa | pendente | |
+| 24 | Diplomatic Immunity | 292-305 | baixa | destilado | [[regra-trate-o-codigo-do-banco-como-codigo]] |
+| 25 | Standard Operating Procedures | 306-319 | baixa | destilado | [[regra-prefira-logica-no-php-a-procedimentos-armazenados]] |
 | 26 | Foreign Key Mistakes in Standard SQL | 320-331 | media | destilado | [[regra-confira-o-motor-innodb-nas-chaves-estrangeiras]] |
 | 27 | Foreign Key Mistakes in MySQL | 332-339 | alta | destilado | [[regra-confira-o-motor-innodb-nas-chaves-estrangeiras]] |
 | A1 | Rules of Normalization | 340-358 | media | destilado | [[formas-normais-resumo]], [[regra-normalize-primeiro-e-desnormalize-so-com-medicao]] |
@@ -57,6 +57,7 @@ Prioridade: `alta`, `media`, `baixa` ou `ignorar` (o usuário pode mudar). Estad
 
 ## Observações
 
+- 2026-11-22 (destilação feita no Claude.ai, fora do Claude Code): capítulos 1, 16, 24 e 25 lidos (prosa; o código de exemplo em Python e SQL foi folheado). Com isso, todos os capítulos do livro estão destilados.
 - 2026-11-22: primeiro lote, com os capítulos 2 a 7, 10, 11, 13, 20 e 21, que são os que mais afetam a stack. Li o texto sem os longos exemplos de código, focando em objetivo, antipadrão, usos legítimos e solução; alguns capítulos (3, 6, 13 e 20) foram lidos só em parte (a enumeração de caminho, as formas de modelar subtipos além da herança de tabela única, e o final do capítulo de senhas). Criadas 10 regras e 1 framework.
 - 2026-11-22: próximos naturais: capítulo 14 (NULL), capítulo 27 (erros de chave estrangeira no MySQL), capítulo 26, o 17 (busca) e o apêndice de normalização.
 

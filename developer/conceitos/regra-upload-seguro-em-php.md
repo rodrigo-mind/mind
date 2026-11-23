@@ -47,3 +47,7 @@ O livro não cobre a validação do tipo real do arquivo nem a renomeação para
 - [[imagens-e-arquivos-no-banco-ou-no-disco]] — o upload decide onde o arquivo vai parar
 - [[regra-sempre-informe-alt-e-as-dimensoes-das-imagens]] — o alt e as dimensões podem ser definidos no tratamento do upload
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[svg-no-html-e-por-javascript]] — o upload de SVG exige cuidado extra de segurança
+- [[enviar-formulario-por-ajax-com-formdata]] — o upload por Ajax chega ao PHP, que deve validar o arquivo
+- [[xml-imagens-e-pdf-com-php]] — o processamento de imagens enviadas segue a regra de upload seguro
+- [[arrastar-e-soltar-com-a-api-nativa-do-html5]] — arquivos soltos chegam ao PHP como upload e exigem validação

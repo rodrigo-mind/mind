@@ -38,3 +38,9 @@ Para amostras pequenas, o livro não discute significância estatística. Ao apl
 - [[analise-de-coortes]] — «Análise de coortes» cita esta nota ao explicar suas relações
 - [[contabilidade-da-inovacao]] — esta nota cita a ideia de «Contabilidade da inovação» na seção sobre como se relaciona
 - [[regra-a-lideranca-deve-construir-o-sistema-de-experimentacao]] — «A liderança deve construir o sistema de experimentação» cita esta nota ao explicar suas relações
+- [[avaliar-valor-e-dificuldade-de-uma-palavra-chave]] — o teste de página de destino do SEO é um teste A/B, cuja lógica e cuidados o conceito explica
+- [[medir-resultados-de-seo-com-kpis-acionaveis]] — a regra de amostra mínima para decidir (cerca de 100 conversões por variante) vale para os testes divididos
+- [[otimizar-conversao-de-site-loja-virtual-e-marketplaces]] — base do teste A/B
+- [[revisar-termos-de-pesquisa-e-negativas-e-manter-a-rotina-de-otimizacao]] — a lógica de experimento com grupos comparáveis
+- [[diagnosticar-e-otimizar-campanhas-da-meta-e-cuidar-da-conta]] — base do teste de incrementalidade
+- [[criar-e-testar-criativos-de-anuncios-na-meta]] — a lógica de teste com hipótese única e critério prévio

@@ -22,3 +22,4 @@ Leitura parcial: li a contracapa, o sumário completo (40 capítulos) e o capít
 - [[CSS-in-Depth-Second-Edition-(Keith-J-Grant) (pdf)]] — os dois tratam de CSS; aquele, de 2024, atualiza a parte de CSS3 deste livro, escrito em 2012
 - [[JavaScript-The-Definitive-Guide-7th-Edition-(David-Flanagan) (pdf)]] — complementa a parte de JavaScript e DOM deste livro com a linguagem atual (classes, módulos, assíncrono) e o capítulo de navegadores
 - [[mapa-the-definitive-guide-to-html5]] — o mapa acompanha a destilação deste livro
+- [[The-Art-of-SEO-Mastering-Search-Engine-Optimization-(Eric-Enge-Stephan-Spencer) (pdf)]] — o HTML bem formado é a base técnica do SEO do capítulo 6 do livro de SEO

@@ -42,3 +42,4 @@ Confiança média: o final da seção (`scrollTo` de elementos e rolagem em elem
 - [[altura-de-elementos-e-overflow]] — scrollHeight e scrollTop tratam do conteúdo que transborda
 - [[unidades-de-viewport-em-css]] — o viewport é a base das medidas em coordenadas de viewport
 - [[tipos-de-posicionamento-em-css]] — absolute usa o bloco contêiner e as coordenadas de viewport
+- [[desenhar-graficos-com-canvas]] — as medidas do documento ajudam a dimensionar o canvas

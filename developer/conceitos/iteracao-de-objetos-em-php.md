@@ -39,3 +39,4 @@ Não li as seções de SPL, de reflexão e de atributos do mesmo capítulo; fica
 - [[vetores-iteraveis-e-geradores-em-php]] — «Vetores, iteráveis e geradores em PHP» cita esta nota ao explicar suas relações
 - [[spl-iteradores-e-classes-padrao-do-php]] — «SPL: iteradores e classes padrão do PHP» cita esta nota ao explicar suas relações
 - [[lacos-em-javascript-for-of-e-for-in]] — «Laços em JavaScript: for, for/of e for/in» cita esta nota ao explicar suas relações
+- [[padrao-collection-colecao-tipada]] — as interfaces de iteração são as que a coleção implementa

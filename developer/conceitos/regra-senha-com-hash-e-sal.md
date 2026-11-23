@@ -42,6 +42,6 @@ Divergência a observar: o livro mostra o cálculo manual do hash SHA-256 com sa
 - [[mapa-sql-antipatterns]] — o mapa do livro lista esta nota como gerada pela destilação
 - [[developer]] — nota destilada ligada a este assunto: regra de livro-base
 - [[regra-sessoes-seguras-em-php]] — senhas guardadas com segurança e sessões protegidas formam a base do login seguro
-- [[developer]] — diverge: o livro ensina calcular o hash SHA-256 com sal à mão; o checklist do centralizador manda usar `password_hash` e `password_verify`, que já cuidam do sal e do custo
 - [[opcoes-de-autenticacao-em-php]] — o login por sessão depende de senhas guardadas com hash
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[regra-guarde-senhas-com-password-hash]] — diverge: aqui o cálculo manual de hash com sal, enquanto Wenz e Hauser usam `password_hash`; a stack do projeto adota `password_hash`

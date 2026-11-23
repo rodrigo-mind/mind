@@ -44,3 +44,7 @@ Combina com os erros de PDO (não deixar a exceção mostrar usuário e senha) e
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
 - [[excecoes-em-javascript-throw-e-try-catch-finally]] — não exibir detalhes de erros ao usuário
 - [[console-api-do-javascript]] — cuidado com detalhes em produção
+- [[regra-nunca-silencie-excecoes]] — registrar o erro, e não exibi-lo, é o que a regra de silêncio exige
+- [[converter-erros-em-excecoes-com-manipuladores-globais]] — o manipulador global é onde se decide não exibir detalhes em produção
+- [[tratar-erros-com-excecoes-em-php]] — a mensagem ao usuário em produção segue esta regra
+- [[diagnosticar-erros-de-ambiente-php]] — o diagnóstico de ambiente lembra de desligar a exibição de erros em produção

@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "David Flanagan, JavaScript, The Definitive Guide, 7ª ed., cap. 15, seção 15.10 (início) (PDF p. 427-594, capítulo 15)"
+  - "Adam Freeman, The Definitive Guide to HTML5, caps. 26 e 27 (PDF p. 640-691)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -26,6 +27,11 @@ A navegação e a URL são a base para links compartilháveis e para o botão Vo
 ## Como se relaciona
 
 Para aplicações que mudam de estado sem recarregar, ver gerenciar o histórico em aplicações de uma página; e links e URLs relativas em HTML para a resolução de URLs.
+
+
+## Notas do Claude
+
+- Confirmado também por Freeman (caps. 26 e 27): `document.location` e `window.location` são o mesmo objeto `Location`; trocar `location.hash` leva ao elemento com aquele `id`.
 
 ## Conexões
 

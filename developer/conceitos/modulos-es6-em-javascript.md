@@ -45,3 +45,5 @@ O livro é de 2020: o Node hoje suporta módulos ES6 de forma estável (inferên
 - [[componentes-web-templates-elementos-customizados-e-shadow-dom]] — «Componentes web: templates, elementos customizados e shadow DOM» cita esta nota ao explicar suas relações
 - [[workers-threads-no-navegador]] — «Workers: threads no navegador» cita esta nota ao explicar suas relações
 - [[modo-estrito-em-javascript]] — «Modo estrito em JavaScript» cita esta nota ao explicar suas relações
+- [[node-js-javascript-fora-do-navegador]] — o Node aceita módulos ES6, com regras próprias de extensão
+- [[versoes-do-ecmascript-e-ambientes-do-javascript]] — os módulos são um dos recursos do ES6

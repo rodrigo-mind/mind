@@ -49,3 +49,6 @@ Os exemplos do livro usam um sistema fictício de listagem de eventos ("Woo"), s
 - [[padroes-de-banco-de-dados-visao-geral]] — a camada de dados é detalhada nos padrões de banco de dados
 - [[padrao-mvc-modelo-visao-controlador]] — o MVC é uma forma de separar camadas
 - [[padrao-facade]] — é o ponto de entrada de uma camada
+- [[padrao-repository-repositorio]] — a camada de dados pode ser feita com repositórios
+- [[regra-prefira-logica-no-php-a-procedimentos-armazenados]] — a regra sobre procedimentos reforça a camada de aplicação
+- [[sintomas-de-um-projeto-php-que-degringola]] — a falta de camadas é a origem dos sintomas descritos

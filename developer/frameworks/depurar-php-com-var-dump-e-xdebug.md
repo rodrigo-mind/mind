@@ -55,3 +55,5 @@ O exemplo do livro termina com a correção do `strpos` (ver compare o retorno d
 - [[niveis-de-erro-e-set-error-handler]] — os níveis de erro orientam a depuração
 - [[regra-verifique-erros-do-banco-e-depure-o-sql-final]] — ambos tratam de depuração em PHP
 - [[console-api-do-javascript]] — depuração no lado do servidor
+- [[converter-erros-em-excecoes-com-manipuladores-globais]] — a depuração mostra os detalhes que o manipulador global registra
+- [[diagnosticar-erros-de-ambiente-php]] — para erros de lógica, e não de ambiente, use a depuração

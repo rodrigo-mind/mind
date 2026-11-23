@@ -38,3 +38,4 @@ A prática está em criar e consumir uma API REST simples em PHP e em SOAP em PH
 - [[soap-em-php-com-php-soap-e-nusoap]] — o framework pratica o SOAP
 - [[acoplamento-e-desacoplamento]] — a SOA se baseia em acoplamento frouxo
 - [[opcoes-de-autenticacao-em-php]] — o REST usa Basic Auth, SSL e OAuth para segurança
+- [[xml-imagens-e-pdf-com-php]] — serviços web SOAP usam XML, tratado aqui

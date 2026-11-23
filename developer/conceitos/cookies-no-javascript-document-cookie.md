@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "David Flanagan, JavaScript, The Definitive Guide, 7ª ed., cap. 15, seção 15.12.2 (PDF p. 427-594, capítulo 15)"
+  - "Adam Freeman, The Definitive Guide to HTML5, cap. 26 (PDF p. 640-665)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -33,6 +34,8 @@ O lado do servidor está em criar e ler cookies em PHP; ver também armazenament
 ## Notas do Claude
 
 Cookies marcados como `httponly` pelo servidor não aparecem em `document.cookie` (conhecimento geral meu, a conferir: o trecho lido não trata desse atributo); e o `SameSite` também não é tratado ali.
+
+- Confirmado também por Freeman (cap. 26): ler `document.cookie` devolve todos os cookies em `nome=valor` separados por ponto e vírgula; cada atribuição grava um cookie só.
 
 ## Conexões
 

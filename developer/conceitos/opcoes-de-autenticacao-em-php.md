@@ -42,3 +42,4 @@ Confiança média: li a introdução e as três primeiras opções; a parte sobr
 - [[regra-sessoes-seguras-em-php]] — esta nota cita a ideia de «Use sessões PHP só com cookie e proteja o identificador» na seção sobre como se relaciona
 - [[regra-senha-com-hash-e-sal]] — o login por sessão depende de senhas guardadas com hash
 - [[servicos-web-rest-soap-e-wsdl]] — o REST usa Basic Auth, SSL e OAuth para segurança
+- [[regra-guarde-senhas-com-password-hash]] — as opções de autenticação dependem de guardar a senha com `password_hash`

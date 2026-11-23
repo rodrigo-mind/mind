@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "Christian Wenz e Tobias Hauser, PHP and MySQL: The Comprehensive Guide, cap. 12, seções 12.1 e 12.2 (PDF p. 550-563)"
+  - "Joseph Edmonds e Lorna Jane Mitchell, The Art of Modern PHP 8, cap. 8 (EPUB, sem páginas)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -42,6 +43,8 @@ Mais detalhes em arquitetura em camadas, controlador de página (page controller
 
 O projeto usa PHP sem framework: o MVC pode ser aplicado só com pastas e arquivos (um `index.php` como controlador frontal, classes de modelo e arquivos de visão), sem instalar o Laminas (inferência minha).
 
+- Edmonds e Mitchell (cap. 8) montam um MVC de brinquedo nesta ordem: controlador frontal enxuto, fábricas que criam a requisição e o controlador certo (escolhido por um atributo `Route` com regex e verbos HTTP, sem configuração fixa no código em produção), um controlador por seção com `getResponse()`, modelo com entidades, repositórios e coleções, e visão com DTO de dados, template PHP e buffer de saída. Ver padrão Repository, padrão Collection e renderizar templates em PHP puro com buffer de saída. Os autores recomendam um framework pronto para projetos reais e criar o próprio só para aprender.
+
 ## Conexões
 
 - [[mapa-php-and-mysql-the-comprehensive-guide]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -56,3 +59,6 @@ O projeto usa PHP sem framework: o MVC pode ser aplicado só com pastas e arquiv
 - [[conteiner-de-injecao-de-dependencias-como-funciona]] — o contêiner monta as peças de uma aplicação MVC
 - [[padrao-command]] — o comando faz o papel de ação do controlador
 - [[padrao-strangler]] — a visão e as rotas são o primeiro trecho a trocar
+- [[estilos-de-programacao-procedural-funcional-e-orientado-a-objetos]] — o MVC é o desenho adotado pelo estilo orientado a objetos
+- [[padrao-repository-repositorio]] — a camada de modelo do MVC usa repositórios
+- [[renderizar-templates-em-php-puro-com-buffer-de-saida]] — a visão do MVC pode ser feita com este renderizador

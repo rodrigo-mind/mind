@@ -58,3 +58,4 @@ A autora conta que a ideia de posicionamento popularizou-se em 1981 com Ries e T
 - [[clientes-de-melhor-ajuste]] — posicionamento fraco atrai clientes que não se encaixam
 - [[alternativas-competitivas]] — o diagnóstico compara como prospects descrevem o produto contra as alternativas
 - [[playbook-posicionamento-de-produto]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[definir-estrategia-posicionamento-e-oferta-no-marketing-digital]] — sinais de posicionamento fraco

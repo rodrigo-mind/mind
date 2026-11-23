@@ -42,3 +42,4 @@ Em muitas hospedagens (inclusive com painel próprio), o PHP não roda como mód
 - [[opcoes-importantes-do-php-ini]] — esta nota cita a ideia de «Opções importantes do php.ini» na seção sobre como se relaciona
 - [[funcoes-do-apache-no-php]] — o .htaccess e as funções do Apache dependem do módulo Apache
 - [[regra-nao-exiba-erros-na-tela-em-producao]] — a regra usa display_errors e log_errors
+- [[diagnosticar-erros-de-ambiente-php]] — saber onde configurar o PHP ajuda a achar o php.ini carregado

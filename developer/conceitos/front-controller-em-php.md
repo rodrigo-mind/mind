@@ -55,3 +55,6 @@ Para a stack do projeto (PHP puro e hospedagem compartilhada), um `index.php` ú
 - [[padrao-mvc-modelo-visao-controlador]] — o controlador frontal recebe as requisições do MVC
 - [[padrao-decorator]] — o pipeline de requisição lembra os filtros do controlador frontal
 - [[padrao-command]] — é a versão simplificada do controlador frontal
+- [[estilos-de-programacao-procedural-funcional-e-orientado-a-objetos]] — o controlador frontal é o `index.php` único do estilo OO
+- [[regra-leia-superglobais-em-um-so-lugar]] — o controlador frontal é o lugar natural dessa leitura
+- [[sintomas-de-um-projeto-php-que-degringola]] — o controlador frontal é uma resposta aos sintomas de lógica espalhada

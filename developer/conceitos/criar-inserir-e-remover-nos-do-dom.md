@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "David Flanagan, JavaScript, The Definitive Guide, 7ª ed., cap. 15, seção 15.3.5 (PDF p. 427-594, capítulo 15)"
+  - "Adam Freeman, The Definitive Guide to HTML5, cap. 28 (PDF p. 692-720)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -35,6 +36,8 @@ Complementa seleção de elementos no DOM e navegação e conteúdo no DOM; a re
 
 O livro mostra um exemplo longo (geração de um sumário de documento) que não li em detalhe.
 
+- Confirmado também por Freeman (cap. 28): para mover um elemento, basta inseri-lo no novo pai, sem removê-lo antes. O autor também reconhece que montar a árvore nó a nó é verboso e aponta `innerHTML`, `outerHTML` e `insertAdjacentHTML` como atalhos (com o cuidado da regra sobre entrada do usuário).
+
 ## Conexões
 
 - [[mapa-javascript-the-definitive-guide]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -44,3 +47,4 @@ O livro mostra um exemplo longo (geração de um sumário de documento) que não
 - [[regra-nunca-insira-entrada-do-usuario-com-innerhtml]] — nós de texto evitam a injeção de HTML
 - [[regra-escape-a-saida-contra-xss]] — criar nós de texto é uma forma de escapar a saída no cliente
 - [[componentes-web-templates-elementos-customizados-e-shadow-dom]] — DocumentFragment e clonagem usam a API de nós
+- [[regra-crie-elementos-svg-com-createelementns]] — para SVG, createElement é trocado por createElementNS

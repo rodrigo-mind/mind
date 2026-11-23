@@ -24,10 +24,10 @@ Livro de Matt Zandstra (7ª edição, 2024) sobre programação orientada a obje
 
 | Cap. | Título | Páginas | Prioridade | Estado | Notas geradas |
 |---|---|---|---|---|---|
-| 1 | PHP: Design and Management | 21-28 | baixa | pendente |  |
-| 2 | PHP and Objects | 29-36 | baixa | pendente |  |
-| 3 | Object Basics | 37-96 | media | pendente |  |
-| 4 | Advanced Features | 97-174 | media | pendente |  |
+| 1 | PHP: Design and Management | 21-28 | baixa | destilado | [[sintomas-de-um-projeto-php-que-degringola]] |
+| 2 | PHP and Objects | 29-36 | baixa | destilado | sem nota própria: a história do PHP com objetos entrou em [[sintomas-de-um-projeto-php-que-degringola]] |
+| 3 | Object Basics | 37-96 | media | destilado | [[declaracoes-de-tipo-em-php-uniao-anulavel-mixed-e-dnf]] (o restante se sobrepõe a notas existentes, que ganharam esta fonte) |
+| 4 | Advanced Features | 97-174 | media | destilado | [[tratar-erros-com-excecoes-em-php]], [[regra-nao-use-die-ou-exit-para-tratar-erros]], [[callbacks-funcoes-anonimas-e-closures-em-php]], [[regra-use-metodos-magicos-com-cuidado-e-documente]] |
 | 5 | Object Tools | 175-228 | alta | destilado | [[namespaces-em-php]], [[carregamento-de-arquivos-e-include-path]], [[carregamento-automatico-em-php]], [[funcoes-de-classe-e-objeto-em-php]], [[regra-nao-execute-plugins-de-origem-nao-confiavel]] |
 | 6 | Objects and Design | 229-258 | alta | destilado | [[responsabilidade-coesao-e-ortogonalidade]], [[regra-defina-a-responsabilidade-da-classe-em-25-palavras]], [[polimorfismo-no-lugar-de-condicionais]] |
 | 7 | What Are Design Patterns? Why Use Them? | 259-269 | alta | destilado | [[padroes-de-projeto]] |
@@ -43,8 +43,10 @@ Prioridade: `alta`, `media`, `baixa` ou `ignorar` (o usuário pode mudar). Estad
 
 ## Observações
 
+- 2026-11-22 (destilação feita no Claude.ai, fora do Claude Code): capítulos 1 e 2 lidos (prosa). O 1 virou nota; o 2 é a história do suporte a objetos (PHP 3 a 8) e só entrou como contexto. Com isso, todos os capítulos do volume 1 estão destilados; segue sem leitura só o apêndice B.
 - 2026-11-22: as páginas da tabela agora são as do leitor de PDF, localizadas pelas aberturas de capítulo no texto extraído (a impressa, em geral, é 14 a 18 páginas menor).
 - 2026-11-22: mapa criado a partir do sumário; nenhum capítulo foi destilado. As páginas dos capítulos 11 a 14 não foram localizadas e estão marcadas com "?"; o livro tem apêndices (bibliografia, analisador simples) que não entram.
+- 2026-11-22 (destilação feita no Claude.ai, fora do Claude Code): capítulos 3 e 4 lidos na prosa; as listagens de código foram puladas. Como eles se sobrepõem a notas de outros livros (Wenz e Hauser, Art of Modern PHP 8), Zandstra entrou como segunda fonte em 6 notas existentes, e só os temas sem nota viraram notas novas: tipos (união, `mixed`, DNF), exceções, callbacks e closures, e dois avisos (sobre `die` e sobre métodos mágicos). Leitura mais rápida nas seções de static, constantes e traits, que confirmam notas existentes.
 
 ## Conexões
 
@@ -94,3 +96,10 @@ Prioridade: `alta`, `media`, `baixa` ou `ignorar` (o usuário pode mudar). Estad
 - [[o-que-os-padroes-de-projeto-oferecem-e-seus-limites]] — o mapa do livro lista esta nota como gerada pela destilação
 - [[regra-faca-o-mais-simples-que-funcione-antes-de-aplicar-um-padrao]] — o mapa do livro lista esta nota como gerada pela destilação
 - [[regra-centralize-as-classes-reutilizaveis-em-vez-de-copiar]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[callbacks-funcoes-anonimas-e-closures-em-php]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[declaracoes-de-tipo-em-php-uniao-anulavel-mixed-e-dnf]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[regra-nao-use-die-ou-exit-para-tratar-erros]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[regra-nunca-silencie-excecoes]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[regra-use-metodos-magicos-com-cuidado-e-documente]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[tratar-erros-com-excecoes-em-php]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[sintomas-de-um-projeto-php-que-degringola]] — o mapa do livro lista esta nota como gerada pela destilação

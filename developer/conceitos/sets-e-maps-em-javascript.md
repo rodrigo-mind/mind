@@ -37,3 +37,4 @@ Veja vetores e iteração em JavaScript, laços (`for/of`), objetos como vetores
 - [[objetos-como-vetores-associativos-e-copia-de-objetos]] — alternativa melhor aos objetos como mapas
 - [[regra-prefira-delegacao-a-heranca-em-javascript]] — o exemplo do Histogram delega a um Map
 - [[igualdade-comparacao-e-operador-mais-em-javascript]] — a pertinência usa igualdade estrita
+- [[iteradores-e-geradores-em-javascript]] — Set e Map são iteráveis, como descrito na nota de iteradores

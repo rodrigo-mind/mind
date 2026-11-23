@@ -40,3 +40,5 @@ Chaves estrangeiras devem ser declaradas no banco (ver regra de declarar chaves 
 - [[produto-cartesiano-nao-intencional]] — trata de junções sem condição
 - [[formas-normais-resumo]] — a normalização leva a mais tabelas ligadas por chave estrangeira
 - [[tabelas-em-html5]] — a grade de linhas e colunas lembra a tabela de dados
+- [[antipadrao-de-sql-o-que-e]] — a teoria relacional é o apêndice que o livro de antipadrões usa para explicar os erros
+- [[outros-bancos-de-dados-com-php]] — o modelo relacional vale para os bancos relacionais comparados

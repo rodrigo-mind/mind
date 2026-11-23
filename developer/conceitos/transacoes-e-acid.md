@@ -50,3 +50,4 @@ O livro cita ainda os procedimentos armazenados (stored procedures), em que a ap
 - [[regra-trave-o-arquivo-ao-ler-e-gravar]] — é o análogo, em arquivos, do isolamento das transações
 - [[imagens-e-arquivos-no-banco-ou-no-disco]] — arquivos externos não seguem transações
 - [[indexeddb-banco-de-objetos-no-navegador]] — as transações do IndexedDB são atômicas
+- [[mysqli-extensao-do-mysql-para-php]] — as transações também podem ser feitas com mysqli

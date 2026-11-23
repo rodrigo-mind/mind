@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "Christian Wenz e Tobias Hauser, PHP and MySQL: The Comprehensive Guide, cap. 11, seções 11.3.5, 11.3.7, 11.3.8 e 11.3.11 (PDF p. 482-502)"
+  - "Matt Zandstra, PHP 8 Objects, Patterns, and Practice, vol. 1, cap. 4 (PDF p. 97-174)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -31,6 +32,8 @@ Complementam fundamentos de classes e objetos em PHP e composição em vez de he
 
 O livro de padrões (*PHP 8 Objects*) recomenda composição antes de herança; traits são uma forma de reaproveitar sem herdar, mas escondem dependências, então use com moderação (inferência minha).
 
+- Zandstra (cap. 4) confirma: uma classe abstrata sem métodos abstratos quase sempre é desnecessária; quem implementa precisa repetir a assinatura; `extends` vem antes de `implements`; conflitos entre traits se resolvem com `insteadof` e apelidos com `as`; classes anônimas não capturam variáveis do contexto (passe pelo construtor).
+
 ## Conexões
 
 - [[mapa-php-and-mysql-the-comprehensive-guide]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -43,3 +46,4 @@ O livro de padrões (*PHP 8 Objects*) recomenda composição antes de herança; 
 - [[tipos-de-objeto-heranca-de-tipos-comparacao-e-referencias]] — interfaces são tipos do objeto
 - [[tipos-de-intersecao-em-php]] — a interseção combina interfaces
 - [[classes-abstratas-e-hierarquias-de-classes-em-javascript]] — classes abstratas formais em PHP
+- [[callbacks-funcoes-anonimas-e-closures-em-php]] — as classes anônimas também são tratadas do ponto de vista de callbacks e closures

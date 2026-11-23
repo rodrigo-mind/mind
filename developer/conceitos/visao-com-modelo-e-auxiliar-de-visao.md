@@ -35,3 +35,4 @@ A solução é tratar a lógica fora e deixar as visões como receptoras passiva
 - [[arquitetura-em-camadas]] — a visão é uma das camadas
 - [[regra-escape-a-saida-contra-xss]] — todo modelo de visão deve escapar a saída
 - [[padrao-mvc-modelo-visao-controlador]] — «Padrão MVC» cita esta nota ao explicar suas relações
+- [[renderizar-templates-em-php-puro-com-buffer-de-saida]] — ambos tratam da camada de visão; este usa buffer de saída em PHP puro

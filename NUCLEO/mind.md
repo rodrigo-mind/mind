@@ -2,7 +2,7 @@
 titulo: Mind
 tipo: ponto-de-partida
 criado: 2026-11-22
-atualizado: 2026-11-22
+atualizado: 2026-11-23
 ---
 
 # Mind
@@ -54,7 +54,7 @@ Dentro dela existe uma subpasta fixa, `relatorios-de-integracao/`, **exclusiva**
 > Este bloco é mantido pelo comando `/integrar`. Não edite entre os marcadores.
 
 <!-- INTEGRAR:ARVORE:INICIO -->
-Última integração: 2026-11-22 19:17
+Última integração: 2026-11-23 19:54
 
 ```
 mind/
@@ -71,6 +71,9 @@ mind/
 │   ├── frameworks/
 │   └── mapas/
 └── trafego/
+    ├── conceitos/
+    ├── frameworks/
+    └── mapas/
 ```
 
 | Diretório | Finalidade |
@@ -80,7 +83,7 @@ mind/
 | `developer/` | Assunto desenvolvimento de software (sistemas, sites, apps e automações), a partir do centralizador `developer.md`, com stack de referência, fluxo e checklist |
 | `biblioteca/` | Livros de referência em PDF e outros formatos, cada um com sua ficha `.md` |
 | `estrategia/` | Assunto estratégia (validação de negócio, posicionamento, personalidade de marca e mensagem), a partir do centralizador `estrategia.md`, com notas destiladas dos livros em `frameworks/`, `conceitos/` e `mapas/` |
-| `trafego/` | Assunto tráfego (pago, orgânico, social e direto, campanhas, anúncios e medição), a partir do centralizador `trafego.md`, que se apoia em `estrategia/` e `developer/`; ainda sem livros nem notas destiladas |
+| `trafego/` | Assunto tráfego (pago, orgânico, social e direto, campanhas, anúncios e medição), a partir do centralizador `trafego.md`, que se apoia em `estrategia/` e `developer/`; tem notas destiladas do livro *The Art of SEO* (tráfego orgânico) e guias de pesquisa atual para o Brasil (SEO, SEO local, marketing digital, Google Ads, Meta e redes sociais) destilados em notas por módulo, ainda sem livros de anúncios nem de redes sociais |
 <!-- INTEGRAR:ARVORE:FIM -->
 
 ## Arquivos do NUCLEO
@@ -90,6 +93,7 @@ mind/
 <!-- INTEGRAR:NUCLEO:INICIO -->
 - [[philosophy]] — onze reflexões sobre conhecimento, domínio de si, poder, preparação e decisão; diretriz filosófica do projeto, a ser questionada e não seguida como dogma
 - [[creator-of-minds]] — método para criar agentes especializados: pesquisa primeiro no projeto e depois na internet, dossiê, prompt, revisão e entrega em RESPOSTAS
+- [[operador-do-mind]] — prompt do Operador do Mind: profissional sênior que usa o Mind primeiro, pesquisa fora quando a tarefa exige e segue um método de seis etapas até a verificação
 <!-- INTEGRAR:NUCLEO:FIM -->
 
 ## Como as notas se ligam

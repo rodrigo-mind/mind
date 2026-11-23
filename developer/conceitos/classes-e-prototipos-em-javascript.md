@@ -42,3 +42,4 @@ Veja classes com a palavra class, subclasses com extends e super, funções de s
 - [[regra-nao-adicione-metodos-aos-prototipos-dos-tipos-nativos]] — a herança dinâmica permite alterar protótipos
 - [[subclasses-com-extends-e-super-em-javascript]] — a herança por protótipos explica o extends
 - [[igualdade-comparacao-e-operador-mais-em-javascript]] — instanceof e a cadeia de protótipos
+- [[metaprogramacao-em-javascript]] — os atributos de propriedade e as operações de protótipo aprofundam o modelo de objetos

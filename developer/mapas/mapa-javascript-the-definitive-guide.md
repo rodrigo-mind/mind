@@ -24,8 +24,8 @@ Referência extensa de JavaScript (7ª edição, 2020): linguagem (tipos, expres
 
 | Cap. | Título | Páginas | Prioridade | Estado | Notas geradas |
 |---|---|---|---|---|---|
-| 1 | Introduction to JavaScript | 19-32 | baixa | pendente |  |
-| 2 | Lexical Structure | 33-40 | baixa | pendente |  |
+| 1 | Introduction to JavaScript | 19-32 | baixa | destilado | [[versoes-do-ecmascript-e-ambientes-do-javascript]] |
+| 2 | Lexical Structure | 33-40 | baixa | destilado | [[regra-nao-quebre-a-linha-depois-de-return]] (estrutura léxica também em [[versoes-do-ecmascript-e-ambientes-do-javascript]]) |
 | 3 | Types, Values, and Variables | 41-78 | alta | destilado | [[regra-prefira-igualdade-estrita-em-javascript]], [[declaracao-de-variaveis-let-const-e-var]] |
 | 4 | Expressions and Operators | 79-114 | media | destilado | [[acesso-condicional-e-invocacao-condicional-em-javascript]], [[operadores-logicos-e-valores-padrao-em-javascript]], [[regra-use-nullish-em-vez-de-ou-para-valores-padrao]], [[igualdade-comparacao-e-operador-mais-em-javascript]], [[precedencia-associatividade-e-ordem-de-avaliacao-em-javascript]], [[typeof-delete-e-outros-operadores-de-javascript]], [[eval-em-javascript]], [[regra-nunca-passe-texto-do-usuario-a-eval]] |
 | 5 | Statements | 115-146 | media | destilado | [[condicionais-em-javascript-if-else-if-e-switch]], [[lacos-em-javascript-for-of-e-for-in]], [[regra-use-for-of-e-nao-for-in-para-vetores]], [[excecoes-em-javascript-throw-e-try-catch-finally]], [[modo-estrito-em-javascript]] |
@@ -34,20 +34,22 @@ Referência extensa de JavaScript (7ª edição, 2020): linguagem (tipos, expres
 | 8 | Functions | 199-238 | alta | destilado | [[funcoes-de-seta-e-o-valor-de-this]], [[closures-em-javascript]], [[parametros-opcionais-e-rest-em-javascript]] |
 | 9 | Classes | 239-266 | media | destilado | [[classes-e-prototipos-em-javascript]], [[classes-com-a-palavra-class-em-javascript]], [[campos-publicos-privados-e-estaticos-em-classes-javascript]], [[subclasses-com-extends-e-super-em-javascript]], [[classes-abstratas-e-hierarquias-de-classes-em-javascript]], [[regra-prefira-delegacao-a-heranca-em-javascript]], [[regra-nao-adicione-metodos-aos-prototipos-dos-tipos-nativos]] |
 | 10 | Modules | 267-284 | alta | destilado | [[modulos-es6-em-javascript]], [[usar-modulos-javascript-no-navegador]], [[modulos-no-node-commonjs]] |
-| 11 | The JavaScript Standard Library | 285-344 | media | pendente  [[sets-e-maps-em-javascript]], [[datas-e-horas-com-date-em-javascript]], [[classes-de-erro-do-javascript-e-erros-personalizados]], [[json-em-javascript-stringify-parse-tojson-replacer-e-reviver]], [[internacionalizacao-com-intl-em-javascript]], [[console-api-do-javascript]], [[classe-url-e-urlsearchparams-em-javascript]], [[temporizadores-settimeout-e-setinterval]], [[expressoes-regulares-em-javascript-sintaxe-e-flags]], [[metodos-de-string-com-expressoes-regulares-em-javascript]], [[arrays-tipados-e-arraybuffer-em-javascript]], [[regra-nao-reutilize-regex-global-em-lacos-sem-controlar-lastindex]], [[regra-ordene-textos-para-pessoas-com-intl-collator]] |
-| 12 | Iterators and Generators | 345-358 | baixa | pendente |  |
+| 11 | The JavaScript Standard Library | 285-344 | media | destilado | [[sets-e-maps-em-javascript]], [[datas-e-horas-com-date-em-javascript]], [[classes-de-erro-do-javascript-e-erros-personalizados]], [[json-em-javascript-stringify-parse-tojson-replacer-e-reviver]], [[internacionalizacao-com-intl-em-javascript]], [[console-api-do-javascript]], [[classe-url-e-urlsearchparams-em-javascript]], [[temporizadores-settimeout-e-setinterval]], [[expressoes-regulares-em-javascript-sintaxe-e-flags]], [[metodos-de-string-com-expressoes-regulares-em-javascript]], [[arrays-tipados-e-arraybuffer-em-javascript]], [[regra-nao-reutilize-regex-global-em-lacos-sem-controlar-lastindex]], [[regra-ordene-textos-para-pessoas-com-intl-collator]] |
+| 12 | Iterators and Generators | 345-358 | baixa | destilado | [[iteradores-e-geradores-em-javascript]] |
 | 13 | Asynchronous JavaScript | 359-396 | alta | destilado | [[assincronia-com-callbacks-e-eventos]], [[promises-em-javascript]], [[async-e-await]], [[regra-encadeie-promises-em-vez-de-aninhar]], [[regra-fetch-so-rejeita-em-falha-de-rede]] |
-| 14 | Metaprogramming | 397-426 | ignorar | pendente |  |
-| 15 | JavaScript in Web Browsers | 427-594 | alta | pendente | [[modelo-de-seguranca-da-web-no-navegador]], [[eventos-no-navegador]], [[selecao-de-elementos-no-dom]], [[navegacao-e-conteudo-no-dom]], [[regra-nunca-insira-entrada-do-usuario-com-innerhtml]], [[usar-a-api-fetch]], [[armazenamento-no-navegador]], [[criar-inserir-e-remover-nos-do-dom]], [[controlar-css-por-javascript]], [[geometria-e-rolagem-do-documento]], [[url-location-e-historico-de-navegacao]], [[gerenciar-o-historico-em-aplicacoes-de-uma-pagina]], [[regra-leia-tamanho-e-posicao-com-getboundingclientrect]], [[server-sent-events-com-eventsource]], [[websockets-no-navegador]], [[cookies-no-javascript-document-cookie]], [[indexeddb-banco-de-objetos-no-navegador]], [[workers-threads-no-navegador]], [[postmessage-messagechannel-e-mensagens-entre-janelas]], [[componentes-web-templates-elementos-customizados-e-shadow-dom]] (o capítulo foi lido só em parte) |
-| 16 | Server-Side JavaScript with Node | 595-652 | ignorar | pendente |  |
-| 17 | JavaScript Tools and Extensions | 653-? | baixa | pendente |  |
+| 14 | Metaprogramming | 397-426 | ignorar | destilado | [[metaprogramacao-em-javascript]] (14.3 a 14.7 só folheadas) |
+| 15 | JavaScript in Web Browsers | 427-594 | alta | destilado | [[modelo-de-seguranca-da-web-no-navegador]], [[eventos-no-navegador]], [[selecao-de-elementos-no-dom]], [[navegacao-e-conteudo-no-dom]], [[regra-nunca-insira-entrada-do-usuario-com-innerhtml]], [[usar-a-api-fetch]], [[armazenamento-no-navegador]], [[criar-inserir-e-remover-nos-do-dom]], [[controlar-css-por-javascript]], [[geometria-e-rolagem-do-documento]], [[url-location-e-historico-de-navegacao]], [[gerenciar-o-historico-em-aplicacoes-de-uma-pagina]], [[regra-leia-tamanho-e-posicao-com-getboundingclientrect]], [[server-sent-events-com-eventsource]], [[websockets-no-navegador]], [[cookies-no-javascript-document-cookie]], [[indexeddb-banco-de-objetos-no-navegador]], [[workers-threads-no-navegador]], [[postmessage-messagechannel-e-mensagens-entre-janelas]], [[componentes-web-templates-elementos-customizados-e-shadow-dom]], [[registrar-tratadores-de-eventos-com-addeventlistener]], [[propagacao-e-cancelamento-de-eventos]], [[regra-nao-defina-tratadores-de-evento-em-atributos-html]], [[disparar-eventos-personalizados-com-customevent]], [[svg-no-html-e-por-javascript]], [[regra-crie-elementos-svg-com-createelementns]], [[desenhar-graficos-com-canvas]], [[efeitos-sonoros-com-audio-e-webaudio]], [[apis-do-navegador-para-conhecer]] (o exemplo do conjunto de Mandelbrot, 15.14, não foi lido) |
+| 16 | Server-Side JavaScript with Node | 595-652 | ignorar | destilado | [[node-js-javascript-fora-do-navegador]] (leitura parcial) |
+| 17 | JavaScript Tools and Extensions | 653-684 | baixa | destilado | [[ferramentas-do-javascript-eslint-prettier-jest-e-empacotadores]] |
 
 Prioridade: `alta`, `media`, `baixa` ou `ignorar` (o usuário pode mudar). Estado: `pendente` ou `destilado`. Páginas: numeração do leitor de PDF, salvo indicação nas observações.
 
 ## Observações
 
+- 2026-11-22 (destilação feita no Claude.ai, fora do Claude Code): capítulos 1, 2, 12, 14, 16 e 17 destilados a pedido do usuário, inclusive os marcados `ignorar` (14 e 16). O 2 e o 12 foram lidos por inteiro; o 1, o 14, o 16 e o 17 em leitura dirigida (confiança média). O capítulo 17 vai até a p. 684 (o índice começa em 685). Com isso, todos os capítulos do livro estão destilados.
 - 2026-11-22: as páginas da tabela foram convertidas para a numeração do leitor de PDF somando 18 à impressa (conferido em três capítulos: 3, 13 e 15). O limite do capítulo 17 continua desconhecido ("?").
 - 2026-11-22: mapa criado a partir do sumário (páginas impressas); nenhum capítulo foi destilado. O capítulo 15 é o mais extenso e pode ser dividido em lotes por seção.
+- 2026-11-22 (destilação feita no Claude.ai, fora do Claude Code): capítulos 11 e 15 completados. Do 11, lida a 11.2.5 (`DataView`); nota de arrays tipados atualizada. Do 15, lidos o restante dos eventos (15.2.2 a 15.2.6), o fim do shadow DOM e o exemplo da caixa de busca (15.6.4 e 15.6.5), SVG (15.7), canvas (15.8), áudio (15.9) e o resumo final (15.15). Atualizadas as notas de eventos, componentes web e arrays tipados. Não lido: o exemplo do conjunto de Mandelbrot (15.14, PDF p. 572-585), que só junta APIs já destiladas. A linha do capítulo 11 tinha uma barra `|` faltando antes das notas; foi corrigida.
 
 ## Conexões
 
@@ -130,3 +132,19 @@ Prioridade: `alta`, `media`, `baixa` ou `ignorar` (o usuário pode mudar). Estad
 - [[arrays-tipados-e-arraybuffer-em-javascript]] — o mapa do livro lista esta nota como gerada pela destilação
 - [[regra-nao-reutilize-regex-global-em-lacos-sem-controlar-lastindex]] — o mapa do livro lista esta nota como gerada pela destilação
 - [[regra-ordene-textos-para-pessoas-com-intl-collator]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[apis-do-navegador-para-conhecer]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[efeitos-sonoros-com-audio-e-webaudio]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[propagacao-e-cancelamento-de-eventos]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[regra-crie-elementos-svg-com-createelementns]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[regra-nao-defina-tratadores-de-evento-em-atributos-html]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[svg-no-html-e-por-javascript]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[desenhar-graficos-com-canvas]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[disparar-eventos-personalizados-com-customevent]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[registrar-tratadores-de-eventos-com-addeventlistener]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[aplicacoes-offline-appcache-e-service-workers]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[ferramentas-do-javascript-eslint-prettier-jest-e-empacotadores]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[iteradores-e-geradores-em-javascript]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[metaprogramacao-em-javascript]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[node-js-javascript-fora-do-navegador]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[regra-nao-quebre-a-linha-depois-de-return]] — o mapa do livro lista esta nota como gerada pela destilação
+- [[versoes-do-ecmascript-e-ambientes-do-javascript]] — o mapa do livro lista esta nota como gerada pela destilação

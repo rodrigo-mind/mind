@@ -42,3 +42,5 @@ Exemplo de função frouxa: `in_array` sem o terceiro argumento verdadeiro (infe
 - [[padrao-null-object]] — evita a checagem de nulos com comparações
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
 - [[regra-use-nullish-em-vez-de-ou-para-valores-padrao]] — a mesma preocupação com valores falsy em PHP
+- [[funcoes-de-vetores-em-php]] — in_array e array_search com `true` são casos da regra
+- [[match-e-switch-em-php]] — o `match` já aplica a comparação idêntica

@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "Adam Freeman, The Definitive Guide to HTML5, cap. 7, seção Using the Scripting Elements (PDF p. 115-148)"
+  - "Adam Freeman, The Definitive Guide to HTML5, cap. 26 (PDF p. 640-665)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -32,6 +33,8 @@ Em cada `script src` do projeto, confira se tem `defer` ou `async` (ou se está 
 
 Módulos (`type="module"`) já se comportam como `defer` (ver usar módulos JavaScript no navegador). O elemento `noscript` mostra conteúdo alternativo a quem não tem JavaScript.
 
+- Do cap. 26 do mesmo livro: `document.readyState` vai de `loading` para `interactive` e depois `complete`, e o evento `readystatechange` avisa cada mudança. Serve para rodar código quando o documento estiver pronto.
+
 ## Conexões
 
 - [[mapa-the-definitive-guide-to-html5]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -40,3 +43,4 @@ Módulos (`type="module"`) já se comportam como `defer` (ver usar módulos Java
 - [[eventos-no-navegador]] — o script precisa que o DOM esteja pronto para registrar eventos
 - [[selecao-de-elementos-no-dom]] — um script só acha elementos que o navegador já leu
 - [[playbook-pagina-responsiva-em-css]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[efeitos-sonoros-com-audio-e-webaudio]] — o script que toca som precisa estar carregado antes do gesto do usuário

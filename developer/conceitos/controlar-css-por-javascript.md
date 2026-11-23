@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "David Flanagan, JavaScript, The Definitive Guide, 7ª ed., cap. 15, seção 15.4 (PDF p. 427-594, capítulo 15)"
+  - "Adam Freeman, The Definitive Guide to HTML5, cap. 29 (PDF p. 721-749)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -32,6 +33,8 @@ Ver transições e animações no CSS (design responsivo e cascata), eventos no 
 
 Preferir classes a estilos em linha é a recomendação implícita do livro (a "mais simples"); valores calculados em tempo de execução, como posições, justificam o estilo em linha (inferência minha).
 
+- Confirmado também por Freeman (cap. 29): `getComputedStyle()` (por `document.defaultView`), `getPropertyValue()` e `setProperty()` com os nomes reais do CSS, e `document.styleSheets`, com `disabled` para ligar e desligar uma folha inteira e `media` para ler as condições de mídia. O autor desaconselha analisar o CSS como texto, porque os navegadores expandem ou não os atalhos de formas diferentes. Os objetos `CSSPrimitiveValue` e `RGBColor` que ele mostra ficaram obsoletos (inferência minha).
+
 ## Conexões
 
 - [[mapa-javascript-the-definitive-guide]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -41,3 +44,4 @@ Preferir classes a estilos em linha é a recomendação implícita do livro (a "
 - [[regra-leia-tamanho-e-posicao-com-getboundingclientrect]] — a regra dá a alternativa ao estilo computado para medidas
 - [[unidades-relativas-em-css]] — o estilo computado converte unidades relativas em pixels
 - [[contextos-de-empilhamento-e-z-index]] — opacity, transform e filter, usados por script, criam contextos
+- [[criar-transicoes-em-css]] — trocar classes por JavaScript dispara transições CSS

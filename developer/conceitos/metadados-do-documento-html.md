@@ -43,3 +43,7 @@ O livro é de 2011: os tipos de dispositivo como `handheld` e `tty` perderam o u
 - [[design-responsivo-mobile-first]] — o atributo media usa o mesmo modelo das consultas de mídia
 - [[cascata-do-css]] — style e link carregam as folhas de estilo que entram na cascata
 - [[playbook-pagina-responsiva-em-css]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[The-Art-of-SEO-Mastering-Search-Engine-Optimization-(Eric-Enge-Stephan-Spencer) (pdf)]] — o livro mostra como título e descrição da página entram no SEO na página
+- [[auditar-um-site-existente-para-seo]] — a auditoria revisa títulos, meta descrição e metatags robots
+- [[o-que-os-buscadores-leem-em-uma-pagina]] — título e meta descrição são metadados que o buscador lê
+- [[otimizar-os-elementos-de-uma-pagina-para-palavras-chave]] — título e meta descrição são os metadados que o framework otimiza para SEO

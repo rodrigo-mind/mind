@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "David Flanagan, JavaScript, The Definitive Guide, 7ª ed., cap. 15, seção 15.10.3 e quadro do clone estruturado (PDF p. 427-594, capítulo 15)"
+  - "Adam Freeman, The Definitive Guide to HTML5, cap. 27 (PDF p. 666-691)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -52,6 +53,8 @@ Estados de aplicação navegáveis pelo histórico, com URLs que reabrem o estad
 ## Notas do Claude
 
 O clone estruturado serializa mais tipos que `JSON.stringify` (`Map`, `Set`, `Date`, expressões regulares, vetores tipados e referências circulares), mas não copia protótipo, getters e setters nem propriedades não enumeráveis (o livro usa o mesmo algoritmo em outras APIs do navegador). Um exemplo de jogo de adivinhação está no livro e não foi lido por inteiro.
+
+- Confirmado também por Freeman (cap. 27), com o mesmo uso de `pushState` com query string e objeto de estado.
 
 ## Conexões
 

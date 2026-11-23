@@ -40,3 +40,4 @@ Confiança média: não li a herança por protótipos, os atributos de proprieda
 - [[typeof-delete-e-outros-operadores-de-javascript]] — delete e in em propriedades
 - [[sets-e-maps-em-javascript]] — alternativa melhor aos objetos como mapas
 - [[json-em-javascript-stringify-parse-tojson-replacer-e-reviver]] — cópia profunda por JSON
+- [[regra-nao-crie-propriedades-dinamicas]] — propriedades dinâmicas são aceitáveis em objetos feitos como vetor

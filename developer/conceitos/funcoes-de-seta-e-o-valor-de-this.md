@@ -42,3 +42,6 @@ Confiança média: leitura dirigida do capítulo 8, sem as seções de `call`, `
 - [[closures-em-javascript]] — ambos dependem do escopo léxico
 - [[classes-e-prototipos-em-javascript]] — «Classes e protótipos em JavaScript» cita esta nota ao explicar suas relações
 - [[modo-estrito-em-javascript]] — em modo estrito, this é undefined em chamadas simples
+- [[callbacks-funcoes-anonimas-e-closures-em-php]] — as funções de seta do PHP têm sintaxe parecida e regra de captura diferente
+- [[registrar-tratadores-de-eventos-com-addeventlistener]] — o valor de this em tratadores é um caso de função de seta
+- [[regra-nao-quebre-a-linha-depois-de-return]] — as funções de seta têm a mesma restrição de quebra de linha

@@ -71,3 +71,5 @@ Este é o esqueleto do processo de 10 passos do livro, que detalha cada componen
 - [[brandscript-sb7]] — o posicionamento define o contexto, o valor e quem se importa; o SB7 organiza a mensagem ao cliente a partir disso
 - [[diagnosticar-sinais-de-posicionamento-fraco]] — o método de cinco componentes é a solução
 - [[playbook-posicionamento-de-produto]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[definir-estrategia-posicionamento-e-oferta-no-marketing-digital]] — base de estratégia para posicionamento
+- [[planejar-a-estrategia-de-redes-sociais-para-o-brasil]] — o posicionamento de redes parte do posicionamento da marca

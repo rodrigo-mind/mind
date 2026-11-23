@@ -51,3 +51,5 @@ O livro é de 2011; os navegadores atuais têm mais recursos (por exemplo, a API
 - [[iframe-object-embed-progress-e-meter-em-html5]] — progress e meter aparecem em interfaces de formulário
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
 - [[expressoes-regulares-em-javascript-sintaxe-e-flags]] — «Expressões regulares em JavaScript: sintaxe e flags» cita esta nota ao explicar suas relações
+- [[api-de-validacao-de-formularios-por-javascript]] — a API de JavaScript permite criar validações próprias sobre a validação nativa
+- [[seletores-css-atributos-combinadores-e-pseudoclasses]] — as pseudoclasses de formulário refletem a validação nativa

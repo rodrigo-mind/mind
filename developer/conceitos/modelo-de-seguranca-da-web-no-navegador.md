@@ -42,3 +42,8 @@ Confiança média: li a segurança e o início do capítulo; as demais seções 
 - [[iframe-object-embed-progress-e-meter-em-html5]] — o sandbox restringe o conteúdo de terceiros
 - [[websockets-no-navegador]] — wss e a restrição a páginas HTTPS
 - [[postmessage-messagechannel-e-mensagens-entre-janelas]] — a política de mesma origem e a origem de destino
+- [[apis-do-navegador-para-conhecer]] — a lista do capítulo 15 aponta CSP e CORS como estudo seguinte
+- [[cors-requisicoes-entre-origens]] — o CORS é o meio legítimo de relaxar o isolamento por origem
+- [[diferencas-entre-navegadores-e-deteccao-de-recursos]] — as diferenças entre navegadores incluem comportamentos de segurança
+- [[regra-nao-defina-tratadores-de-evento-em-atributos-html]] — CSP e o fim de tratadores em atributos andam juntos
+- [[geolocalizacao-no-navegador]] — a geolocalização é um recurso que exige permissão explícita

@@ -38,3 +38,4 @@ Procure `fetch(` seguido de `.json()` sem teste de `ok` ou de `status`.
 - [[async-e-await]] — a conferência de response.ok vale também com await
 - [[validar-formularios-em-php]] — o servidor PHP precisa validar o que o fetch envia, mesmo que o cliente valide
 - [[usar-a-api-fetch]] — a regra detalha a conferência do status da resposta
+- [[xmlhttprequest-estados-eventos-e-erros]] — a armadilha do status vale também para o XMLHttpRequest

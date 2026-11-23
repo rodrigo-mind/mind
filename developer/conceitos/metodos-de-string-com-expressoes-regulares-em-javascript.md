@@ -42,3 +42,4 @@ Para decidir entre as formas: `test` para verificar, `matchAll` para percorrer, 
 - [[developer]] — nota destilada ligada a este assunto: conceito de livro-base
 - [[validar-formularios-em-php]] — esta nota cita a ideia de «Validar formulários em PHP» na seção sobre como se relaciona
 - [[regra-nao-reutilize-regex-global-em-lacos-sem-controlar-lastindex]] — o lastIndex é explicado ali
+- [[classe-url-e-urlsearchparams-em-javascript]] — o livro desaconselha analisar URLs com regex

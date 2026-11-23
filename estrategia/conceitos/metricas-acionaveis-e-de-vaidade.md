@@ -42,3 +42,7 @@ São a base da contabilidade da inovação. Costumam ser calculadas por análise
 - [[teste-dividido]] — esta nota cita a ideia de «Teste dividido» na seção sobre como se relaciona
 - [[contabilidade-da-inovacao]] — esta nota cita a ideia de «Contabilidade da inovação» na seção sobre como se relaciona
 - [[pivo]] — «Pivô» cita esta nota ao explicar suas relações
+- [[configurar-conversoes-de-seo-e-valor-por-acao]] — definir o que conta como conversão evita medir só números de vaidade
+- [[medir-resultados-de-seo-com-kpis-acionaveis]] — a ideia de KPI acionável (que leva a uma decisão) é a mesma de métricas acionáveis de produto
+- [[diagnosticar-o-negocio-e-calcular-unit-economics]] — métricas de vaidade contra acionáveis
+- [[planejar-as-conversoes-de-uma-conta-de-google-ads]] — a conversão principal deve ser métrica acionável, e não de vaidade

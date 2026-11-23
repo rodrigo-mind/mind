@@ -41,3 +41,4 @@ Os métodos de iteradores do exemplo vieram em duas versões no livro (com e sem
 - [[padrao-observer]] — esta nota cita a ideia de «Padrão Observer» na seção sobre como se relaciona
 - [[trabalhar-com-arquivos-em-php]] — esta nota cita a ideia de «Trabalhar com arquivos em PHP» na seção sobre como se relaciona
 - [[vetores-iteraveis-e-geradores-em-php]] — alternativa com geradores
+- [[padrao-collection-colecao-tipada]] — a coleção usa as classes de iteração da SPL

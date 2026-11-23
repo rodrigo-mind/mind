@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "Joseph Edmonds e Lorna Jane Mitchell, The Art of Modern PHP 8, cap. 12, seção Enumerations"
+  - "Matt Zandstra, PHP 8 Objects, Patterns, and Practice, vol. 1, cap. 4 (PDF p. 97-130)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -40,6 +41,8 @@ Para guardar o valor no banco, o enum com valor associado se liga bem a uma tabe
 
 Exigem PHP 8.1 ou superior. Na hospedagem compartilhada do projeto, confira a versão do PHP antes de usar (inferência minha).
 
+- Confirmado também por Zandstra (cap. 4): enums com valor (`enum Prodcat: int`), `from()` para converter de volta (com erro para valor inválido), métodos e métodos estáticos dentro da enum.
+
 ## Conexões
 
 - [[mapa-the-art-of-modern-php-8]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -48,3 +51,4 @@ Exigem PHP 8.1 ou superior. Na hospedagem compartilhada do projeto, confira a ve
 - [[visibilidade-static-final-e-constantes-de-classe-em-php]] — constantes tipadas e enums cobrem valores fixos
 - [[constantes-final-em-php]] — «Constantes final em PHP 8.1» cita esta nota ao explicar suas relações
 - [[atributos-nativos-do-php-8]] — «Atributos nativos do PHP 8» cita esta nota ao explicar suas relações
+- [[match-e-switch-em-php]] — o `match` é a forma natural de tratar cada caso de um enum

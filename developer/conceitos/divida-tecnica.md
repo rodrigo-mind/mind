@@ -42,3 +42,4 @@ O livro cita siglas de código limpo e brinca que usar siglas é um antipadrão;
 - [[nomes-claros-e-linguagem-ubiqua-no-codigo]] — código difícil de ler é uma fonte de dívida técnica
 - [[complexidade-ciclomatica]] — métodos complexos aumentam a dívida técnica
 - [[padrao-strangler]] — é a estratégia para pagar a dívida de um sistema legado
+- [[sintomas-de-um-projeto-php-que-degringola]] — a história do projeto que degringola é um caso de dívida técnica

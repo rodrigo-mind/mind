@@ -46,3 +46,5 @@ O livro é de 2011. A escolha do conjunto de caracteres e do atributo `lang` per
 - [[metadados-do-documento-html]] — «Metadados do documento HTML: meta, link e style» cita esta nota ao explicar suas relações
 - [[agrupar-conteudo-em-html]] — o corpo do documento recebe esses elementos
 - [[playbook-pagina-responsiva-em-css]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[regra-omita-a-tag-de-fechamento-em-arquivos-so-php]] — a regra vale para arquivos só PHP, e não para o documento HTML
+- [[atributos-globais-booleanos-e-data-em-html]] — os atributos globais, como lang, complementam a estrutura do documento

@@ -90,3 +90,4 @@ A ordem segue a do método de *Obviously Awesome* e encaixa o StoryBrand (mensag
 - [[acompanhar-o-posicionamento-ao-longo-do-tempo]] — o playbook usa esta nota como etapa do processo
 - [[regra-posicionar-para-clientes-nao-para-investidores]] — o playbook usa esta nota como etapa do processo
 - [[regra-nao-usar-declaracao-de-posicionamento]] — o playbook usa esta nota como etapa do processo
+- [[playbook-pagina-responsiva-em-css]] — a mensagem da página nasce do posicionamento

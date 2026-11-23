@@ -36,16 +36,17 @@ Guia atual de CSS (segunda edição), que parte dos fundamentos (cascata, unidad
 | 10 | Container queries | 299-322 | media | destilado | [[tornar-um-modulo-responsivo-ao-seu-conteiner]], [[consultas-de-estilo-de-conteiner]], [[regra-prefira-consultas-de-conteiner-as-de-midia-nos-modulos]] |
 | 11 | Color and contrast | 323-355 | media | destilado | [[contraste-visual-como-ferramenta-de-design]], [[notacoes-de-cor-em-css-e-oklch]], [[organizar-cores-com-propriedades-personalizadas]], [[regra-garanta-o-contraste-minimo-do-texto-wcag]] |
 | 12 | Typography and spacing | 356-386 | media | destilado | [[espacamento-preciso-ao-implementar-um-design]], [[fontes-web-e-font-face]], [[regra-carregue-so-as-fontes-necessarias-e-escolha-o-font-display]], [[fontes-variaveis-em-css]], [[espacamento-de-texto-line-height-letter-spacing-e-text-transform]] |
-| 13 | Gradients, shadows, and blend modes | 387-412 | baixa | pendente |  |
-| 14 | Masks, shapes, and clipping | 413-438 | baixa | pendente |  |
-| 15 | Transitions | 441-460 | baixa | pendente |  |
-| 16 | Transforms | 461-488 | baixa | pendente |  |
-| 17 | Animations | 489-? | baixa | pendente |  |
+| 13 | Gradients, shadows, and blend modes | 387-412 | baixa | destilado | [[gradientes-sombras-e-modos-de-mesclagem-em-css]] |
+| 14 | Masks, shapes, and clipping | 413-438 | baixa | destilado | [[filtros-mascaras-e-recortes-em-css]] |
+| 15 | Transitions | 441-460 | baixa | destilado | [[criar-transicoes-em-css]], [[regra-respeite-prefers-reduced-motion]] |
+| 16 | Transforms | 461-488 | baixa | destilado | [[transformacoes-em-css]], [[regra-anime-so-transform-e-opacity]] |
+| 17 | Animations | 489-510 | baixa | destilado | [[animacoes-com-keyframes-em-css]] |
 
 Prioridade: `alta`, `media`, `baixa` ou `ignorar` (o usuário pode mudar). Estado: `pendente` ou `destilado`. Páginas: numeração do leitor de PDF, salvo indicação nas observações.
 
 ## Observações
 
+- 2026-11-22 (destilação feita no Claude.ai, fora do Claude Code): capítulos 13 a 17 lidos na prosa (as listagens de CSS foram puladas). Aberturas no PDF: 13 em 387, 14 em 413, 15 em 441, 16 em 461, 17 em 489; o capítulo 17 termina na p. 510 (o apêndice A começa em 511). Leitura mais rápida em sombras, modos de mesclagem, `clip-path`, `shape-outside` e no exemplo 3D do capítulo 17 (confiança média nessas notas).
 - 2026-11-22: as páginas da tabela foram convertidas para a numeração do leitor de PDF somando 30 à impressa (conferido no capítulo 1: impressa 4 = PDF 34). As notas de CSS citam a numeração impressa.
 - 2026-11-22: mapa criado a partir do sumário (páginas impressas); nenhum capítulo foi destilado. O limite final do capítulo 17 não foi localizado.
 

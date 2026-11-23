@@ -39,3 +39,4 @@ Acrescentar métodos às suas próprias classes (como `Complex.prototype.conj`, 
 - [[classes-e-prototipos-em-javascript]] — a herança dinâmica permite alterar protótipos
 - [[vetores-e-iteracao-em-javascript]] — Array.prototype é um dos protótipos nativos
 - [[regra-use-for-of-e-nao-for-in-para-vetores]] — propriedades acrescentadas ao protótipo aparecem no for/in
+- [[metaprogramacao-em-javascript]] — a metaprogramação oferece as ferramentas que a regra pede para não usar nos tipos nativos

@@ -42,3 +42,4 @@ Combina com a regra de que valores vindos de formulários chegam como texto (ver
 - [[regra-use-sempre-a-comparacao-identica-em-php]] — o mesmo princípio no JavaScript
 - [[igualdade-comparacao-e-operador-mais-em-javascript]] — a regra decorrente
 - [[condicionais-em-javascript-if-else-if-e-switch]] — o switch compara com ===
+- [[ferramentas-do-javascript-eslint-prettier-jest-e-empacotadores]] — o ESLint aponta a violação desta regra

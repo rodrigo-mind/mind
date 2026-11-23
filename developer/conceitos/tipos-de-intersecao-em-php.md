@@ -5,6 +5,7 @@ origem: destilar
 assunto: developer
 fontes:
   - "Joseph Edmonds e Lorna Jane Mitchell, The Art of Modern PHP 8, cap. 12, seção Intersection types (EPUB, sem páginas)"
+  - "Matt Zandstra, PHP 8 Objects, Patterns, and Practice, vol. 1, cap. 3 (PDF p. 64-66)"
 confianca: alta
 criado: 2026-11-22
 atualizado: 2026-11-22
@@ -30,6 +31,8 @@ Veja princípios SOLID, interfaces, classes abstratas e traits em PHP, tipos de 
 
 Pelo trecho lido, a interseção cobre tipos de classe e de interface; o livro não detalha limites (por exemplo, não misturar com tipos escalares). Confira o manual do PHP.
 
+- Também em Zandstra (cap. 3), que acrescenta os tipos DNF do PHP 8.2 (ver declarações de tipo em PHP).
+
 ## Conexões
 
 - [[mapa-the-art-of-modern-php-8]] — o mapa do livro lista esta nota como gerada pela destilação
@@ -38,3 +41,4 @@ Pelo trecho lido, a interseção cobre tipos de classe e de interface; o livro n
 - [[interfaces-classes-abstratas-traits-e-classes-anonimas-em-php]] — a interseção combina interfaces
 - [[regra-componentes-devem-expor-capacidades-nao-tipos]] — pedir capacidades combinadas em vez de um tipo concreto
 - [[tipos-de-objeto-heranca-de-tipos-comparacao-e-referencias]] — regras de tipos de objeto e covariância
+- [[declaracoes-de-tipo-em-php-uniao-anulavel-mixed-e-dnf]] — os tipos de interseção entram nas combinações DNF

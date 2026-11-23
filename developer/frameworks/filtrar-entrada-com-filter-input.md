@@ -57,3 +57,5 @@ if ($email === false || $email === null) { $erros[] = 'E-mail inválido.'; }
 - [[validar-formularios-em-php]] — os filtros validam formatos que a checagem de campos obrigatórios não cobre
 - [[regra-validacao-no-navegador-nao-substitui-a-do-servidor]] — os filtros do PHP validam no servidor o que o HTML valida no navegador
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
+- [[expressoes-regulares-em-php-com-preg]] — o filtro de regex usa a sintaxe preg
+- [[regra-leia-superglobais-em-um-so-lugar]] — filtrar a entrada cabe no ponto único que lê as superglobais

@@ -36,3 +36,5 @@ Veja iteração de objetos em PHP e vetores e iteração em JavaScript (conceito
 - [[vetores-e-iteracao-em-javascript]] — o equivalente em JavaScript
 - [[trabalhar-com-arquivos-em-php]] — geradores leem arquivos grandes linha a linha
 - [[spl-iteradores-e-classes-padrao-do-php]] — alternativa com geradores
+- [[funcoes-de-vetores-em-php]] — as funções de vetores são o lado de manipulação, ao lado da iteração e dos geradores
+- [[iteradores-e-geradores-em-javascript]] — os geradores de JavaScript têm paralelo em PHP

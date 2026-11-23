@@ -34,3 +34,4 @@ Ver especificidade de seletores e camadas da cascata em CSS; o aninhamento tamb�
 - [[camadas-da-cascata-em-css]] — esta nota cita a ideia de «Camadas da cascata» na seção sobre como se relaciona
 - [[especificidade-de-seletores]] — tratam de como a especificidade é calculada
 - [[aninhamento-de-css]] — o aninhamento se converte em :is()
+- [[seletores-css-atributos-combinadores-e-pseudoclasses]] — `:is()` e `:where()` complementam os seletores do livro

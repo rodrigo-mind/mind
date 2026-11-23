@@ -39,3 +39,4 @@ A ressalva sobre limpeza ao sair é minha, e não do livro (em PHP, `finally` re
 - [[complexidade-ciclomatica]] — o retorno antecipado é a principal forma de reduzi-la
 - [[nomes-claros-e-linguagem-ubiqua-no-codigo]] — as duas melhoram a legibilidade
 - [[condicionais-em-javascript-if-else-if-e-switch]] — reduz o aninhamento dos if
+- [[match-e-switch-em-php]] — o `match` e o retorno antecipado são formas de evitar `if` aninhado

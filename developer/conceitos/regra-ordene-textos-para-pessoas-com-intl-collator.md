@@ -39,3 +39,4 @@ Em PHP, o equivalente é a classe `Collator` da extensão `intl` (conhecimento m
 - [[internacionalizacao-com-intl-em-javascript]] — a classe Collator é descrita ali
 - [[igualdade-comparacao-e-operador-mais-em-javascript]] — a comparação padrão de textos é por valor Unicode
 - [[vetores-e-iteracao-em-javascript]] — sort() de vetores
+- [[funcoes-de-vetores-em-php]] — o mesmo cuidado de ordenação vale para sort em PHP
