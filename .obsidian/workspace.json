@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "RESPOSTAS/ST Motors/Informacoes_Gerais/dados-da-empresa.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLAUDE"
+              "title": "dados-da-empresa"
             }
           }
         ]
@@ -189,6 +189,7 @@
   },
   "active": "5094364f87452241",
   "lastOpenFiles": [
+    "CLAUDE.md",
     "RESPOSTAS/ST Motors/Informacoes_Gerais/dados-da-empresa.md",
     "RESPOSTAS/ST Motors/Informacoes_Gerais",
     "RESPOSTAS/ST Motors",
@@ -199,7 +200,6 @@
     "RESPOSTAS/relatorios-de-integracao/2026-11-23-1955-integracao.md",
     "RESPOSTAS/2026-11-23-2005-possibilidades-do-sistema.md",
     "RESPOSTAS/2026-11-23-2005-possibilidades-do-sistema.md.tmp.25402.f31216701ccb",
-    "CLAUDE.md",
     "NUCLEO/operador-do-mind.md",
     "RESPOSTAS/2026-11-24-0015-texto-para-o-claude-md.md",
     "RESPOSTAS/2026-11-23-2355-prompt-do-agente-operador-do-mind.md",
