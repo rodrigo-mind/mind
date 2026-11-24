@@ -39,3 +39,4 @@ Texto escondido para IAs, menções compradas, conteúdo em massa; bloquear tudo
 - [[trafego]] — centralizador do assunto
 - [[construir-presenca-local-autoridade-e-visibilidade-em-ia]] — a versão geral de visibilidade em IA
 - [[mapa-dos-guias-de-trafego]] — o mapa dos guias lista esta nota entre as extraídas dos guias de pesquisa atual
+- [[head-site-veiculos-TEMPLATE-1]] — o head entrega entidade consistente e dados estruturados que sustentam a visibilidade em IA

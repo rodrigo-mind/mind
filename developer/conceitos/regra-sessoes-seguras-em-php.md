@@ -54,3 +54,4 @@ O checklist do projeto também pede cookies de sessão seguros e HTTPS. Em hospe
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
 - [[regra-guarde-senhas-com-password-hash]] — a nota sobre senhas diverge do uso de md5(uniqid()) para IDs de sessão
 - [[regra-omita-a-tag-de-fechamento-em-arquivos-so-php]] — sessões e cookies falham se algo for enviado antes dos cabeçalhos
+- [[loja-veiculos-TEMPLATE-1]] — o painel administrativo do template depende de login com sessão segura

@@ -1,0 +1,332 @@
+/* ── VENDAS DE CAPACETES ── */
+
+/* -- Abas de filtro (Concretizadas / Canceladas / Geral) -- */
+.cv-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.75rem 0 1.1rem;
+    border-bottom: 1px solid var(--color-border-light);
+    padding-bottom: 0.6rem;
+}
+.cv-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: transparent;
+    border: 1px solid var(--color-border-light);
+    border-radius: 999px;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.82rem;
+    font-weight: var(--font-weight-medium, 500);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.cv-tab:hover { color: var(--color-text-primary); border-color: var(--color-text-secondary); }
+.cv-tab--active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #0d1410;
+    font-weight: var(--font-weight-semibold, 600);
+}
+.cv-tab-count {
+    font-size: 0.72rem;
+    font-weight: var(--font-weight-semibold, 600);
+    background: rgba(255,255,255,.12);
+    border-radius: 999px;
+    padding: 0.05rem 0.45rem;
+    line-height: 1.4;
+}
+.cv-tab--active .cv-tab-count { background: rgba(13,20,16,.18); }
+
+/* -- Lista (mobile-first) -- */
+/* minmax(0, 1fr) em vez de 1fr: o 1fr puro vale minmax(auto, 1fr) e a
+   coluna se recusa a ficar menor que o conteúdo do card (nome do cliente,
+   valor, modelo sem espaço…), fazendo a página inteira "estourar" no mobile. */
+.cv-lista {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+}
+@media (min-width: 640px)  { .cv-lista { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; } }
+@media (min-width: 1100px) { .cv-lista { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-md, 1.5rem); } }
+
+.cv-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 0.6rem;
+    background: var(--color-bg-panel, #0d1410);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-lg, 16px);
+    padding: 1rem 1.1rem;
+}
+.cv-card--cancelada { opacity: 0.6; }
+/* Mesmo motivo do .cv-card__itens[hidden] mais abaixo: sem isso, o
+   `display: flex` do .cv-card vence o atributo `hidden` do HTML e o
+   card fica visível mesmo quando a aba ativa deveria escondê-lo. */
+.cv-card[hidden] { display: none; }
+
+.cv-card__top {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    cursor: pointer;
+}
+.cv-card__top-linha1 {
+    display: flex;
+    flex-wrap: wrap;            /* telas bem estreitas: o valor desce em vez de vazar */
+    align-items: center;
+    gap: 0.15rem 0.5rem;
+}
+.cv-card__id { font-weight: var(--font-weight-semibold, 600); color: var(--color-text-primary); font-size: 0.92rem; }
+
+.cv-card__valor {
+    margin-left: auto;
+    font-weight: var(--font-weight-bold, 700);
+    font-size: 1.05rem;
+    color: var(--color-primary);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.cv-card__seta {
+    flex-shrink: 0;
+    font-size: 1.1rem;
+    line-height: 1;
+    color: var(--color-text-secondary);
+    transition: transform 0.15s ease;
+}
+.cv-card--aberta .cv-card__seta { transform: rotate(90deg); }
+
+.cv-card__top-linha2 {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    min-width: 0;
+}
+.cv-card__data {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.cv-card__sep { color: var(--color-text-secondary); font-size: 0.75rem; flex-shrink: 0; }
+.cv-card__cliente-nome {
+    flex: 1;
+    min-width: 0;
+    font-size: 0.82rem;
+    font-weight: var(--font-weight-medium, 500);
+    color: var(--color-text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cv-badge-cancelada {
+    font-size: 0.68rem;
+    font-weight: var(--font-weight-semibold, 600);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #e87878;
+    background: rgba(232, 120, 120, 0.12);
+    border: 1px solid rgba(232, 120, 120, 0.35);
+    border-radius: 999px;
+    padding: 0.15rem 0.55rem;
+}
+
+.cv-card__cliente { display: flex; flex-direction: column; gap: 0.1rem; font-size: 0.85rem; }
+.cv-card__cliente-info { font-size: 0.75rem; color: var(--color-text-secondary); }
+
+.cv-card__formas { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.cv-badge-forma {
+    font-size: 0.68rem;
+    font-weight: var(--font-weight-semibold, 600);
+    border-radius: 999px;
+    padding: 0.15rem 0.55rem;
+    border: 1px solid var(--color-border-light);
+    color: var(--color-text-secondary);
+}
+.forma-pix    { background: rgba(79, 158, 33, 0.12); color: #7dca5a; border-color: rgba(125,202,90,.35); }
+.forma-din    { background: rgba(79, 158, 33, 0.12); color: #7dca5a; border-color: rgba(125,202,90,.35); }
+.forma-cartao { background: rgba(90,140,220,0.12);   color: #7fa8e8; border-color: rgba(127,168,232,.35); }
+.forma-fin    { background: rgba(200,150,60,0.14);   color: #e0b25a; border-color: rgba(224,178,90,.35); }
+.forma-rec    { background: rgba(224,120,50,0.12);   color: #e8935a; border-color: rgba(232,147,90,.35); }
+.forma-out    { background: var(--glass-2, rgba(255,255,255,.05)); }
+
+.cv-card__itens {
+    border-top: 1px solid var(--color-border-light);
+    padding-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+/* IMPORTANTE: sem esta regra, o `display: flex` acima vence o atributo
+   `hidden` do HTML e o bloco fica sempre visível, mesmo "fechado". */
+.cv-card__itens[hidden] { display: none; }
+.cv-itens-titulo { font-size: 0.75rem; font-weight: var(--font-weight-semibold, 600); color: var(--color-text-secondary); }
+.cv-item-row { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; font-size: 0.8rem; }
+/* flex:1 + min-width:0 deixam o nome encolher e quebrar (overflow-wrap) em vez
+   de empurrar quantidade e total para fora do card. */
+.cv-item-nome { display: flex; flex-direction: column; flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.cv-item-codigo { font-size: 0.68rem; color: var(--color-text-secondary); }
+.cv-item-qtd { flex-shrink: 0; white-space: nowrap; }
+.cv-item-total { font-weight: var(--font-weight-semibold, 600); flex-shrink: 0; white-space: nowrap; }
+
+.cv-pagamentos {
+    border-top: 1px solid var(--color-border-light);
+    padding-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.cv-pagamento-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+.cv-pagamento-valor {
+    font-weight: var(--font-weight-semibold, 600);
+    color: var(--color-text-primary);
+    white-space: nowrap;
+}
+
+.cv-itens-extras, .cv-itens-obs, .cv-itens-motivo {
+    font-size: 0.78rem;
+    color: var(--color-text-secondary);
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    min-width: 0;
+    overflow-wrap: anywhere;    /* links/textos longos em Obs. e Motivo não vazam */
+}
+.cv-itens-motivo { color: #e8935a; }
+.cv-itens-motivo-data { font-size: 0.7rem; opacity: 0.8; }
+
+.cv-card__acoes { display: flex; justify-content: flex-end; }
+/* O .btn-icon global tem 36×36px fixos (feito p/ botão só com emoji). Aqui o botão
+   leva texto ("🗑️ Excluir"), então liberamos o tamanho SÓ dentro do card de venda. */
+.cv-card__acoes .btn-icon {
+    width: auto;
+    height: auto;
+    gap: 0.35rem;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.82rem;
+    white-space: nowrap;
+}
+
+.btn--perigo { background: #e87878 !important; border-color: #e87878 !important; }
+
+/* Modal "Excluir Venda": o .form-actions global é flex sem wrap, então em celular
+   estreito os dois botões não cabem e o "Voltar" vaza para a esquerda.
+   Escopo só neste formulário (#cancelar-form existe apenas na página de vendas). */
+#cancelar-form .form-actions { flex-wrap: wrap; gap: 0.5rem; }
+#cancelar-form .form-actions .btn { margin-right: 0 !important; }
+@media (max-width: 420px) {
+    #cancelar-form .form-actions { flex-direction: column-reverse; }
+    #cancelar-form .form-actions .btn { width: 100%; justify-content: center; }
+}
+
+/* -- Formulário de nova venda -- */
+.cv-linha-item, .cv-linha-pagto {
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-lg, 12px);
+    padding: 0.9rem 1rem;
+    margin-bottom: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.cv-linha-topo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.cv-linha-topo select { flex: 1; }
+
+/* Selects de Produto e Forma de Pagamento: em telas maiores o menu nativo
+   do navegador abre com o fundo branco do sistema operacional, mas o
+   texto herdava a cor clara do tema escuro — ficava claro em fundo claro,
+   "sumindo". Fixamos cor e fundo explícitos tanto no campo fechado quanto
+   em cada <option> da lista aberta. */
+.cv-it-produto,
+.cv-pg-forma {
+    color: var(--color-text-primary);
+    background: var(--color-bg-panel, #0d1410);
+}
+.cv-it-produto option,
+.cv-pg-forma option {
+    color: var(--color-text-primary);
+    background: var(--color-bg-panel, #0d1410);
+}
+
+/* O campo "Vencimento" só deve aparecer quando a forma for "A Receber"
+   (controlado via JS: vencWrap.hidden = !ehReceber). Reforça aqui pelo
+   mesmo motivo do .cv-card__itens[hidden]/.cv-card[hidden] acima: se o
+   admin.css der um `display` explícito à classe .form-group (comum em
+   layouts de label+input), esse display vence o atributo `hidden` puro
+   do HTML e o campo fica sempre visível, mesmo "fechado" pelo JS. */
+.cv-campo-venc[hidden] { display: none !important; }
+
+.cv-linha-total {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--color-border-light);
+    font-size: 0.85rem;
+}
+
+/* Por padrão, a descrição do campo (.form-hint) NÃO é vermelha — só fica
+   vermelha quando o campo está errado/faltando (.form-hint--erro) ou em
+   alerta (.form-hint--alerta), aplicado via JS conforme o caso. Essa regra
+   precisa vir ANTES das duas abaixo: como a especificidade é igual (uma
+   única classe), quem vem depois no arquivo vence — assim os modificadores
+   continuam coloridos mesmo com as duas classes juntas no elemento. */
+.form-hint {
+    color: var(--color-text-secondary);
+}
+/* Mesmo motivo do .cv-card[hidden]/.cv-card__itens[hidden]/.cv-campo-venc[hidden]
+   acima: o admin.css deve dar um `display` explícito à classe .form-hint
+   (pra estilizar a dica de texto embaixo do campo), e isso vence o atributo
+   `hidden` puro do HTML. Sem isso, os avisos de erro (que nascem com
+   `hidden` e só aparecem via JS quando o campo está errado/faltando)
+   ficam sempre visíveis — e por isso sempre vermelhos, mesmo sem erro. */
+.form-hint[hidden] { display: none !important; }
+.form-hint--alerta { color: #e0b25a; }
+
+.cv-pg-valor--negativo {
+    color: #e87878;
+    border-color: #e87878 !important;
+}
+
+.campo-invalido { border-color: #e87878 !important; }
+.form-hint--erro { color: #e87878; }
+
+.cv-resumo {
+    margin-top: 1rem;
+    padding: 0.9rem 1rem;
+    background: var(--glass-2, rgba(255,255,255,.03));
+    border-radius: var(--radius-lg, 12px);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.cv-resumo__linha { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--color-text-secondary); }
+.cv-resumo__linha--restante strong { color: #e87878; }
+.cv-resumo__linha--restante.cv-resumo__linha--ok strong { color: #7dca5a; }
+
+.cv-total-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cv-total-rotulo { font-size: 0.9rem; color: var(--color-text-secondary); }
+.cv-total-valor { font-size: 1.4rem; font-weight: var(--font-weight-bold, 700); color: var(--color-primary); }
+
+@media (min-width: 640px) {
+    .cv-linha-item .modal-row:nth-of-type(1),
+    .cv-linha-item .modal-row:nth-of-type(2) { grid-template-columns: 1fr 1fr; }
+}

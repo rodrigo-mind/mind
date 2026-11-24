@@ -36,3 +36,4 @@ Otimizar só a nota de laboratório; lazy na imagem principal; marcar avaliaçã
 - [[guia-seo-brasil]] — guia de que esta nota foi extraída; ele traz o detalhe completo do módulo
 - [[trafego]] — centralizador do assunto
 - [[mapa-dos-guias-de-trafego]] — o mapa dos guias lista esta nota entre as extraídas dos guias de pesquisa atual
+- [[head-site-veiculos-TEMPLATE-1]] — aplica preload da imagem principal, fontes próprias e Speculation Rules no head

@@ -1,0 +1,282 @@
+/* ── ESTOQUE DE CAPACETES ── */
+
+/* Evita que filhos de flex/grid estiquem o layout além da tela
+   (min-width padrão é "auto" e faz o conteúdo estourar) */
+.admin-main,
+.admin-content,
+.cadastro-section {
+    min-width: 0;
+}
+
+.capacete-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: var(--color-primary-light, rgba(79, 158, 33, 0.15));
+    border: 1px solid var(--color-border-light);
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.td-codigo { color: var(--color-text-secondary); }
+
+.td-lucro { font-weight: var(--font-weight-semibold); white-space: nowrap; }
+.td-lucro--positivo { color: #7dca5a; }
+.td-lucro--negativo { color: #e87878; }
+
+/* ── GRID DE CARDS ──
+   Colunas calculadas pela largura disponível (não pela janela),
+   então funciona com ou sem sidebar, em qualquer tela.
+   min(100%, 260px) impede overflow quando o espaço é menor que 260px. */
+.capacetes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+    gap: clamp(0.75rem, 1.5vw, 1.5rem);
+}
+
+.capacetes-grid > * { min-width: 0; }
+
+.capacete-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    min-width: 0;
+    background: var(--color-bg-panel, #0d1410);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-lg, 16px);
+    padding: clamp(0.9rem, 2vw, 1.15rem);
+    transition: border-color .15s ease;
+}
+
+.capacete-card:hover {
+    border-color: var(--color-primary);
+}
+
+/* -- topo: código + ações -- */
+.capacete-card__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.capacete-card__codigo {
+    min-width: 0;
+    font-size: 0.72rem;
+    font-weight: var(--font-weight-semibold, 600);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+    overflow-wrap: anywhere;
+}
+
+.capacete-card__actions {
+    display: flex;
+    gap: 0.4rem;
+    flex-shrink: 0;
+}
+
+/* -- corpo: thumb + modelo/tamanho + valor -- */
+.capacete-card__body {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    min-width: 0;
+}
+
+.capacete-card__thumb-wrap {
+    position: relative;
+    flex-shrink: 0;
+}
+
+/* Miniatura — mesmo tamanho em qualquer largura de tela */
+.capacete-thumb--lg {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.capacete-card__foto {
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid var(--color-border-light);
+    display: block;
+}
+
+.capacete-card__qtd {
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    border-radius: 999px;
+    background: var(--color-primary);
+    color: #06210c;
+    font-size: 0.68rem;
+    font-weight: var(--font-weight-bold, 700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 2px solid var(--color-bg-panel, #0d1410);
+}
+
+.capacete-card__info {
+    min-width: 0;
+    flex: 1;
+}
+
+.capacete-card__modelo {
+    margin: 0 0 0.3rem;
+    font-size: 0.98rem;
+    font-weight: var(--font-weight-semibold, 600);
+    color: var(--color-text-primary);
+    line-height: 1.25;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.capacete-card__tamanho {
+    display: inline-block;
+    margin-left: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: var(--font-weight-normal, 400);
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+}
+
+.capacete-card__valor {
+    font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+    font-weight: var(--font-weight-bold, 700);
+    color: var(--color-primary);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+}
+
+/* -- rodapé: custo + lucro --
+   flex-wrap: se não couber lado a lado, o lucro desce sozinho
+   (substitui o media query de 420px, que não considerava a sidebar) */
+.capacete-card__footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.25rem 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--color-border-light);
+    font-size: 0.8rem;
+}
+
+.capacete-card__custo {
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+}
+
+/* Nome do arquivo exibido junto à prévia da foto no modal */
+.upload-area__filename {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.78rem;
+    color: var(--color-text-secondary);
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+/* Campos de texto do modal não têm ícone — remove o recuo padrão */
+#capacete-form .form-input {
+    padding-left: .875rem;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Valor de custo / venda: 2 colunas quando couber, 1 coluna quando não couber
+   (sem depender de media query) */
+.modal-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+    gap: var(--spacing-md, 1.5rem);
+}
+
+.modal-row > * { min-width: 0; }
+
+.btn--ghost-dark {
+    background: transparent;
+    color: var(--color-text-secondary);
+    border: 1px solid var(--color-border-light);
+}
+.btn--ghost-dark:hover {
+    background: var(--glass-2);
+    color: var(--color-text-primary);
+}
+
+/* ── MODAL ── */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(0.75rem, 3vw, 1.5rem);
+}
+
+.modal-overlay.open {
+    display: flex;
+}
+
+.modal {
+    width: 100%;
+    max-width: 480px;
+    max-height: 90vh;
+    max-height: 90dvh; /* mobile: respeita a barra do navegador */
+    overflow-y: auto;
+    background: var(--color-bg-panel, #0d1410);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-lg, 16px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    padding: clamp(1.1rem, 4vw, 2rem);
+}
+
+.modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-md, 1.5rem);
+}
+
+.modal__title {
+    font-size: var(--font-size-xl, 1.25rem);
+    font-weight: var(--font-weight-bold, 700);
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.modal__close {
+    background: transparent;
+    border: none;
+    color: var(--color-text-secondary);
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 0.25rem;
+}
+.modal__close:hover { color: var(--color-text-primary); }

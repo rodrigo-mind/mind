@@ -1,0 +1,181 @@
+/* ── CADASTRAR MOTO ADMIN ── */
+
+/* Sobrescreve o grid fixo do admin.css para este contexto */
+.cadastro-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    grid-template-columns: unset; /* anula o grid do admin.css */
+}
+
+/* Cada form-group dentro do form de cadastro ocupa o espaço definido */
+.cadastro-form .form-group {
+    flex: 1 1 160px; /* base padrão */
+    min-width: 0;
+}
+
+/* ── Larguras proporcionais por campo (desktop ≥ 769px) ── */
+@media (min-width: 769px) {
+    /* Menores — conteúdo curto */
+    .fg-marca      { flex: 0 0 170px; }   /* "Harley-Davidson" ~16ch */
+    .fg-ano        { flex: 0 0 120px; }   /* "2026/2027" ~9ch */
+    .fg-cilindrada { flex: 0 0 130px; }   /* "1300" + cc */
+    .fg-km         { flex: 0 0 130px; }   /* "999.999" */
+    .fg-categoria  { flex: 0 0 140px; }   /* "Quadriciclo" ~11ch */
+    .fg-cambio     { flex: 0 0 155px; }   /* "Semi-automático" ~15ch */
+    .fg-cor        { flex: 0 0 155px; }   /* "Prata Metálico" ~14ch */
+
+    /* Maiores — conteúdo longo ou campo de digitação livre */
+    .fg-modelo     { flex: 1 1 240px; }   /* livre */
+    .fg-combustivel{ flex: 1 1 200px; }   /* "Flex (Gasolina/Etanol)" ~22ch */
+    .fg-placa      { flex: 0 0 145px; }   /* "ABC-1D23" + hint */
+    .fg-preco      { flex: 0 0 155px; }   /* "99.999,00" */
+}
+
+/* ── Sufixo "cc" colado ao input ── */
+.input-suffix-wrap {
+    display: flex;
+    align-items: stretch;
+}
+.input-suffix-wrap .form-input {
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+    border-right: none;
+    flex: 1;
+    min-width: 0;
+}
+.input-suffix {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 .65rem;
+    background: var(--glass-2);
+    border: 1px solid var(--color-border-light);
+    border-left: none;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+    user-select: none;
+}
+
+/* ── Selects — contraste garantido ── */
+.form-select {
+    background-color: #111811;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    padding-left: .75rem;  /* remove o recuo do ícone que não existe aqui */
+}
+.form-select option {
+    background-color: #111811;
+    color: #e8ede8;
+}
+.form-select option:disabled {
+    color: #444;
+}
+
+/* ── Área de upload de fotos — drag & drop visual ── */
+.fotos-upload-area {
+    border: 1.5px dashed var(--color-border-mid);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    background: var(--glass-1);
+    transition: border-color .2s, background .2s;
+    cursor: pointer;
+}
+.fotos-upload-area:hover,
+.fotos-upload-area.dragover {
+    border-color: var(--color-primary);
+    background: rgba(79,158,33,.04);
+}
+.fotos-upload-area input[type="file"] {
+    display: none;
+}
+.fotos-upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    text-align: center;
+}
+.fotos-upload-label svg {
+    opacity: .5;
+}
+
+/* ── Preview de miniaturas antes do upload ── */
+.fotos-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: .75rem;
+}
+.fotos-preview__thumb {
+    position: relative;
+    width: 80px;
+    height: 60px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--color-border-light);
+    flex-shrink: 0;
+}
+.fotos-preview__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.fotos-preview__info {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    margin-top: .4rem;
+}
+
+/* ── Grid de fotos já salvas ── */
+.fotos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.foto-item {
+    position: relative;
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+.foto-item--principal {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary);
+}
+.foto-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+.foto-actions {
+    display: flex;
+    gap: .25rem;
+    padding: .5rem;
+    justify-content: flex-end;
+    background: rgba(0,0,0,.45);
+}
+
+/* ── Mobile: empilha tudo ── */
+@media (max-width: 768px) {
+    .cadastro-form .form-row {
+        flex-direction: column;
+    }
+    .cadastro-form .form-group,
+    .fg-marca, .fg-modelo, .fg-ano, .fg-cilindrada, .fg-km,
+    .fg-categoria, .fg-combustivel, .fg-cambio,
+    .fg-cor, .fg-placa, .fg-preco {
+        flex: 1 1 100%;
+    }
+}

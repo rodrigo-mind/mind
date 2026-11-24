@@ -53,3 +53,4 @@ Modelos de página com marcação, uma lista de tipos e propriedades por tipo de
 - [[guia-seo-brasil]] — o módulo B5 trata dos dados estruturados suportados hoje
 - [[otimizar-o-perfil-da-empresa-no-google-e-converter-visitas]] — marcação LocalBusiness do site
 - [[melhorar-velocidade-e-experiencia-movel-de-um-site]] — base de dados estruturados, a atualizar com a galeria atual
+- [[head-site-veiculos-TEMPLATE-1]] — aplica o método com JSON-LD de AutoDealer, veículo e trilha de navegação, em PHP

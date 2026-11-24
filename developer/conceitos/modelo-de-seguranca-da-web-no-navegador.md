@@ -47,3 +47,4 @@ Confiança média: li a segurança e o início do capítulo; as demais seções 
 - [[diferencas-entre-navegadores-e-deteccao-de-recursos]] — as diferenças entre navegadores incluem comportamentos de segurança
 - [[regra-nao-defina-tratadores-de-evento-em-atributos-html]] — CSP e o fim de tratadores em atributos andam juntos
 - [[geolocalizacao-no-navegador]] — a geolocalização é um recurso que exige permissão explícita
+- [[head-site-veiculos-TEMPLATE-1]] — a CSP com nonce e os cabeçalhos do template aplicam este modelo de segurança do navegador

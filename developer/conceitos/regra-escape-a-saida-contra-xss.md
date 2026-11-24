@@ -56,3 +56,4 @@ Para PHP moderno, `htmlspecialchars($s, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8')` e
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
 - [[escapar-texto-conforme-o-destino-em-php]] — o escape de HTML é o passo 1 deste framework
 - [[renderizar-templates-em-php-puro-com-buffer-de-saida]] — o template é o lugar em que o escape de saída precisa ser garantido
+- [[head-site-veiculos-TEMPLATE-1]] — escapa todo valor do head com e() e protege os blocos JSON-LD com JSON_HEX_TAG

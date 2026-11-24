@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Links Rápidos — ST Motors</title>
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4f9e21">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ST Motors">
+<link rel="apple-touch-icon" href="../favicon.svg">
+
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --color-primary: #4f9e21;
+        --color-primary-dark: #3d7a19;
+        --color-primary-tint: #e6f3df;
+        --text-primary: #1c1f1a;
+        --text-secondary: #6b7068;
+        --text-muted: #8b9086;
+        --border: #eaece8;
+        --bg-page: #f5f7f2;
+        --bg-card: #ffffff;
+        --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+        --shadow-md: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: var(--bg-page);
+        background-image:
+            radial-gradient(circle at 12% 8%, rgba(79,158,33,0.06), transparent 40%),
+            radial-gradient(circle at 88% 92%, rgba(79,158,33,0.05), transparent 40%);
+        color: var(--text-primary);
+        min-height: 100vh;
+        padding: max(40px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(80px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+    }
+
+    .page {
+        max-width: 640px;
+        margin: 0 auto;
+        animation: rise 0.5s ease both;
+    }
+
+    @keyframes rise {
+        from { opacity: 0; transform: translateY(10px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── HEADER ── */
+    .top {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 32px;
+    }
+    .top img {
+        width: 46px;
+        height: 46px;
+        border-radius: 12px;
+        background: #fff;
+        border: 1px solid var(--border);
+        padding: 6px;
+        box-shadow: var(--shadow-sm);
+    }
+    .top-text { flex: 1; }
+    .top h1 {
+        margin: 0;
+        font-size: 1.3rem;
+        font-weight: 800;
+        letter-spacing: -0.01em;
+    }
+    .top p {
+        margin: 2px 0 0;
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        text-transform: uppercase;
+        letter-spacing: .06em;
+        font-weight: 600;
+    }
+    .install-btn {
+        display: none;
+        align-items: center;
+        gap: 6px;
+        flex-shrink: 0;
+        background: var(--color-primary);
+        color: #fff;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 10px;
+        font-family: inherit;
+        font-size: 0.78rem;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: var(--shadow-sm);
+        transition: background 0.15s ease, transform 0.1s ease;
+    }
+    .install-btn:hover { background: var(--color-primary-dark); }
+    .install-btn:active { transform: scale(0.96); }
+    .install-btn.visible { display: inline-flex; }
+    .install-btn svg { width: 15px; height: 15px; }
+
+    /* ── SECTION ── */
+    .group { margin-bottom: 30px; }
+    .group__title {
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        color: var(--text-muted);
+        margin: 0 0 10px 4px;
+    }
+
+    /* ── LINK ROW ── */
+    .link-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 14px 14px 14px 16px;
+        margin-bottom: 10px;
+        box-shadow: var(--shadow-sm);
+        transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+        position: relative;
+    }
+    .link-row:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-1px);
+        border-color: #dfe4d8;
+    }
+    .link-row::before {
+        content: "";
+        position: absolute;
+        left: 0; top: 10px; bottom: 10px;
+        width: 3px;
+        border-radius: 3px;
+        background: var(--border);
+    }
+    .link-row--accent::before { background: var(--color-primary); }
+
+    .link-row__main {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        text-decoration: none;
+        color: inherit;
+    }
+    .link-row__label {
+        font-size: 0.92rem;
+        font-weight: 600;
+        color: var(--text-primary);
+    }
+    .link-row__url {
+        font-size: 0.76rem;
+        color: var(--text-secondary);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .link-row__desc {
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        margin: 0 0 2px;
+    }
+
+    .share-btn {
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        background: #fafbf9;
+        color: #25D366;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+    }
+    .share-btn:hover {
+        background: #e7f9ee;
+        color: #1da851;
+        border-color: #bdeccf;
+    }
+    .share-btn:active { transform: scale(0.93); }
+    .share-btn svg { width: 17px; height: 17px; }
+
+    .link-row__actions {
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .copy-btn {
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        background: #fafbf9;
+        color: var(--text-secondary);
+        cursor: pointer;
+        transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+    }
+    .copy-btn:hover {
+        background: var(--color-primary-tint);
+        color: var(--color-primary-dark);
+        border-color: #cfe6c0;
+    }
+    .copy-btn:active { transform: scale(0.93); }
+    .copy-btn.copied {
+        background: var(--color-primary);
+        color: #fff;
+        border-color: var(--color-primary);
+    }
+    .copy-btn svg { width: 16px; height: 16px; }
+    .copy-btn .icon-check { display: none; }
+    .copy-btn.copied .icon-copy { display: none; }
+    .copy-btn.copied .icon-check { display: block; }
+
+    /* ── FEATURED (ADMIN) ── */
+    .link-row--featured {
+        margin-bottom: 34px;
+        padding: 20px 18px 20px 22px;
+        border: 1.5px solid var(--color-primary);
+        background: linear-gradient(180deg, #ffffff 0%, var(--color-primary-tint) 260%);
+    }
+    .link-row--featured::before { width: 4px; }
+    .link-row--featured .link-row__label {
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+    .link-row--featured .badge {
+        display: inline-block;
+        font-size: 0.65rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        color: var(--color-primary-dark);
+        background: var(--color-primary-tint);
+        padding: 3px 9px;
+        border-radius: 999px;
+        margin-bottom: 6px;
+        width: fit-content;
+    }
+    .link-row--featured .share-btn,
+    .link-row--featured .copy-btn {
+        width: 42px;
+        height: 42px;
+    }
+
+    /* ── TOAST ── */
+    .toast {
+        position: fixed;
+        left: 50%;
+        bottom: 28px;
+        transform: translateX(-50%) translateY(12px);
+        background: var(--text-primary);
+        color: #fff;
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 10px 18px;
+        border-radius: 999px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        z-index: 10;
+    }
+    .toast.show {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    @media (max-width: 480px) {
+        body { padding: 28px 14px 60px; }
+        .link-row__url { max-width: 180px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .page, .link-row, .share-btn, .copy-btn, .toast { animation: none !important; transition: none !important; }
+    }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+    <div class="top">
+        <img src="../favicon.svg" alt="ST Motors" onerror="this.onerror=null;this.src='../favicon.ico';">
+        <div class="top-text">
+            <h1>ST Motors</h1>
+            <p>Links rápidos</p>
+        </div>
+        <button class="install-btn" id="install-btn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Instalar
+        </button>
+    </div>
+
+    <!-- ── ACESSO RÁPIDO ── -->
+    <div class="group">
+        <p class="group__title">Acesso rápido</p>
+
+        <div class="link-row link-row--featured" style="margin-bottom:10px;">
+            <a class="link-row__main" href="https://stmotors.com.br/admin" target="_blank" rel="noopener">
+                <span class="badge">Acesso administrativo</span>
+                <span class="link-row__label">Admin ST Motors</span>
+                <span class="link-row__url">stmotors.com.br/admin</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="https://stmotors.com.br/admin" aria-label="Copiar link do admin">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=https%3A%2F%2Fstmotors.com.br%2Fadmin" target="_blank" rel="noopener" aria-label="Compartilhar link do admin pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+        <div class="link-row link-row--featured">
+            <a class="link-row__main" href="https://stmotors.com.br/painel-capacetes" target="_blank" rel="noopener">
+                <span class="badge">Acesso administrativo</span>
+                <span class="link-row__label">Painel Financeiro Capacetes</span>
+                <span class="link-row__desc">Painel Financeiro da venda de capacetes</span>
+                <span class="link-row__url">stmotors.com.br/painel-capacetes</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="https://stmotors.com.br/painel-capacetes" aria-label="Copiar link do painel financeiro de capacetes">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=https%3A%2F%2Fstmotors.com.br%2Fpainel-capacetes" target="_blank" rel="noopener" aria-label="Compartilhar link do painel financeiro de capacetes pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="link-row link-row--accent">
+            <a class="link-row__main" href="https://stmotors.com.br/estoque" target="_blank" rel="noopener">
+                <span class="link-row__label">Catálogo de Motos</span>
+                <span class="link-row__url">stmotors.com.br/estoque</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="https://stmotors.com.br/estoque" aria-label="Copiar link do catálogo de motos">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=https%3A%2F%2Fstmotors.com.br%2Festoque" target="_blank" rel="noopener" aria-label="Compartilhar link do catálogo de motos pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+        <div class="link-row link-row--accent">
+            <a class="link-row__main" href="https://stmotors.com.br/capacetes" target="_blank" rel="noopener">
+                <span class="link-row__label">Catálogo de Capacetes</span>
+                <span class="link-row__url">stmotors.com.br/capacetes</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="https://stmotors.com.br/capacetes" aria-label="Copiar link do catálogo de capacetes">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=https%3A%2F%2Fstmotors.com.br%2Fcapacetes" target="_blank" rel="noopener" aria-label="Compartilhar link do catálogo de capacetes pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="link-row link-row--accent">
+            <a class="link-row__main" href="https://maps.app.goo.gl/ZZKXZbzivyzYxYrf7" target="_blank" rel="noopener">
+                <span class="link-row__label">Endereço da loja</span>
+                <span class="link-row__url">maps.app.goo.gl/ZZKXZbzivyzYxYrf7</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="https://maps.app.goo.gl/ZZKXZbzivyzYxYrf7" aria-label="Copiar link do endereço">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=https%3A%2F%2Fmaps.app.goo.gl%2FZZKXZbzivyzYxYrf7" target="_blank" rel="noopener" aria-label="Compartilhar link do endereço pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="link-row link-row--accent">
+            <a class="link-row__main" href="https://stmotors.com.br/financiamento/whatsapp-simulacao" target="_blank" rel="noopener">
+                <span class="link-row__label">Formulário de simulação</span>
+                <span class="link-row__url">stmotors.com.br/financiamento/whatsapp-simulacao</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="https://stmotors.com.br/financiamento/whatsapp-simulacao" aria-label="Copiar link de simulação">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=https%3A%2F%2Fstmotors.com.br%2Ffinanciamento%2Fwhatsapp-simulacao" target="_blank" rel="noopener" aria-label="Compartilhar link de simulação pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="link-row link-row--accent">
+            <a class="link-row__main" href="https://stmotors.com.br/financiamento/whatsapp-financiamento" target="_blank" rel="noopener">
+                <span class="link-row__label">Dados para financiamento</span>
+                <span class="link-row__url">stmotors.com.br/financiamento/whatsapp-financiamento</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="https://stmotors.com.br/financiamento/whatsapp-financiamento" aria-label="Copiar link de dados para financiamento">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=https%3A%2F%2Fstmotors.com.br%2Ffinanciamento%2Fwhatsapp-financiamento" target="_blank" rel="noopener" aria-label="Compartilhar link de dados para financiamento pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── CONTATOS ── -->
+    <div class="group">
+        <p class="group__title">Contatos</p>
+
+        <div class="link-row">
+            <a class="link-row__main" href="https://wa.me/5516997305602" target="_blank" rel="noopener">
+                <span class="link-row__label">Rodrigo — Consultor</span>
+                <span class="link-row__url">(16) 99730-5602</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="(16) 99730-5602" data-toast="Número copiado!" aria-label="Copiar número do Rodrigo">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=%2816%29%2099730-5602" target="_blank" rel="noopener" aria-label="Compartilhar número do Rodrigo pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="link-row">
+            <a class="link-row__main" href="https://wa.me/5516996128768" target="_blank" rel="noopener">
+                <span class="link-row__label">Diogo — Consultor</span>
+                <span class="link-row__url">(16) 99612-8768</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="(16) 99612-8768" data-toast="Número copiado!" aria-label="Copiar número do Diogo">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=%2816%29%2099612-8768" target="_blank" rel="noopener" aria-label="Compartilhar número do Diogo pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="link-row">
+            <a class="link-row__main" href="https://wa.me/5516997236419" target="_blank" rel="noopener">
+                <span class="link-row__label">Gustavo — Documentação</span>
+                <span class="link-row__url">(16) 99723-6419</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="(16) 99723-6419" data-toast="Número copiado!" aria-label="Copiar número do Gustavo">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=%2816%29%2099723-6419" target="_blank" rel="noopener" aria-label="Compartilhar número do Gustavo pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="link-row">
+            <a class="link-row__main" href="https://wa.me/5516991000796" target="_blank" rel="noopener">
+                <span class="link-row__label">Edison — Administração</span>
+                <span class="link-row__url">(16) 99100-0796</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="(16) 99100-0796" data-toast="Número copiado!" aria-label="Copiar número do Edison">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=%2816%29%2099100-0796" target="_blank" rel="noopener" aria-label="Compartilhar número do Edison pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── REDES SOCIAIS ── -->
+    <div class="group">
+        <p class="group__title">Redes sociais</p>
+
+        <div class="link-row">
+            <a class="link-row__main" href="https://www.facebook.com/St.Motors.Araraquara" target="_blank" rel="noopener">
+                <span class="link-row__label">Facebook</span>
+                <span class="link-row__url">facebook.com/St.Motors.Araraquara</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="https://www.facebook.com/St.Motors.Araraquara" aria-label="Copiar link do Facebook">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=https%3A%2F%2Fwww.facebook.com%2FSt.Motors.Araraquara" target="_blank" rel="noopener" aria-label="Compartilhar link do Facebook pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="link-row">
+            <a class="link-row__main" href="https://www.instagram.com/stmotors_ara/" target="_blank" rel="noopener">
+                <span class="link-row__label">Instagram</span>
+                <span class="link-row__url">instagram.com/stmotors_ara</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="https://www.instagram.com/stmotors_ara/" aria-label="Copiar link do Instagram">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=https%3A%2F%2Fwww.instagram.com%2Fstmotors_ara%2F" target="_blank" rel="noopener" aria-label="Compartilhar link do Instagram pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── AVALIAÇÃO GOOGLE ── -->
+    <div class="group">
+        <p class="group__title">Avaliação Google</p>
+
+        <div class="link-row">
+            <a class="link-row__main" href="https://g.page/r/CT1Xfa7rXvCUEAE/review" target="_blank" rel="noopener">
+                <span class="link-row__label">Avaliar no Google</span>
+                <span class="link-row__url">g.page/r/CT1Xfa7rXvCUEAE/review</span>
+            </a>
+            <div class="link-row__actions">
+                <button class="copy-btn" type="button" data-copy="https://g.page/r/CT1Xfa7rXvCUEAE/review" aria-label="Copiar link de avaliação">
+                    <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+                <a class="share-btn" href="https://wa.me/?text=https%3A%2F%2Fg.page%2Fr%2FCT1Xfa7rXvCUEAE%2Freview" target="_blank" rel="noopener" aria-label="Compartilhar link de avaliação pelo WhatsApp">
+                    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.748 5.484 2.048 7.776L0 32l8.416-2.048A15.932 15.932 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.36c-2.54 0-4.932-.708-6.96-1.932l-.5-.3-5.164 1.256 1.288-4.948-.328-.516A13.272 13.272 0 012.64 16C2.64 8.62 8.62 2.64 16 2.64S29.36 8.62 29.36 16 23.38 29.36 16 29.36z" /><path d="M23.116 19.276c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-1.024 1.248-1.248 1.504-.224.256-.448.288-.832.096-.384-.192-1.632-.6-3.104-1.92-1.152-1.024-1.92-2.288-2.144-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.768-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.92.4 1.632.64 2.192.816.92.288 1.76.256 2.432.16.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z" /></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="toast" id="toast">Link copiado!</div>
+
+<script>
+    async function copyText(text) {
+        try {
+            await navigator.clipboard.writeText(text);
+            return true;
+        } catch (e) {
+            // Fallback para navegadores/contextos sem Clipboard API (ex: http sem SSL)
+            try {
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.style.position = 'fixed';
+                ta.style.opacity = '0';
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                return true;
+            } catch (e2) {
+                return false;
+            }
+        }
+    }
+
+    function showToast() {
+        const toast = document.getElementById('toast');
+        toast.classList.add('show');
+        clearTimeout(showToast._t);
+        showToast._t = setTimeout(() => toast.classList.remove('show'), 1600);
+    }
+
+    document.querySelectorAll('.copy-btn').forEach(function (btn) {
+        btn.addEventListener('click', async function (e) {
+            e.preventDefault();
+            const value = btn.getAttribute('data-copy');
+            const ok = await copyText(value);
+            if (ok) {
+                btn.classList.add('copied');
+                showToast(btn.getAttribute('data-toast'));
+                clearTimeout(btn._resetT);
+                btn._resetT = setTimeout(() => btn.classList.remove('copied'), 1400);
+            }
+        });
+    });
+
+    // ── PWA: instalação ──
+    let deferredPrompt = null;
+    const installBtn = document.getElementById('install-btn');
+
+    window.addEventListener('beforeinstallprompt', function (e) {
+        e.preventDefault();
+        deferredPrompt = e;
+        installBtn.classList.add('visible');
+    });
+
+    installBtn.addEventListener('click', async function () {
+        if (!deferredPrompt) return;
+        deferredPrompt.prompt();
+        await deferredPrompt.userChoice;
+        deferredPrompt = null;
+        installBtn.classList.remove('visible');
+    });
+
+    window.addEventListener('appinstalled', function () {
+        installBtn.classList.remove('visible');
+        deferredPrompt = null;
+    });
+
+    // ── PWA: service worker (cache offline + carregamento instantâneo) ──
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('sw.js').catch(function () {
+                // Ambiente sem suporte (ex: aberto via file://) — ignora silenciosamente
+            });
+        });
+    }
+</script>
+
+</body>
+</html>

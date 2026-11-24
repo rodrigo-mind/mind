@@ -484,3 +484,5 @@ Quando uma nota, livro ou agente sugerir outra stack, registrar como alternativa
 - [[guia-trafego-pago-meta-brasil]] — pixel e API de conversões são implementados pela área de desenvolvimento
 - [[mapa-dos-guias-de-trafego]] — implementa o rastreamento que os guias de mensuração exigem
 - [[operador-do-mind]] — o Operador do Mind começa por este centralizador nas tarefas de construção
+- [[loja-veiculos-TEMPLATE-1]] — template de estrutura de pastas para site de loja de veículos, em `developer/templates/sites/veiculos/`, comentado a partir de um projeto real
+- [[head-site-veiculos-TEMPLATE-1]] — template do `<head>` de site de loja de veículos, em `developer/templates/sites/veiculos/`, com SEO, segurança e desempenho

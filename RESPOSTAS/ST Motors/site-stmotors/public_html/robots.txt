@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /admin/
+Disallow: /financiamento/api/
+Disallow: /estoque/api/
+
+Sitemap: https://stmotors.com.br/sitemap.xml

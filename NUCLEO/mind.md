@@ -2,7 +2,7 @@
 titulo: Mind
 tipo: ponto-de-partida
 criado: 2026-11-22
-atualizado: 2026-11-23
+atualizado: 2026-11-24
 ---
 
 # Mind
@@ -54,7 +54,7 @@ Dentro dela existe uma subpasta fixa, `relatorios-de-integracao/`, **exclusiva**
 > Este bloco é mantido pelo comando `/integrar`. Não edite entre os marcadores.
 
 <!-- INTEGRAR:ARVORE:INICIO -->
-Última integração: 2026-11-23 19:54
+Última integração: 2026-11-24 02:44
 
 ```
 mind/
@@ -65,7 +65,8 @@ mind/
 ├── developer/
 │   ├── conceitos/
 │   ├── frameworks/
-│   └── mapas/
+│   ├── mapas/
+│   └── templates/
 ├── estrategia/
 │   ├── conceitos/
 │   ├── frameworks/
@@ -80,7 +81,7 @@ mind/
 |---|---|
 | `NUCLEO/` | Ponto de partida e diretrizes estruturais e filosóficas do projeto |
 | `RESPOSTAS/` | Saída de dados: respostas e arquivos gerados a pedido, isolados do resto do projeto |
-| `developer/` | Assunto desenvolvimento de software (sistemas, sites, apps e automações), a partir do centralizador `developer.md`, com stack de referência, fluxo e checklist |
+| `developer/` | Assunto desenvolvimento de software (sistemas, sites, apps e automações), a partir do centralizador `developer.md`, com stack de referência, fluxo e checklist; `templates/` guarda modelos reutilizáveis de projetos (hoje, estrutura de pastas e `<head>` de site de loja de veículos) |
 | `biblioteca/` | Livros de referência em PDF e outros formatos, cada um com sua ficha `.md` |
 | `estrategia/` | Assunto estratégia (validação de negócio, posicionamento, personalidade de marca e mensagem), a partir do centralizador `estrategia.md`, com notas destiladas dos livros em `frameworks/`, `conceitos/` e `mapas/` |
 | `trafego/` | Assunto tráfego (pago, orgânico, social e direto, campanhas, anúncios e medição), a partir do centralizador `trafego.md`, que se apoia em `estrategia/` e `developer/`; tem notas destiladas do livro *The Art of SEO* (tráfego orgânico) e guias de pesquisa atual para o Brasil (SEO, SEO local, marketing digital, Google Ads, Meta e redes sociais) destilados em notas por módulo, ainda sem livros de anúncios nem de redes sociais |

@@ -1091,3 +1091,4 @@ Quando uma mudança contradizer este guia ou os guias relacionados, avise o usu�
 - [[planejar-o-conteudo-de-seo-para-o-publico-brasileiro]] — nota derivada deste guia: Planejar o conteúdo de SEO para o público brasileiro
 - [[otimizar-o-site-para-busca-com-ia-e-decidir-a-politica-de-rastreadores]] — nota derivada deste guia: Otimizar o site para busca com IA e decidir a política de rastreadores
 - [[melhorar-velocidade-e-experiencia-movel-de-um-site]] — nota derivada deste guia: Melhorar velocidade e experiência móvel de um site
+- [[head-site-veiculos-TEMPLATE-1]] — as decisões de canonical, noindex, hreflang, dados estruturados e produto fora de estoque deste guia viram regras por tipo de página no template do head

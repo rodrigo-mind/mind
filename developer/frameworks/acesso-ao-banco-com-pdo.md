@@ -81,3 +81,4 @@ Segundo o checklist do projeto, as consultas devem usar comandos preparados. O l
 - [[outros-bancos-de-dados-com-php]] — o PDO é o caminho comum para vários bancos
 - [[regra-nao-ordene-por-rand-em-tabelas-grandes]] — o PDO é o meio de aplicar a alternativa de sortear a posição
 - [[regra-prefira-logica-no-php-a-procedimentos-armazenados]] — o acesso por PDO concentra a lógica na aplicação
+- [[loja-veiculos-TEMPLATE-1]] — o template centraliza a conexão PDO em includes/db.php

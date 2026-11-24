@@ -1,0 +1,2 @@
+# Roteamento de /estoque/motos/<slug> é tratado pelo .htaccess da raiz
+# (regra única, para evitar duas fontes de verdade para a mesma rota).

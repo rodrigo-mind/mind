@@ -1,0 +1,25 @@
+{
+  "name": "ST Motors — Links Rápidos",
+  "short_name": "ST Motors",
+  "description": "Acesso rápido aos links e contatos da ST Motors",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f5f7f2",
+  "theme_color": "#4f9e21",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "../favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "../favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

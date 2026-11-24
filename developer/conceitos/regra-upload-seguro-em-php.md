@@ -51,3 +51,4 @@ O livro não cobre a validação do tipo real do arquivo nem a renomeação para
 - [[enviar-formulario-por-ajax-com-formdata]] — o upload por Ajax chega ao PHP, que deve validar o arquivo
 - [[xml-imagens-e-pdf-com-php]] — o processamento de imagens enviadas segue a regra de upload seguro
 - [[arrastar-e-soltar-com-a-api-nativa-do-html5]] — arquivos soltos chegam ao PHP como upload e exigem validação
+- [[loja-veiculos-TEMPLATE-1]] — o template aplica esta regra nas pastas de upload de fotos e no upload-handler do painel

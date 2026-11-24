@@ -1,0 +1,674 @@
+/* ============================================================
+   moto.css — Página de Exibição de Moto
+   ST Motors · Glassmorphism minimalista · Dark automotive
+   ============================================================ */
+
+/* ── RESET CONTEXTUAL ─────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── TOKENS ───────────────────────────────────────────────── */
+:root {
+  --clr-bg:          #0A0A0B;
+  --clr-bg-2:        #111114;
+  --clr-surface:     rgba(255,255,255,0.04);
+  --clr-surface-2:   rgba(255,255,255,0.07);
+  --clr-border:      rgba(255,255,255,0.08);
+  --clr-border-2:    rgba(255,255,255,0.13);
+  --clr-accent:      #E8C547;         /* dourado — valor, urgência */
+  --clr-accent-dim:  rgba(232,197,71,0.12);
+  --clr-accent-glow: rgba(232,197,71,0.25);
+  --clr-text:        #F0EEE8;
+  --clr-text-2:      rgba(240,238,232,0.55);
+  --clr-text-3:      rgba(240,238,232,0.30);
+  --clr-green:       #4ADE80;
+  --clr-green-dim:   rgba(74,222,128,0.10);
+
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+
+  --shadow-glass: 0 8px 32px rgba(0,0,0,0.45), 0 1px 0 rgba(255,255,255,0.06) inset;
+  --shadow-card:  0 24px 64px rgba(0,0,0,0.6);
+
+  --transition: 0.22s cubic-bezier(0.4,0,0.2,1);
+
+  --font-display: 'Montserrat', sans-serif;
+  --font-body:    'Inter', sans-serif;
+}
+
+/* ── BASE ─────────────────────────────────────────────────── */
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+/* ── BREADCRUMB ───────────────────────────────────────────── */
+.breadcrumb {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 0;
+  font-size: 0.78rem;
+  color: var(--clr-text-3);
+  letter-spacing: 0.01em;
+}
+.breadcrumb a {
+  color: var(--clr-text-3);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.breadcrumb a:hover { color: var(--clr-accent); }
+.breadcrumb span { color: var(--clr-text-2); }
+
+/* ── MAIN LAYOUT ──────────────────────────────────────────── */
+.moto-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding: 0 1.5rem 5rem;
+}
+
+/* ── LAYOUT PRINCIPAL (galeria + detalhes) ────────────────── */
+.moto-layout {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 2rem;
+  margin-top: 1.75rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .moto-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* ============================================================
+   GALERIA
+   ============================================================ */
+.moto-galeria {
+  position: sticky;
+  top: 88px;
+}
+
+.moto-galeria__principal {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--clr-bg-2);
+  aspect-ratio: 4/3;
+}
+
+.moto-galeria__principal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+
+.moto-galeria__principal:hover img {
+  transform: scale(1.025);
+}
+
+/* Overlay sutil na borda inferior da foto */
+.moto-galeria__principal::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,10,11,0.35) 0%, transparent 45%);
+  pointer-events: none;
+}
+
+.moto-galeria__placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  background: var(--clr-bg-2);
+  border-radius: var(--radius-lg);
+  color: var(--clr-text-3);
+}
+
+/* Thumbs */
+.moto-galeria__thumbs {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.moto-galeria__thumbs .thumb {
+  width: 72px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  opacity: 0.5;
+  border: 2px solid transparent;
+  transition: opacity var(--transition), border-color var(--transition), transform var(--transition);
+  flex-shrink: 0;
+}
+
+.moto-galeria__thumbs .thumb:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.moto-galeria__thumbs .thumb--ativa {
+  opacity: 1;
+  border-color: var(--clr-accent);
+}
+
+/* ============================================================
+   PAINEL DE DETALHES — glassmorphism
+   ============================================================ */
+.moto-detalhes {
+  background: var(--clr-surface);
+  backdrop-filter: blur(24px) saturate(1.4);
+  -webkit-backdrop-filter: blur(24px) saturate(1.4);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-xl);
+  padding: 2rem 1.75rem 1.75rem;
+  box-shadow: var(--shadow-glass);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Brilho sutil no topo do card */
+.moto-detalhes::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+}
+
+/* Badge de disponibilidade — gatilho escassez */
+.moto-detalhes__disponivel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--clr-green-dim);
+  border: 1px solid rgba(74,222,128,0.2);
+  color: var(--clr-green);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  margin-bottom: 1.1rem;
+}
+
+.moto-detalhes__disponivel::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--clr-green);
+  animation: pulse-green 2s ease infinite;
+}
+
+@keyframes pulse-green {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.7); }
+}
+
+/* Marca */
+.moto-detalhes__marca {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: 0.3rem;
+}
+
+/* Nome do modelo — hierarquia visual clara */
+.moto-detalhes__nome {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--clr-text);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+/* Separador */
+.moto-detalhes__divider {
+  height: 1px;
+  background: var(--clr-border);
+  margin: 1.25rem 0;
+}
+
+/* ── PREÇO — âncora de valor ──────────────────────────────── */
+.moto-detalhes__preco {
+  margin-bottom: 1.5rem;
+}
+
+.preco-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--clr-text-3);
+  margin-bottom: 0.3rem;
+}
+
+.preco-valor {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 4vw, 2.5rem);
+  font-weight: 900;
+  color: var(--clr-accent);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.preco-financie {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--clr-text-2);
+  margin-top: 0.4rem;
+}
+
+/* ── SPECS TABLE ──────────────────────────────────────────── */
+.moto-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.25rem;
+}
+
+.moto-specs-table tr {
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.moto-specs-table tr:last-child {
+  border-bottom: none;
+}
+
+.moto-specs-table th,
+.moto-specs-table td {
+  padding: 0.65rem 0;
+  font-size: 0.88rem;
+  text-align: left;
+}
+
+.moto-specs-table th {
+  color: var(--clr-text-3);
+  font-weight: 500;
+  width: 42%;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.moto-specs-table th svg {
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.moto-specs-table td {
+  color: var(--clr-text);
+  font-weight: 600;
+}
+
+/* ── TRUST BADGES — prova social / segurança ──────────────── */
+.moto-trust-badges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin: 1.25rem 0;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--clr-surface-2);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 0.75rem;
+  font-size: 0.77rem;
+  color: var(--clr-text-2);
+  font-weight: 500;
+}
+
+.trust-badge svg {
+  flex-shrink: 0;
+  color: var(--clr-accent);
+  opacity: 0.85;
+}
+
+/* ── DESCRIÇÃO ────────────────────────────────────────────── */
+.moto-descricao {
+  background: var(--clr-surface-2);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.moto-descricao h3 {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clr-text-3);
+  margin-bottom: 0.5rem;
+}
+
+.moto-descricao p {
+  font-size: 0.88rem;
+  color: var(--clr-text-2);
+  line-height: 1.7;
+}
+
+/* ── CTA PRINCIPAL — gatilho ação imediata ───────────────── */
+.moto-cta-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: #25D366;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+  box-shadow: 0 4px 24px rgba(37,211,102,0.3);
+  margin-bottom: 0.75rem;
+}
+
+.moto-cta-whatsapp::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.12);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+
+.moto-cta-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(37,211,102,0.45);
+}
+
+.moto-cta-whatsapp:hover::before {
+  transform: translateX(100%);
+}
+
+.moto-cta-whatsapp:active {
+  transform: translateY(0);
+}
+
+/* CTA secundário — visita */
+.moto-cta-secundario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  background: transparent;
+  color: var(--clr-text-2);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid var(--clr-border-2);
+  border-radius: var(--radius-md);
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.moto-cta-secundario:hover {
+  background: var(--clr-surface-2);
+  color: var(--clr-text);
+  border-color: var(--clr-border-2);
+}
+
+/* ── Micro-copy de segurança ──────────────────────────────── */
+.moto-cta-hint {
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--clr-text-3);
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+/* ── Compartilhar ────────────────────────────────────────── */
+.moto-share {
+  margin-top: 1.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--clr-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.moto-share__label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--clr-text-3);
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+.moto-share__buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.moto-share__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--clr-border);
+  background: var(--clr-surface);
+  color: var(--clr-text-2);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition), transform 0.15s ease;
+}
+
+.moto-share__btn:hover {
+  background: var(--clr-surface-2);
+  color: var(--clr-text);
+  border-color: var(--clr-border-2);
+  transform: translateY(-1px);
+}
+
+.moto-share__btn:active {
+  transform: translateY(0) scale(0.96);
+}
+
+.moto-share__btn--whatsapp:hover { color: #25D366; border-color: rgba(37,211,102,0.3); }
+.moto-share__btn--facebook:hover { color: #1877F2; border-color: rgba(24,119,242,0.3); }
+.moto-share__btn--x:hover        { color: var(--clr-text); border-color: var(--clr-border-2); }
+.moto-share__btn--copy:hover     { color: var(--clr-accent); border-color: var(--clr-accent-dim); }
+
+.moto-share__btn--copied {
+  color: var(--clr-green) !important;
+  border-color: rgba(74,222,128,0.3) !important;
+  background: var(--clr-green-dim) !important;
+}
+
+/* ============================================================
+   SEÇÃO DE SUGESTÕES
+   ============================================================ */
+.moto-sugestoes {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--clr-border);
+}
+
+.moto-sugestoes h2 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--clr-text-2);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.78rem;
+}
+
+/* Reutiliza .estoque-grid e .bike-card do estoque.css */
+.moto-sugestoes .estoque-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ============================================================
+   BIKE-CARD (auto-suficiente nesta página)
+   ============================================================ */
+.bike-card {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.bike-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--clr-border-2);
+}
+
+.bike-card__link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.bike-card__image-wrapper {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: var(--clr-bg-2);
+}
+
+.bike-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.bike-card:hover .bike-card__image {
+  transform: scale(1.04);
+}
+
+.bike-card__no-foto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background: var(--clr-bg-2);
+}
+
+.bike-card__content {
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.bike-card__brand {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--clr-accent);
+  margin-bottom: 0.2rem;
+}
+
+.bike-card__name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--clr-text);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.bike-card__footer {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.bike-card__price {
+  line-height: 1;
+}
+
+.bike-card__price-label {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--clr-text-3);
+  margin-bottom: 0.15rem;
+}
+
+.bike-card__price-value {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--clr-accent);
+}
+
+/* ============================================================
+   ENTRADA — animação ao carregar
+   ============================================================ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.moto-layout { animation: fadeUp 0.45s ease both; }
+.moto-detalhes { animation: fadeUp 0.55s 0.08s ease both; }
+
+/* ============================================================
+   RESPONSIVIDADE
+   ============================================================ */
+@media (max-width: 600px) {
+  .moto-page { padding: 0 1rem 4rem; }
+  .moto-detalhes { padding: 1.5rem 1.25rem; }
+  .moto-trust-badges { grid-template-columns: 1fr; }
+  .moto-galeria { position: static; }
+  .breadcrumb { padding: 1rem 1rem 0; }
+  .moto-share { flex-direction: column; align-items: flex-start; gap: 0.7rem; }
+  .moto-share__buttons { width: 100%; }
+  .moto-share__btn { flex: 1; }
+}

@@ -45,3 +45,4 @@ Divergência a observar: o livro mostra o cálculo manual do hash SHA-256 com sa
 - [[opcoes-de-autenticacao-em-php]] — o login por sessão depende de senhas guardadas com hash
 - [[playbook-formulario-seguro-em-php]] — é usada como etapa deste playbook, que a combina com notas de outros livros
 - [[regra-guarde-senhas-com-password-hash]] — diverge: aqui o cálculo manual de hash com sal, enquanto Wenz e Hauser usam `password_hash`; a stack do projeto adota `password_hash`
+- [[loja-veiculos-TEMPLATE-1]] — o template guarda as senhas do painel como hash e traz um utilitário isolado para gerá-lo

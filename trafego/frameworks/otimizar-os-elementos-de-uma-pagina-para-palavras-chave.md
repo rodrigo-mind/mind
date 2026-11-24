@@ -63,3 +63,4 @@ Limites de caracteres e a aparência dos resultados mudaram desde 2014; confira 
 - [[produzir-e-operar-conteudo-de-redes-sociais]] — a lógica de palavra-chave no título e no texto vale também nas redes
 - [[criar-anuncios-responsivos-e-recursos-para-o-mercado-brasileiro]] — a página de destino também precisa de título, H1 e conteúdo otimizados
 - [[planejar-o-conteudo-de-seo-para-o-publico-brasileiro]] — otimização da página, do livro
+- [[head-site-veiculos-TEMPLATE-1]] — monta título e meta descrição por tipo de página em um head único

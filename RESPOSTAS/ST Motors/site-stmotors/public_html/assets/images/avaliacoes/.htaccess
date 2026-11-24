@@ -1,0 +1,24 @@
+# Pasta de upload de fotos — nunca deve executar código.
+# Duas camadas porque não temos certeza se esta conta roda mod_php ou php-fpm/CGI:
+
+# 1) mod_php: desliga o interpretador PHP nesta pasta
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+
+# 2) php-fpm/CGI (onde php_flag é ignorado): remove o handler e nega acesso direto
+<IfModule mod_handler.c>
+    RemoveHandler .php .phtml .phar .pl .cgi
+</IfModule>
+<FilesMatch "\.(php|phtml|phar|pl|cgi)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>

@@ -111,3 +111,5 @@ Comportamento esperado: tarefa trivial. Você consulta a nota de robots.txt, met
 - [[developer]] — centralizador de desenvolvimento, por onde o Operador começa nas tarefas de construção
 - [[estrategia]] — centralizador de estratégia, consultado em tarefas de posicionamento, oferta e mensagem
 - [[trafego]] — centralizador de tráfego, consultado em tarefas de canais, anúncios, SEO e medição
+- [[loja-veiculos-TEMPLATE-1]] — template de site de loja de veículos que o Operador consulta ao criar ou revisar esse tipo de projeto
+- [[head-site-veiculos-TEMPLATE-1]] — template de `<head>` que o Operador consulta ao criar ou revisar o cabeçalho HTML de um site de loja de veículos

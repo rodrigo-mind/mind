@@ -49,3 +49,4 @@ O livro avisa que o suporte a comandos como crawl-delay, Allow e Noindex no robo
 - [[guia-seo-brasil]] — o módulo B1 trata de robots.txt, sitemap, canonical e noindex, com os riscos de mudança em produção
 - [[corrigir-rastreamento-indexacao-e-arquitetura-de-urls]] — explica o funcionamento de cada controle usado aqui
 - [[otimizar-o-site-para-busca-com-ia-e-decidir-a-politica-de-rastreadores]] — o robots.txt é o mecanismo que aplica a política de rastreadores
+- [[head-site-veiculos-TEMPLATE-1]] — aplica robots, canonical e noindex por tipo de página de uma loja de veículos

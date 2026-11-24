@@ -1,0 +1,95 @@
+/* ── ESTOQUE ADMIN ── */
+.estoque-table { width:100%; border-collapse:collapse; font-size:.875rem; }
+.estoque-table th, .estoque-table td { padding:.75rem 1rem; text-align:left; border-bottom:1px solid var(--color-border-light); }
+.estoque-table th { font-weight:var(--font-weight-semibold); color:var(--color-text-secondary); }
+.estoque-table tbody tr:hover { background:var(--glass-2); }
+.row--inativo { opacity:.45; }
+
+.badge { display:inline-block; padding:2px 8px; border-radius:20px; font-size:.75rem; font-weight:600; }
+.badge--ativo   { background:rgba(79,158,33,.15); color:#7dca5a; }
+.badge--inativo { background:rgba(224,82,82,.15);  color:#e87878; }
+
+/* ── DESTAQUES SLOTS ── */
+.destaques-slots {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: .75rem;
+    margin-top: 1rem;
+}
+
+.destaque-slot {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+
+.destaque-slot__num {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary-light, rgba(255,255,255,.08));
+    border: 1px solid var(--color-border-light);
+    border-radius: 6px;
+    font-size: .75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.destaque-slot__select {
+    flex: 1;
+    font-size: .875rem;
+    padding: .4rem .65rem;
+}
+
+.destaque-slot__select option {
+    background: #1a1a1a; /* ou a cor de fundo do seu admin */
+    color: #f0f0f0;
+}
+
+@media(max-width:768px){
+    .estoque-table thead { display:none; }
+
+    .estoque-table tr {
+        display: grid;
+        grid-template-columns: 56px 1fr;
+        gap: .15rem .75rem;
+        align-items: start;
+        margin-bottom: .75rem;
+        border: 1px solid var(--color-border-light);
+        border-radius: 8px;
+        padding: .625rem .75rem;
+    }
+
+    .estoque-table td { display: block; padding: 0; border: none; }
+
+    /* Coluna 1: foto, ancorada no topo — não depende de saber quantas
+       linhas a coluna de info vai ter (robusto a futuras mudanças de campos) */
+    .td-foto { grid-column: 1; grid-row: 1; align-self: start; }
+    .td-foto img, .td-foto span { width: 56px; height: 42px; display: flex; align-items: center; justify-content: center; }
+
+    /* Coluna 2: cada td cai numa linha própria, em sequência — sem grid-area
+       compartilhada, então não há mais sobreposição entre eles. */
+    .td-moto, .td-ano, .td-placa, .td-preco, .td-status { grid-column: 2; }
+
+    .td-moto { font-size: .9rem; line-height: 1.3; }
+    .td-moto strong { display: inline; }
+    .td-moto__cor { color: var(--color-text-secondary); font-size: .8rem; }
+    .td-moto__cor::before { content: " · "; }
+
+    .estoque-table .td-ano, .estoque-table .td-placa { display: inline-block; font-size: .8rem; color: var(--color-text-secondary); }
+    .td-ano::after { content: " · "; }
+
+    .td-preco { font-weight: var(--font-weight-semibold); margin-top: .25rem; }
+    .td-status { display: inline-block; margin-top: .15rem; }
+
+    /* Destaque sai do card compacto (some espaço vertical) — continua editável na tela de edição */
+    .estoque-table .td-destaque { display: none; }
+
+    /* Ações ocupam a linha inteira, abaixo de foto + info */
+    .td-acoes { grid-column: 1 / -1; margin-top: .375rem; padding-top: .375rem; border-top: 1px solid var(--color-border-light); }
+
+    .destaques-slots { grid-template-columns: 1fr; }
+}

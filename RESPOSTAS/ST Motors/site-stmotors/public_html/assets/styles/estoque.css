@@ -1,0 +1,336 @@
+/* ================================================================
+   ESTOQUE PUBLICO — ST Motors
+   Glassmorphism minimalista · Dark theme
+   ================================================================ */
+
+/* ── BODY ── */
+.estoque-body {
+  background: var(--color-bg-primary, #0a0f0a);
+}
+
+/* ── HERO BANNER ── */
+.estoque-hero {
+  padding-top: calc(var(--header-height-mobile, 64px) + 2rem);
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background:
+    linear-gradient(180deg, rgba(10,15,10,.92) 0%, rgba(10,15,10,.75) 100%),
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(79,158,33,.18) 0%, transparent 70%);
+}
+
+.estoque-hero__content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.estoque-hero__meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.estoque-hero__label {
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--color-primary, #4f9e21);
+  margin-bottom: .5rem;
+}
+
+.estoque-hero__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.estoque-hero__title span {
+  color: var(--color-primary, #4f9e21);
+}
+
+.estoque-hero__sub {
+  font-size: .85rem;
+  color: rgba(255,255,255,.45);
+}
+
+/* ── BOTÃO TOGGLE FILTROS ── */
+.filtro-toggle-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  height: 36px;
+  padding: 0 1rem;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+  color: rgba(255,255,255,.8);
+  font-size: .825rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background .2s, border-color .2s;
+  white-space: nowrap;
+}
+
+.filtro-toggle-btn:hover,
+.filtro-toggle-btn[aria-expanded="true"] {
+  background: rgba(79,158,33,.15);
+  border-color: rgba(79,158,33,.4);
+  color: #fff;
+}
+
+.filtro-toggle-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-primary, #4f9e21);
+}
+
+/* ── FILTROS ── */
+.estoque-filtros-wrap {
+  position: static;
+  z-index: 20;
+  padding: .875rem 1.25rem;
+  background: rgba(10,15,10,.95);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  animation: filtrosSlide .2s ease;
+}
+
+@keyframes filtrosSlide {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.filtros-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.filtro-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.filtro-group--search {
+  flex: 1 1 200px;
+  min-width: 160px;
+}
+
+.filtro-icon {
+  position: absolute;
+  left: .75rem;
+  color: rgba(255,255,255,.35);
+  pointer-events: none;
+}
+
+.filtro-input {
+  height: 40px;
+  padding: 0 .875rem;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 8px;
+  font-size: .825rem;
+  font-family: inherit;
+  color: rgba(255,255,255,.9);
+  outline: none;
+  transition: border-color .2s, background .2s;
+  -webkit-appearance: none;
+}
+
+.filtro-input--text {
+  width: 100%;
+  padding-left: 2.25rem;
+}
+
+.filtro-select {
+  padding-right: 2rem;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.4)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right .6rem center;
+}
+
+.filtro-input:focus, .filtro-select:focus {
+  border-color: var(--color-primary, #4f9e21);
+  background: rgba(79,158,33,.08);
+  box-shadow: 0 0 0 3px rgba(79,158,33,.12);
+}
+
+.filtro-input::placeholder { color: rgba(255,255,255,.3); }
+
+.filtro-btn {
+  height: 40px;
+  padding: 0 1.25rem;
+  background: var(--color-primary, #4f9e21);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: .825rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background .2s, transform .15s;
+  white-space: nowrap;
+}
+
+.filtro-btn:hover { background: #5cb528; transform: translateY(-1px); }
+
+.filtro-btn--clear {
+  background: transparent;
+  color: rgba(255,255,255,.5);
+  border: 1px solid rgba(255,255,255,.12);
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  text-decoration: none;
+}
+
+.filtro-btn--clear:hover {
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.75);
+  transform: none;
+}
+
+/* Tags de filtros ativos */
+.filtros-ativos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  align-items: center;
+  max-width: 1280px;
+  margin: .6rem auto 0;
+}
+
+.filtro-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: .2rem .65rem;
+  background: rgba(79,158,33,.15);
+  border: 1px solid rgba(79,158,33,.3);
+  border-radius: 20px;
+  font-size: .75rem;
+  color: rgba(255,255,255,.75);
+}
+
+.filtros-ativos__total {
+  font-size: .75rem;
+  color: rgba(255,255,255,.35);
+  margin-left: auto;
+}
+
+/* ── GRID DE MOTOS ── */
+.estoque-page {
+  min-height: 100vh;
+  padding-top: 0;
+}
+
+.estoque-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 1280px;
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+}
+
+@media (min-width: 580px)  { .estoque-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px)  { .estoque-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1200px) { .estoque-grid { grid-template-columns: repeat(4, 1fr); } }
+
+/* ── BIKE CARD — reutiliza o da home com override de CTA ── */
+.bike-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--color-primary, #4f9e21);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity .2s, transform .2s;
+}
+
+.bike-card:hover .bike-card__cta {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.bike-card__no-foto {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background: rgba(255,255,255,.03);
+}
+
+/* ── VAZIO ── */
+.estoque-vazio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 5rem 1rem;
+  color: rgba(255,255,255,.35);
+  text-align: center;
+}
+
+.estoque-vazio svg { 
+    opacity: .3; 
+    
+}
+
+.estoque-vazio p {
+  font-size: .95rem;
+  color: #4a4a4a;
+  line-height: 1.7;
+  max-width: 360px;
+  text-align: center;
+}
+
+.estoque-vazio a {
+  display: inline-block;
+  margin-top: .5rem;
+  padding: .65rem 1.5rem;
+  background: var(--color-primary, #4f9e21);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: .875rem;
+  transition: background .2s;
+}
+
+.estoque-vazio a:hover { background: #5cb528; }
+
+/* ── STICKY FILTROS — DESKTOP offset ── */
+@media (min-width: 1024px) {
+  .estoque-hero {
+    padding-top: calc(var(--header-height, 72px) + 3rem);
+  }
+}
+
+/* ── SELECT OPTION contraste ── */
+.filtro-select option {
+  background: #0f160f;
+  color: #e8ede8;
+}

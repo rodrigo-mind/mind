@@ -36,3 +36,4 @@ Evento duplicado; conector de relatório com janela descontinuada; otimizar por 
 - [[trafego]] — centralizador do assunto
 - [[montar-crm-e-mail-whatsapp-e-automacoes-de-retencao]] — retorno de estágios do CRM à Meta
 - [[mapa-dos-guias-de-trafego]] — o mapa dos guias lista esta nota entre as extraídas dos guias de pesquisa atual
+- [[head-site-veiculos-TEMPLATE-1]] — o script de consentimento do head só carrega pixel e tags depois do aceite, como esta configuração exige
